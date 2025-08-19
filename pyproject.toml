@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "n-r-ai"
+version = "0.0.0"
+description = "AI player for Nemesis: Retaliation"
+readme = "README.md"
+requires-python = ">=3.13"
+keywords = ["board-game", "ai", "nemesis", "retaliation"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.13",
+]
+
+[project.urls]
+Homepage = "https://github.com/0xtyls/n-r-ai"
+Issues = "https://github.com/0xtyls/n-r-ai/issues"
