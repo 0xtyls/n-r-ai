@@ -1,0 +1,34 @@
+const API_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
+
+export type StateOut = {
+  turn: number
+  phase: string
+  seed?: number | null
+}
+
+export type ActionOut = {
+  type: string
+  params?: Record<string, unknown> | null
+}
+
+export async function getState(): Promise<StateOut> {
+  const res = await fetch(`${API_URL}/api/state`)
+  if (!res.ok) throw new Error('Failed to fetch state')
+  return res.json()
+}
+
+export async function getActions(): Promise<ActionOut[]> {
+  const res = await fetch(`${API_URL}/api/actions`)
+  if (!res.ok) throw new Error('Failed to fetch actions')
+  return res.json()
+}
+
+export async function step(type: string, params?: Record<string, unknown>): Promise<StateOut> {
+  const res = await fetch(`${API_URL}/api/step`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ type, params: params ?? null })
+  })
+  if (!res.ok) throw new Error('Failed to step')
+  return res.json()
+}
