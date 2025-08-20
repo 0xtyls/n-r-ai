@@ -1,5 +1,5 @@
 # n-r-ai
 
-AI player for Nemesis: Retaliation.
+AI player project.
 
 *Python 3.13+, work-in-progress.*

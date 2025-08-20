@@ -1,3 +1,3 @@
-"""n-r-ai: AI player for Nemesis: Retaliation."""
+"""n-r-ai package."""
 
 __version__ = "0.0.0"

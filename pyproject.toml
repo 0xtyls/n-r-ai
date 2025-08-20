@@ -5,10 +5,10 @@ build-backend = "hatchling.build"
 [project]
 name = "n-r-ai"
 version = "0.0.0"
-description = "AI player for Nemesis: Retaliation"
+description = "Board game AI player"
 readme = "README.md"
 requires-python = ">=3.13"
-keywords = ["board-game", "ai", "nemesis", "retaliation"]
+keywords = ["board-game", "ai"]
 classifiers = [
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3 :: Only",
