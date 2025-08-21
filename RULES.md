@@ -1,7 +1,6 @@
-# Nemesis: Retaliation  
+# N: R
 ### Unofficial Rules Reference for AI Development  
 
-*Derived exclusively from the local PDF `Nemesis_RT_Rulebook.pdf`.  
 This document is **not** an official rulebook and is provided only to guide engine / agent implementation.*
 
 ---

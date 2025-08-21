@@ -6,5 +6,5 @@ AI player project.
 
 ## Documentation
 
-- [RULES.md](RULES.md) – Unofficial rules reference extracted from the official Nemesis: Retaliation rulebook PDF.
+- [RULES.md](RULES.md) – Unofficial rules reference derived from the local rulebook PDF.
 - [AGENTS.md](AGENTS.md) – Architecture and usage guide for AI agents (Random, MCTS, LLM-based, etc.).
