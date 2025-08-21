@@ -18,6 +18,7 @@ classifiers = [
 [project.dependencies]
 fastapi = ">=0.110"
 uvicorn[standard] = ">=0.24"
+openai = ">=1.30"
 
 [project.urls]
 Homepage = "https://github.com/0xtyls/n-r-ai"

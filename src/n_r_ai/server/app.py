@@ -70,3 +70,52 @@ def post_step(a: ActionIn) -> StateOut:
     action = parse_action(a)
     s, _, _, _ = env.step(action)
     return state_to_out(s)
+
+# --- LLM integration ---------------------------------------------------------
+
+from .llm import llm_choose_action  # noqa: E402
+
+
+class LLMActIn(BaseModel):
+    persona: Optional[str] = None
+    temperature: Optional[float] = None
+
+
+class LLMActOut(BaseModel):
+    chosen: ActionOut
+    rationale: str
+    state: StateOut
+
+
+@app.post("/api/llm_act", response_model=LLMActOut)
+def post_llm_act(body: LLMActIn) -> LLMActOut:
+    actions = env.rules.legal_actions(env.state)
+    actions_payload = [
+        {"type": a.type.name, "params": dict(a.params) if a.params else None}
+        for a in actions
+    ]
+    state_summary = (
+        f"turn={env.state.turn}, phase={env.state.phase.name}, seed={env.state.seed}"
+    )
+
+    try:
+        res = llm_choose_action(
+            state_summary,
+            actions_payload,
+            persona=body.persona,
+            temperature=body.temperature,
+        )
+    except RuntimeError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+    idx = res["pick"]
+    rationale = res.get("rationale", "")
+    chosen = actions[idx] if actions else Action(ActionType.NOOP)
+
+    s, _, _, _ = env.step(chosen)
+
+    return LLMActOut(
+        chosen=action_to_out(chosen),
+        rationale=rationale,
+        state=state_to_out(s),
+    )

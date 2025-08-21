@@ -32,3 +32,33 @@ export async function step(type: string, params?: Record<string, unknown>): Prom
   if (!res.ok) throw new Error('Failed to step')
   return res.json()
 }
+
+// ---------------------------------------------------------------------------
+// LLM integration
+// ---------------------------------------------------------------------------
+
+export type LLMActOut = {
+  chosen: ActionOut
+  rationale: string
+  state: StateOut
+}
+
+export async function llmAct(
+  persona?: string,
+  temperature?: number
+): Promise<LLMActOut> {
+  const res = await fetch(`${API_URL}/api/llm_act`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ persona: persona ?? null, temperature })
+  })
+
+  if (!res.ok) {
+    const detail = await res.json().catch(() => null)
+    const msg =
+      detail && detail.detail ? String(detail.detail) : 'LLM act failed'
+    throw new Error(msg)
+  }
+
+  return res.json()
+}
