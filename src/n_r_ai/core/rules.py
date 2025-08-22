@@ -16,13 +16,28 @@ def _norm_edge(a: str, b: str) -> Edge:
     """
     return tuple(sorted((a, b)))  # type: ignore[return-value]
 
+# ---------------------------------------------------------------------------#
+# helpers                                                                    #
+# ---------------------------------------------------------------------------#
+
+def _neighbors_open(state: GameState, room: str) -> List[str]:
+    """
+    Return neighbouring rooms reachable from `room`, i.e. board neighbours
+    whose connecting edge is NOT blocked by a door.
+    """
+    neighs: List[str] = []
+    for n in state.board.neighbors(room):
+        if _norm_edge(room, n) not in state.doors:
+            neighs.append(n)
+    return neighs
+
 class Rules:
     def legal_actions(self, state: GameState) -> List[Action]:
         actions: List[Action] = []
 
         if state.phase == Phase.PLAYER:
             # Movement options
-            for neigh in state.board.neighbors(state.player_room):
+            for neigh in _neighbors_open(state, state.player_room):
                 actions.append(Action(ActionType.MOVE, {"to": neigh}))
                 actions.append(Action(ActionType.MOVE_CAUTIOUS, {"to": neigh}))
             # Pass is always legal
@@ -61,6 +76,10 @@ class Rules:
             if to_room is None or to_room not in state.board.neighbors(state.player_room):
                 # illegal – ignore, treat as NOOP
                 return state.next(turn=state.turn + 1)
+            # edge must be open
+            move_edge = _norm_edge(state.player_room, to_room)
+            if move_edge in state.doors:
+                return state.next(turn=state.turn + 1)
 
             # Move the player
             new_state = new_state.next(player_room=to_room)
@@ -79,6 +98,9 @@ class Rules:
                         if maybe_edge in state.board.edges:
                             chosen_edge_param = maybe_edge
                 if chosen_edge_param:
+                    # ignore if closed by door
+                    if chosen_edge_param in state.doors:
+                        chosen_edge_param = None
                     new_noise[chosen_edge_param] = new_noise.get(chosen_edge_param, 0) + 1
 
             # --- encounter spawn check -------------------------------------
@@ -94,6 +116,10 @@ class Rules:
                     intruders = set(new_state.intruders)
                     intruders.add(to_room)
                     new_state = new_state.next(intruders=intruders)
+                    # clear all incident noise (encounter removes it)
+                    for a, b in list(new_noise):
+                        if a == to_room or b == to_room:
+                            new_noise.pop((a, b), None)
 
         # --------------------------------------------------------------------
         # Handle PASS
@@ -161,6 +187,41 @@ class Rules:
 
             # --- EVENT effects ------------------------------------------------
             elif phase == state.phase.__class__.EVENT:
+                # --- intruder movement towards player ----------------------
+                from collections import deque
+
+                # BFS distances from player
+                dist: Dict[str, int] = {new_state.player_room: 0}
+                q: deque[str] = deque([new_state.player_room])
+                while q:
+                    cur = q.popleft()
+                    for nb in _neighbors_open(new_state, cur):
+                        if nb not in dist:
+                            dist[nb] = dist[cur] + 1
+                            q.append(nb)
+
+                moved_intruders: Set[str] = set()
+                dmg_event = 0
+                for r in new_state.intruders:
+                    # choose adjacent room that gets closer to player
+                    best: str | None = None
+                    best_d = dist.get(r, None)
+                    if best_d is None:
+                        # no path, stay
+                        moved_intruders.add(r)
+                        continue
+                    for nb in _neighbors_open(new_state, r):
+                        if dist.get(nb, best_d + 1) < best_d:
+                            best = nb
+                            best_d = dist[nb]
+                    moved_intruders.add(best if best is not None else r)
+
+                # apply moved positions
+                new_state = new_state.next(intruders=moved_intruders)
+                if new_state.player_room in moved_intruders and health > 0:
+                    dmg_event = 1
+                health -= dmg_event
+
                 if new_state.event_deck > 0:
                     new_state = new_state.next(event_deck=new_state.event_deck - 1)
                 # deterministic noise: lexicographically smallest neighbor edge

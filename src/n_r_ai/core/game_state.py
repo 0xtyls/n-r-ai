@@ -41,6 +41,8 @@ class GameState:
     # hazards state
     fires: Set[RoomId] = field(default_factory=set)
     noise: Dict[Tuple[RoomId, RoomId], int] = field(default_factory=dict)
+    # closed / blocked doors (undirected edges); movement & noise cannot cross
+    doors: Set[Tuple[RoomId, RoomId]] = field(default_factory=set)
 
     # --- new v1.1 fields ----------------------------------------------------
     round: int = 1

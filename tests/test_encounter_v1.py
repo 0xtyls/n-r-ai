@@ -27,6 +27,10 @@ class TestEncounterV1(unittest.TestCase):
         # Verify intruder spawned in B due to pre-existing noise
         self.assertIn("B", new_state.intruders, "Room B should have an intruder after move")
         self.assertEqual(len(new_state.intruders), 1, "Only one intruder should exist")
+
+        # Verify noise on incident edge is cleared after encounter
+        self.assertNotIn(edge_ab, new_state.noise,
+                         "Noise on (A,B) should be cleared after encounter in room B")
     
     def test_no_intruder_without_preexisting_noise(self):
         """Test that moving to a room without pre-existing noise does NOT spawn an intruder."""
