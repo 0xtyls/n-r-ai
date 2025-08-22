@@ -24,6 +24,7 @@ class GameState:
         default_factory=lambda: Board(
             rooms={"A", "B", "C"},
             edges={("A", "B"), ("B", "C")},
+            room_types={"A": "DEFAULT", "B": "CONTROL", "C": "DEFAULT"},
         )
     )
     player_room: RoomId = "A"
@@ -31,6 +32,7 @@ class GameState:
     # player resources / hazards
     oxygen: int = 5
     health: int = 5
+    ammo: int = 3
 
     # per-turn counter
     actions_in_turn: int = 0

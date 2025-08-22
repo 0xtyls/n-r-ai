@@ -67,11 +67,11 @@ class Rules:
                     actions.append(Action(ActionType.CLOSE_DOOR, {"to": neigh}))
             
             # Combat action
-            if state.player_room in state.intruders:
+            if state.player_room in state.intruders and state.ammo > 0:
                 actions.append(Action(ActionType.SHOOT))
             
             # Room action
-            if state.player_room == 'B':
+            if state.board.room_types.get(state.player_room) == 'CONTROL':
                 actions.append(Action(ActionType.USE_ROOM))
             
             # Pass is always legal
@@ -206,27 +206,42 @@ class Rules:
         # Handle SHOOT
         # --------------------------------------------------------------------
         elif action.type is ActionType.SHOOT:
-            # Can only shoot if intruder is in the same room
-            if state.player_room in state.intruders:
+            # Can only shoot if intruder is in the same room and player has ammo
+            if state.player_room in state.intruders and state.ammo > 0:
                 new_intruders = dict(state.intruders)
-                hp = new_intruders[state.player_room]
-                hp -= 1
+                ammo = state.ammo - 1
+                attack_deck = state.attack_deck
                 
-                # Remove intruder if HP <= 0
-                if hp <= 0:
-                    new_intruders.pop(state.player_room)
-                else:
-                    new_intruders[state.player_room] = hp
+                # Check if we can draw from attack deck
+                hit = False
+                if attack_deck > 0:
+                    attack_deck -= 1
+                    hit = True
                 
-                new_state = new_state.next(intruders=new_intruders)
+                # Apply damage if hit
+                if hit:
+                    hp = new_intruders[state.player_room]
+                    hp -= 1
+                    
+                    # Remove intruder if HP <= 0
+                    if hp <= 0:
+                        new_intruders.pop(state.player_room)
+                    else:
+                        new_intruders[state.player_room] = hp
+                
+                new_state = new_state.next(
+                    intruders=new_intruders,
+                    ammo=ammo,
+                    attack_deck=attack_deck
+                )
                 actions_in_turn += 1
 
         # --------------------------------------------------------------------
         # Handle USE_ROOM
         # --------------------------------------------------------------------
         elif action.type is ActionType.USE_ROOM:
-            # Room B toggles life support
-            if state.player_room == 'B':
+            # Room type CONTROL toggles life support
+            if state.board.room_types.get(state.player_room) == 'CONTROL':
                 new_state = new_state.next(life_support_active=not state.life_support_active)
                 actions_in_turn += 1
 
@@ -372,6 +387,7 @@ class Rules:
             health=health,
             turn=state.turn + 1,
             phase=phase,
+            doors=doors,
         )
 
         return new_state
