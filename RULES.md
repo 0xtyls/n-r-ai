@@ -5,6 +5,36 @@ This document is **not** an official rulebook and is provided only to guide engi
 
 ---
 
+## Finding full rules in `RULES_EXTRACT.txt`
+
+`RULES_EXTRACT.txt` is a plain-text dump of the full rule-book PDF.  
+Use a text search tool (`grep`, `rg`, an editor “find” panel, etc.) to jump from the short reference below to the complete wording in the extract.
+
+| Topic | Helpful search terms in `RULES_EXTRACT.txt` |
+|-------|---------------------------------------------|
+| Round structure | `game round structure`, `PLAYER PHASE`, `INTRUDER PHASE`, `EVENT PHASE`, `cleanup phase`, `Bag Development` |
+| Player turn & actions | `players' turns`, `RESOLVING ACTIONS`, `Actions List`, `Basic Action`, `Costing 1 Action card`, `Costing 2 Action cards`, `NOT IN COMBAT` |
+| Movement | `MOVEMENT`, `Make a Move Cautiously` |
+| Shooting | `shooting`, `Shooting is resolved in the following way` |
+| Bursting | `bursting`, `Bursting is resolved in the following way` |
+| Intruder movement | `Intruder Movement`, `INTRUDER MOVEMENT` |
+| Objectives | `choosing an objective`, `OBJECTIVE AND MISSION TASK` |
+| Escape & hibernation | `Hibernatorium`, `Make a Noise roll to Hibernate`, `Escape Shuttle` |
+| Oxygen & fire | `Oxygen Loss`, `Fire Damage`, `Fire markers` |
+| Lander & anti-aircraft | `LANDER`, `ANTI-AIRCRAFT` |
+| Autodestruction | `AUTODESTRUCTION TOKEN` |
+
+> **Tip – quick CLI look-ups (macOS/Linux)**  
+> ```bash
+> # basic POSIX grep
+> grep -ni "PLAYER PHASE" RULES_EXTRACT.txt
+>
+> # ripgrep (if installed)
+> rg -n "Shooting is resolved" RULES_EXTRACT.txt
+> ```
+
+---
+
 ## 1. Round Structure (exact order)
 
 1. **Player Phase**  
