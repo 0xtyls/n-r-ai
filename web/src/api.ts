@@ -4,6 +4,12 @@ export type StateOut = {
   turn: number
   phase: string
   seed?: number | null
+  // extended fields (may be omitted by older server versions)
+  location?: string
+  oxygen?: number
+  health?: number
+  actions_in_turn?: number
+  life_support_active?: boolean
 }
 
 export type ActionOut = {

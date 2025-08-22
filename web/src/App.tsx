@@ -49,6 +49,23 @@ export default function App() {
     }
   }
 
+  // Execute a chosen action (used by the “Do” buttons in the list)
+  async function execAction(action: ActionOut) {
+    if (loading) return
+    setLoading(true)
+    setError(null)
+    try {
+      const next = await step(action.type, action.params ?? undefined)
+      setState(next)
+      const a = await getActions()
+      setActions(a)
+    } catch (e: any) {
+      setError(e?.message ?? String(e))
+    } finally {
+      setLoading(false)
+    }
+  }
+
   async function onLlmAct() {
     setError(null)
     setLlmResult(null)
@@ -76,6 +93,18 @@ export default function App() {
           <div>
             <div>Turn: <b>{state.turn}</b></div>
             <div>Phase: <b>{state.phase}</b></div>
+            {'location' in state && state.location !== undefined && (
+              <div>Location: <b>{state.location}</b></div>
+            )}
+            {'oxygen' in state && state.oxygen !== undefined && (
+              <div>Oxygen: <b>{state.oxygen}</b></div>
+            )}
+            {'health' in state && state.health !== undefined && (
+              <div>Health: <b>{state.health}</b></div>
+            )}
+            {'actions_in_turn' in state && state.actions_in_turn !== undefined && (
+              <div>Actions this turn: <b>{state.actions_in_turn}</b></div>
+            )}
           </div>
         ) : (
           <div>Loading state…</div>
@@ -98,7 +127,15 @@ export default function App() {
         {actions.length ? (
           <ul>
             {actions.map((a, i) => (
-              <li key={i}><code>{a.type}</code></li>
+              <li key={i} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                <code>{a.type}</code>
+                <button
+                  onClick={() => execAction(a)}
+                  disabled={loading}
+                >
+                  Do
+                </button>
+              </li>
             ))}
           </ul>
         ) : (
