@@ -57,8 +57,26 @@ class Rules:
             for neigh in _neighbors_open(state, state.player_room):
                 actions.append(Action(ActionType.MOVE, {"to": neigh}))
                 actions.append(Action(ActionType.MOVE_CAUTIOUS, {"to": neigh}))
+            
+            # Door actions
+            for neigh in state.board.neighbors(state.player_room):
+                edge = _norm_edge(state.player_room, neigh)
+                if edge in state.doors:
+                    actions.append(Action(ActionType.OPEN_DOOR, {"to": neigh}))
+                else:
+                    actions.append(Action(ActionType.CLOSE_DOOR, {"to": neigh}))
+            
+            # Combat action
+            if state.player_room in state.intruders:
+                actions.append(Action(ActionType.SHOOT))
+            
+            # Room action
+            if state.player_room == 'B':
+                actions.append(Action(ActionType.USE_ROOM))
+            
             # Pass is always legal
             actions.append(Action(ActionType.PASS))
+            
             # Optionally end player phase when no pending actions
             if state.actions_in_turn == 0:
                 actions.append(Action(ActionType.END_PLAYER_PHASE))
@@ -86,6 +104,7 @@ class Rules:
         phase = state.phase
         oxygen = new_state.oxygen
         health = new_state.health
+        doors = set(state.doors)
 
         # --------------------------------------------------------------------
         # Handle MOVE / MOVE_CAUTIOUS
@@ -158,6 +177,58 @@ class Rules:
                     # Clear room noise
                     if to_room in new_room_noise:
                         new_room_noise.pop(to_room)
+
+        # --------------------------------------------------------------------
+        # Handle OPEN_DOOR / CLOSE_DOOR
+        # --------------------------------------------------------------------
+        elif action.type in (ActionType.OPEN_DOOR, ActionType.CLOSE_DOOR):
+            to_room: str = action.params.get("to") if action.params else None  # type: ignore[attr-defined]
+            if to_room is None or to_room not in state.board.neighbors(state.player_room):
+                # illegal – ignore, treat as NOOP
+                return state.next(turn=state.turn + 1)
+            
+            edge = _norm_edge(state.player_room, to_room)
+            
+            if action.type is ActionType.OPEN_DOOR:
+                # Can only open if door is closed (edge is in doors)
+                if edge in doors:
+                    doors.remove(edge)
+                    actions_in_turn += 1
+            else:  # CLOSE_DOOR
+                # Can only close if door is open (edge is not in doors)
+                if edge not in doors:
+                    doors.add(edge)
+                    actions_in_turn += 1
+            
+            new_state = new_state.next(doors=doors)
+
+        # --------------------------------------------------------------------
+        # Handle SHOOT
+        # --------------------------------------------------------------------
+        elif action.type is ActionType.SHOOT:
+            # Can only shoot if intruder is in the same room
+            if state.player_room in state.intruders:
+                new_intruders = dict(state.intruders)
+                hp = new_intruders[state.player_room]
+                hp -= 1
+                
+                # Remove intruder if HP <= 0
+                if hp <= 0:
+                    new_intruders.pop(state.player_room)
+                else:
+                    new_intruders[state.player_room] = hp
+                
+                new_state = new_state.next(intruders=new_intruders)
+                actions_in_turn += 1
+
+        # --------------------------------------------------------------------
+        # Handle USE_ROOM
+        # --------------------------------------------------------------------
+        elif action.type is ActionType.USE_ROOM:
+            # Room B toggles life support
+            if state.player_room == 'B':
+                new_state = new_state.next(life_support_active=not state.life_support_active)
+                actions_in_turn += 1
 
         # --------------------------------------------------------------------
         # Handle PASS
