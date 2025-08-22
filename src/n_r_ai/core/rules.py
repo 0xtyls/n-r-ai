@@ -29,6 +29,10 @@ class Rules:
         # Pass is always legal during the player phase.
         actions.append(Action(ActionType.PASS))
 
+        # Advance phase only if player has finished their turn (no pending actions)
+        if state.actions_in_turn == 0:
+            actions.append(Action(ActionType.NEXT_PHASE))
+
         # NOOP can be useful for testing
         actions.append(Action(ActionType.NOOP))
 
@@ -42,6 +46,9 @@ class Rules:
         new_state = state
         new_noise: Dict[Edge, int] = dict(state.noise)
         actions_in_turn = state.actions_in_turn
+        phase = state.phase
+        oxygen = new_state.oxygen
+        health = new_state.health
 
         # --------------------------------------------------------------------
         # Handle MOVE / MOVE_CAUTIOUS
@@ -93,6 +100,46 @@ class Rules:
                 health -= 1
             actions_in_turn = 0  # reset for next player turn
 
+        # --------------------------------------------------------------------
+        # Handle NEXT_PHASE (phase transitions & effects)
+        # --------------------------------------------------------------------
+        if action.type is ActionType.NEXT_PHASE:
+
+            def _cycle(p: Any) -> Any:
+                if p == state.phase.__class__.PLAYER:
+                    return state.phase.__class__.ENEMY
+                if p == state.phase.__class__.ENEMY:
+                    return state.phase.__class__.EVENT
+                if p == state.phase.__class__.EVENT:
+                    return state.phase.__class__.CLEANUP
+                return state.phase.__class__.PLAYER  # from CLEANUP
+
+            phase = _cycle(state.phase)
+
+            # --- ENEMY effects ------------------------------------------------
+            if phase == state.phase.__class__.ENEMY:
+                burn_total = len(new_state.intruders & new_state.fires)
+                # damage to player if sharing room with intruder
+                if new_state.player_room in new_state.intruders and health > 0:
+                    health -= 1
+                new_state = new_state.next(intruder_burn_last=burn_total)
+
+            # --- EVENT effects ------------------------------------------------
+            elif phase == state.phase.__class__.EVENT:
+                if new_state.event_deck > 0:
+                    new_state = new_state.next(event_deck=new_state.event_deck - 1)
+                # deterministic noise: lexicographically smallest neighbor edge
+                neighs = sorted(new_state.board.neighbors(new_state.player_room))
+                if neighs:
+                    edge = _norm_edge(new_state.player_room, neighs[0])
+                    new_noise[edge] = new_noise.get(edge, 0) + 1
+
+            # --- CLEANUP effects ---------------------------------------------
+            elif phase == state.phase.__class__.CLEANUP:
+                new_state = new_state.next(round=new_state.round + 1)
+
+            # after phase-specific updates new_state variables used below
+
         # Build final state snapshot
         new_state = new_state.next(
             noise=new_noise,
@@ -100,6 +147,7 @@ class Rules:
             oxygen=oxygen,
             health=health,
             turn=state.turn + 1,
+            phase=phase,
         )
 
         return new_state

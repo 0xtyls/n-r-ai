@@ -9,6 +9,7 @@ class Phase(Enum):
     SETUP = auto()
     PLAYER = auto()
     ENEMY = auto()
+    EVENT = auto()
     CLEANUP = auto()
 
 @dataclass(frozen=True)
@@ -40,6 +41,13 @@ class GameState:
     # hazards state
     fires: Set[RoomId] = field(default_factory=set)
     noise: Dict[Tuple[RoomId, RoomId], int] = field(default_factory=dict)
+
+    # --- new v1.1 fields ----------------------------------------------------
+    round: int = 1
+    intruders: Set[RoomId] = field(default_factory=set)
+    event_deck: int = 10
+    bag_dev_count: int = 0
+    intruder_burn_last: int = 0
 
     def next(self, **changes: Any) -> "GameState":
         return replace(self, **changes)

@@ -8,6 +8,7 @@ class ActionType(Enum):
     PASS = auto()           # end turn early
     MOVE = auto()           # standard move (adds noise in the moved corridor)
     MOVE_CAUTIOUS = auto()  # cautious move (player chooses corridor for noise)
+    NEXT_PHASE = auto()     # advance game phase (PLAYER→ENEMY→EVENT→CLEANUP→PLAYER)
 
 @dataclass(frozen=True)
 class Action:
