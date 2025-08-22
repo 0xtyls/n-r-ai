@@ -38,9 +38,24 @@ class StateOut(BaseModel):
     turn: int
     phase: str
     seed: Optional[int] = None
+    # extended fields for UI
+    location: str
+    oxygen: int
+    health: int
+    actions_in_turn: int
+    life_support_active: bool
 
 def state_to_out(s: GameState) -> StateOut:
-    return StateOut(turn=s.turn, phase=s.phase.name, seed=s.seed)
+    return StateOut(
+        turn=s.turn,
+        phase=s.phase.name,
+        seed=s.seed,
+        location=s.player_room,
+        oxygen=s.oxygen,
+        health=s.health,
+        actions_in_turn=s.actions_in_turn,
+        life_support_active=s.life_support_active,
+    )
 
 def action_to_out(a: Action) -> ActionOut:
     return ActionOut(type=a.type.name, params=dict(a.params) if a.params else None)
