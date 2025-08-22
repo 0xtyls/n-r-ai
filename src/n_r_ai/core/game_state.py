@@ -1,7 +1,9 @@
 from __future__ import annotations
-from dataclasses import dataclass, replace
+from dataclasses import dataclass, field, replace
 from enum import Enum, auto
-from typing import Any
+from typing import Any, Dict, Set, Tuple
+
+from .board import Board, RoomId
 
 class Phase(Enum):
     SETUP = auto()
@@ -11,9 +13,33 @@ class Phase(Enum):
 
 @dataclass(frozen=True)
 class GameState:
+    # core bookkeeping
     turn: int = 0
-    phase: Phase = Phase.SETUP
+    phase: Phase = Phase.PLAYER
     seed: int | None = None
+
+    # board & tokens
+    board: Board = field(
+        default_factory=lambda: Board(
+            rooms={"A", "B", "C"},
+            edges={("A", "B"), ("B", "C")},
+        )
+    )
+    player_room: RoomId = "A"
+
+    # player resources / hazards
+    oxygen: int = 5
+    health: int = 5
+
+    # per-turn counter
+    actions_in_turn: int = 0
+
+    # global systems
+    life_support_active: bool = True
+
+    # hazards state
+    fires: Set[RoomId] = field(default_factory=set)
+    noise: Dict[Tuple[RoomId, RoomId], int] = field(default_factory=dict)
 
     def next(self, **changes: Any) -> "GameState":
         return replace(self, **changes)
