@@ -3,6 +3,7 @@ from typing import List, Dict, Tuple, Any
 
 from .game_state import GameState
 from .actions import Action, ActionType
+from .game_state import Phase  # enum
 
 # type aliases
 Edge = Tuple[str, str]
@@ -17,25 +18,24 @@ def _norm_edge(a: str, b: str) -> Edge:
 
 class Rules:
     def legal_actions(self, state: GameState) -> List[Action]:
-        # Always allow NOOP (debug); real play uses MOVE/PASS.
         actions: List[Action] = []
 
-        # Movement to neighbouring rooms.
-        for neigh in state.board.neighbors(state.player_room):
-            actions.append(Action(ActionType.MOVE, {"to": neigh}))
-            # Cautious move (player may later pick which corridor gains noise)
-            actions.append(Action(ActionType.MOVE_CAUTIOUS, {"to": neigh}))
-
-        # Pass is always legal during the player phase.
-        actions.append(Action(ActionType.PASS))
-
-        # Advance phase only if player has finished their turn (no pending actions)
-        if state.actions_in_turn == 0:
+        if state.phase == Phase.PLAYER:
+            # Movement options
+            for neigh in state.board.neighbors(state.player_room):
+                actions.append(Action(ActionType.MOVE, {"to": neigh}))
+                actions.append(Action(ActionType.MOVE_CAUTIOUS, {"to": neigh}))
+            # Pass is always legal
+            actions.append(Action(ActionType.PASS))
+            # Optionally end player phase when no pending actions
+            if state.actions_in_turn == 0:
+                actions.append(Action(ActionType.END_PLAYER_PHASE))
+        else:
+            # Non-player phases can only advance
             actions.append(Action(ActionType.NEXT_PHASE))
 
-        # NOOP can be useful for testing
+        # Always expose NOOP for debugging
         actions.append(Action(ActionType.NOOP))
-
         return actions
 
     def apply(self, state: GameState, action: Action) -> GameState:
@@ -44,7 +44,10 @@ class Rules:
             return state.next(turn=state.turn + 1)
 
         new_state = state
-        new_noise: Dict[Edge, int] = dict(state.noise)
+        # copy of noise map at the start of the step – used for encounter checks
+        old_noise: Dict[Edge, int] = dict(state.noise)
+        # mutated noise map we will return with the new state
+        new_noise: Dict[Edge, int] = dict(old_noise)
         actions_in_turn = state.actions_in_turn
         phase = state.phase
         oxygen = new_state.oxygen
@@ -78,6 +81,20 @@ class Rules:
                 if chosen_edge_param:
                     new_noise[chosen_edge_param] = new_noise.get(chosen_edge_param, 0) + 1
 
+            # --- encounter spawn check -------------------------------------
+            if to_room not in new_state.intruders:
+                # any incident edge that had noise >=1 **before** this move?
+                spawn = False
+                for a, b in old_noise:
+                    if a == to_room or b == to_room:
+                        if old_noise[(a, b)] >= 1:
+                            spawn = True
+                            break
+                if spawn:
+                    intruders = set(new_state.intruders)
+                    intruders.add(to_room)
+                    new_state = new_state.next(intruders=intruders)
+
         # --------------------------------------------------------------------
         # Handle PASS
         # --------------------------------------------------------------------
@@ -101,9 +118,27 @@ class Rules:
             actions_in_turn = 0  # reset for next player turn
 
         # --------------------------------------------------------------------
+        # Handle explicit END_PLAYER_PHASE  ---------------------------------
+        # --------------------------------------------------------------------
+        if action.type is ActionType.END_PLAYER_PHASE:
+            if state.phase != Phase.PLAYER or state.actions_in_turn != 0:
+                # invalid use -> treat as NOOP
+                return state.next(turn=state.turn + 1)
+
+            phase = Phase.ENEMY
+            # apply ENEMY effects
+            burn_total = len(new_state.intruders & new_state.fires)
+            if new_state.player_room in new_state.intruders and health > 0:
+                health -= 1
+            new_state = new_state.next(intruder_burn_last=burn_total)
+
+        # --------------------------------------------------------------------
         # Handle NEXT_PHASE (phase transitions & effects)
         # --------------------------------------------------------------------
         if action.type is ActionType.NEXT_PHASE:
+            # Only allowed if not in PLAYER phase
+            if state.phase == Phase.PLAYER:
+                return state.next(turn=state.turn + 1)
 
             def _cycle(p: Any) -> Any:
                 if p == state.phase.__class__.PLAYER:

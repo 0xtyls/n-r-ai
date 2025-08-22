@@ -14,13 +14,13 @@ class TestPhasesV1(unittest.TestCase):
         # Record initial health
         initial_health = state.health
         
-        # Apply NEXT_PHASE to transition from PLAYER to ENEMY
-        next_phase_action = Action(ActionType.NEXT_PHASE)
+        # Apply END_PLAYER_PHASE to transition from PLAYER to ENEMY
+        next_phase_action = Action(ActionType.END_PLAYER_PHASE)
         new_state = rules.apply(state, next_phase_action)
         
         # Verify phase changed to ENEMY
-        self.assertEqual(new_state.phase, Phase.ENEMY, 
-                         "Phase should change to ENEMY after NEXT_PHASE from PLAYER")
+        self.assertEqual(new_state.phase, Phase.ENEMY,
+                         "Phase should change to ENEMY after END_PLAYER_PHASE from PLAYER")
         
         # Verify health decreased by 1 due to intruder attack
         self.assertEqual(new_state.health, initial_health - 1, 
@@ -32,8 +32,8 @@ class TestPhasesV1(unittest.TestCase):
         state = GameState()
         rules = Rules()
         
-        # First transition to ENEMY phase
-        enemy_phase = rules.apply(state, Action(ActionType.NEXT_PHASE))
+        # First transition to ENEMY phase via END_PLAYER_PHASE
+        enemy_phase = rules.apply(state, Action(ActionType.END_PLAYER_PHASE))
         self.assertEqual(enemy_phase.phase, Phase.ENEMY, "First phase transition should be to ENEMY")
         
         # Then transition to EVENT phase
@@ -54,7 +54,7 @@ class TestPhasesV1(unittest.TestCase):
         initial_round = state.round
         
         # Cycle through phases: PLAYER -> ENEMY -> EVENT -> CLEANUP
-        enemy_phase = rules.apply(state, Action(ActionType.NEXT_PHASE))
+        enemy_phase = rules.apply(state, Action(ActionType.END_PLAYER_PHASE))
         event_phase = rules.apply(enemy_phase, Action(ActionType.NEXT_PHASE))
         cleanup_phase = rules.apply(event_phase, Action(ActionType.NEXT_PHASE))
         
