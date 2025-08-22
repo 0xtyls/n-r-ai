@@ -105,6 +105,15 @@ export default function App() {
             {'actions_in_turn' in state && state.actions_in_turn !== undefined && (
               <div>Actions this turn: <b>{state.actions_in_turn}</b></div>
             )}
+            {'round' in state && state.round !== undefined && (
+              <div>Round: <b>{state.round}</b></div>
+            )}
+            {'event_deck' in state && state.event_deck !== undefined && (
+              <div>Event deck: <b>{state.event_deck}</b></div>
+            )}
+            {'intruder_burn_last' in state && state.intruder_burn_last !== undefined && (
+              <div>Intruders burned last phase: <b>{state.intruder_burn_last}</b></div>
+            )}
           </div>
         ) : (
           <div>Loading state…</div>

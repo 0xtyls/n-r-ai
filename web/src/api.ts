@@ -10,6 +10,10 @@ export type StateOut = {
   health?: number
   actions_in_turn?: number
   life_support_active?: boolean
+  // v1.2 fields
+  round?: number
+  event_deck?: number
+  intruder_burn_last?: number
 }
 
 export type ActionOut = {

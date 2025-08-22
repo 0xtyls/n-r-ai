@@ -44,6 +44,10 @@ class StateOut(BaseModel):
     health: int
     actions_in_turn: int
     life_support_active: bool
+    # v1.2 additions
+    round: int
+    event_deck: int
+    intruder_burn_last: int
 
 def state_to_out(s: GameState) -> StateOut:
     return StateOut(
@@ -55,6 +59,9 @@ def state_to_out(s: GameState) -> StateOut:
         health=s.health,
         actions_in_turn=s.actions_in_turn,
         life_support_active=s.life_support_active,
+        round=s.round,
+        event_deck=s.event_deck,
+        intruder_burn_last=s.intruder_burn_last,
     )
 
 def action_to_out(a: Action) -> ActionOut:
