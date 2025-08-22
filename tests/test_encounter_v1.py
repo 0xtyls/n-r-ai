@@ -53,6 +53,26 @@ class TestEncounterV1(unittest.TestCase):
         self.assertNotIn("C", new_state.intruders, "Room C should NOT have an intruder after move")
         self.assertEqual(len(new_state.intruders), 0, "No intruders should exist")
 
+    def test_intruder_spawns_with_room_noise(self):
+        """Intruder should spawn when entering a room that already has room_noise."""
+        # Place room noise in room B
+        state = GameState(room_noise={"B": 1})
+        rules = Rules()
+
+        # Move A -> B
+        move_action = Action(ActionType.MOVE, {"to": "B"})
+        new_state = rules.apply(state, move_action)
+
+        # Player ends in B
+        self.assertEqual(new_state.player_room, "B", "Player should have moved to room B")
+
+        # Intruder spawns in B
+        self.assertIn("B", new_state.intruders, "Room B should have an intruder due to room noise")
+
+        # Room noise for B is cleared
+        self.assertNotIn("B", new_state.room_noise,
+                         "Room noise marker should be cleared after encounter")
+
 
 if __name__ == '__main__':
     unittest.main()

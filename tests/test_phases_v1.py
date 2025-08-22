@@ -8,7 +8,7 @@ class TestPhasesV1(unittest.TestCase):
     def test_intruder_attack_on_enemy_phase(self):
         """Test that player takes damage when sharing a room with an intruder during ENEMY phase."""
         # Create initial game state with an intruder in player's room A
-        state = GameState(intruders={"A"})  # Player starts in room "A" by default
+        state = GameState(intruders={"A": 1})  # Player starts in room "A" by default
         rules = Rules()
         
         # Record initial health
@@ -81,7 +81,7 @@ class TestPhasesV1(unittest.TestCase):
 
         # --- Path OPEN ------------------------------------------------------
         # Player at A (default), intruder at C, no doors: expect move to B.
-        state_open = GameState(intruders={"C"})
+        state_open = GameState(intruders={"C": 1})
         rules = Rules()
 
         # Advance to EVENT phase (PLAYER -> ENEMY -> EVENT)
@@ -97,7 +97,7 @@ class TestPhasesV1(unittest.TestCase):
         # --- Path BLOCKED ---------------------------------------------------
         # Close door between B and C; intruder should remain in C.
         door_bc = _norm_edge("B", "C")
-        state_blocked = GameState(intruders={"C"}, doors={door_bc})
+        state_blocked = GameState(intruders={"C": 1}, doors={door_bc})
 
         enemy_phase_blk = rules.apply(state_blocked, Action(ActionType.END_PLAYER_PHASE))
         event_phase_blk = rules.apply(enemy_phase_blk, Action(ActionType.NEXT_PHASE))

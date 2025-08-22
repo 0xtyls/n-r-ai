@@ -41,15 +41,20 @@ class GameState:
     # hazards state
     fires: Set[RoomId] = field(default_factory=set)
     noise: Dict[Tuple[RoomId, RoomId], int] = field(default_factory=dict)
+    # per-room noise markers (separate from corridor noise)
+    room_noise: Dict[RoomId, int] = field(default_factory=dict)
     # closed / blocked doors (undirected edges); movement & noise cannot cross
     doors: Set[Tuple[RoomId, RoomId]] = field(default_factory=set)
 
     # --- new v1.1 fields ----------------------------------------------------
     round: int = 1
-    intruders: Set[RoomId] = field(default_factory=set)
+    # Intruders tracked as room → HP
+    intruders: Dict[RoomId, int] = field(default_factory=dict)
     event_deck: int = 10
     bag_dev_count: int = 0
     intruder_burn_last: int = 0
+    # stub for future attack resolution
+    attack_deck: int = 10
 
     def next(self, **changes: Any) -> "GameState":
         return replace(self, **changes)
