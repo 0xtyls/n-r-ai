@@ -32,7 +32,8 @@ Current dice / attack results use simple deterministic mappings (e.g., modulo ch
 ## Next Priorities
 
 1. Flesh out full attack dice tables (weapon types, ranged/energy), weapon jam clear actions, serious-wound decks.
-2. Implement full Event cards & Bag development loop.
-3. Add additional room types & actions beyond Control/Armory (e.g., Surgery – heal, Engine – self-destruct).
-4. Objective & end-game flow (escape, destruction outcomes).
-5. Enhance LLMAgent with rule-aware planning (use `core.rules.legal_actions`).
+2. Server/UI: expose new fields (`weapon_jammed`, `serious_wounds`, `ammo_max`) and wire actions (MELEE, OPEN/CLOSE_DOOR, USE_ROOM variants).
+3. Implement full Event cards & Bag development loop.
+4. Add additional room types & actions beyond Control/Armory (e.g., Surgery – heal, Engine – self-destruct).
+5. Objective & end-game flow (escape, destruction outcomes).
+6. Enhance LLMAgent with rule-aware planning (use `core.rules.legal_actions`).
