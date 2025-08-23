@@ -82,5 +82,43 @@ class TestAmmoAndAttackDeck(unittest.TestCase):
         # Verify attack_deck remains at 0
         self.assertEqual(state_after_shoot.attack_deck, 0, "Attack deck should remain empty")
 
+    def test_reload_enables_shoot(self):
+        """Armory reload (USE_ROOM in room C) should replenish ammo and make SHOOT legal."""
+        # Start in Armory (room C) with 0 ammo and an intruder present
+        state = self.initial_state.next(
+            player_room="C",
+            intruders={"C": 1},
+            ammo=0
+        )
+
+        # SHOOT must not be legal with 0 ammo
+        legal = self.rules.legal_actions(state)
+        self.assertEqual(
+            [a for a in legal if a.type == ActionType.SHOOT],
+            [],
+            "SHOOT should not be legal when ammo is 0"
+        )
+
+        # USE_ROOM (reload) should be available in Armory
+        use_room_actions = [a for a in legal if a.type == ActionType.USE_ROOM]
+        self.assertEqual(len(use_room_actions), 1, "USE_ROOM should be available in Armory")
+
+        # Apply reload
+        state_after_reload = self.rules.apply(state, use_room_actions[0])
+
+        # After reload, ammo should be at max
+        self.assertEqual(
+            state_after_reload.ammo,
+            state_after_reload.ammo_max,
+            "Ammo should be refilled to ammo_max after reload"
+        )
+
+        # SHOOT should now be legal
+        legal_after_reload = self.rules.legal_actions(state_after_reload)
+        self.assertTrue(
+            any(a.type == ActionType.SHOOT for a in legal_after_reload),
+            "SHOOT should be legal after reloading in Armory"
+        )
+
 if __name__ == "__main__":
     unittest.main()

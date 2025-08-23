@@ -24,7 +24,7 @@ class GameState:
         default_factory=lambda: Board(
             rooms={"A", "B", "C"},
             edges={("A", "B"), ("B", "C")},
-            room_types={"A": "DEFAULT", "B": "CONTROL", "C": "DEFAULT"},
+            room_types={"A": "DEFAULT", "B": "CONTROL", "C": "ARMORY"},
         )
     )
     player_room: RoomId = "A"
@@ -33,6 +33,8 @@ class GameState:
     oxygen: int = 5
     health: int = 5
     ammo: int = 3
+    # maximum ammo capacity (used by Armory reload action)
+    ammo_max: int = 3
 
     # per-turn counter
     actions_in_turn: int = 0

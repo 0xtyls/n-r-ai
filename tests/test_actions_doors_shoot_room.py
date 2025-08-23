@@ -110,5 +110,45 @@ class TestActionsDoorShootRoom(unittest.TestCase):
         # Verify life support is now on again
         self.assertTrue(state_after_second_use.life_support_active, "Life support should be on after second USE_ROOM")
 
+    # ------------------------------------------------------------------ #
+    # New tests for melee combat and Armory reload                       #
+    # ------------------------------------------------------------------ #
+
+    def test_melee_damages_both(self):
+        """MELEE should hurt intruder and player each time it is used."""
+        state = self.initial_state.next(intruders={"A": 2}, health=5)
+
+        # MELEE must be available (ammo irrelevant)
+        legal = self.rules.legal_actions(state)
+        melee_actions = [a for a in legal if a.type == ActionType.MELEE]
+        self.assertEqual(len(melee_actions), 1, "MELEE action should be legal when intruder present")
+
+        # First melee → intruder HP 2→1, player 5→4
+        s1 = self.rules.apply(state, melee_actions[0])
+        self.assertEqual(s1.intruders.get("A", 0), 1, "Intruder HP should drop by 1")
+        self.assertEqual(s1.health, 4, "Player health should drop by 1 after melee")
+
+        # Second melee → intruder removed, player 4→3
+        s2 = self.rules.apply(s1, melee_actions[0])
+        self.assertNotIn("A", s2.intruders, "Intruder should be eliminated after second melee")
+        self.assertEqual(s2.health, 3, "Player health should drop again after second melee")
+
+    def test_armory_reload_restores_ammo(self):
+        """Using the Armory (room C) should refill ammo to ammo_max."""
+        # Move player to C (Armory) with zero ammo; ensure doors are open
+        state = self.initial_state.next(player_room="C", doors=set(), ammo=0)
+
+        # Armory USE_ROOM action must be legal
+        legal = self.rules.legal_actions(state)
+        reload_actions = [a for a in legal if a.type == ActionType.USE_ROOM]
+        self.assertEqual(len(reload_actions), 1, "USE_ROOM (reload) should be legal in Armory")
+
+        # Apply reload
+        s1 = self.rules.apply(state, reload_actions[0])
+        self.assertEqual(
+            s1.ammo, s1.ammo_max,
+            "Ammo should be fully restored to ammo_max after reload in Armory"
+        )
+
 if __name__ == "__main__":
     unittest.main()

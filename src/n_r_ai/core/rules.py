@@ -66,12 +66,17 @@ class Rules:
                 else:
                     actions.append(Action(ActionType.CLOSE_DOOR, {"to": neigh}))
             
-            # Combat action
-            if state.player_room in state.intruders and state.ammo > 0:
-                actions.append(Action(ActionType.SHOOT))
+            # Combat actions --------------------------------------------------
+            if state.player_room in state.intruders:
+                # MELEE is always possible if intruder shares the room
+                actions.append(Action(ActionType.MELEE))
+                # SHOOT requires at least 1 ammo
+                if state.ammo > 0:
+                    actions.append(Action(ActionType.SHOOT))
             
-            # Room action
-            if state.board.room_types.get(state.player_room) == 'CONTROL':
+            # Room actions ----------------------------------------------------
+            room_type = state.board.room_types.get(state.player_room)
+            if room_type in ('CONTROL', 'ARMORY'):
                 actions.append(Action(ActionType.USE_ROOM))
             
             # Pass is always legal
@@ -237,12 +242,39 @@ class Rules:
                 actions_in_turn += 1
 
         # --------------------------------------------------------------------
+        # Handle MELEE
+        # --------------------------------------------------------------------
+        elif action.type is ActionType.MELEE:
+            # Can melee if intruder shares the room
+            if state.player_room in state.intruders:
+                new_intruders = dict(state.intruders)
+                hp = new_intruders[state.player_room]
+                hp -= 1
+                if hp <= 0:
+                    new_intruders.pop(state.player_room)
+                else:
+                    new_intruders[state.player_room] = hp
+
+                # Player takes 1 damage
+                if health > 0:
+                    health -= 1
+
+                new_state = new_state.next(intruders=new_intruders)
+                actions_in_turn += 1
+
+        # --------------------------------------------------------------------
         # Handle USE_ROOM
         # --------------------------------------------------------------------
         elif action.type is ActionType.USE_ROOM:
-            # Room type CONTROL toggles life support
-            if state.board.room_types.get(state.player_room) == 'CONTROL':
+            room_type = state.board.room_types.get(state.player_room)
+            if room_type == 'CONTROL':
+                # Toggle life support
                 new_state = new_state.next(life_support_active=not state.life_support_active)
+                actions_in_turn += 1
+            elif room_type == 'ARMORY':
+                # Reload to maximum ammo capacity
+                if new_state.ammo < new_state.ammo_max:
+                    new_state = new_state.next(ammo=new_state.ammo_max)
                 actions_in_turn += 1
 
         # --------------------------------------------------------------------
@@ -258,8 +290,6 @@ class Rules:
         end_turn = action.type is ActionType.PASS or actions_in_turn >= 2
 
         # Apply hazards if turn ends
-        oxygen = new_state.oxygen
-        health = new_state.health
         if end_turn:
             if not new_state.life_support_active and oxygen > 0:
                 oxygen -= 1

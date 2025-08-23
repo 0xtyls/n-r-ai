@@ -11,6 +11,7 @@ class ActionType(Enum):
     OPEN_DOOR = auto()      # open an adjacent closed door
     CLOSE_DOOR = auto()     # close an adjacent open door
     SHOOT = auto()          # attack intruder in the same room
+    MELEE = auto()          # hand-to-hand attack when intruder is in the same room
     USE_ROOM = auto()       # perform room-specific interaction (e.g., toggle life support)
     END_PLAYER_PHASE = auto()  # explicitly finish player phase (allows NEXT_PHASE)
     NEXT_PHASE = auto()     # advance game phase (PLAYER→ENEMY→EVENT→CLEANUP→PLAYER)
