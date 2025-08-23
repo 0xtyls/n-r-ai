@@ -64,6 +64,9 @@ class StateOut(BaseModel):
     intruders: Dict[str, int]
     corridor_noise: List[Dict[str, Any]]
     room_noise: Dict[str, int]
+    # v1.5 bag development
+    bag_dev_count: int
+    bag: Dict[str, int]
 
 def state_to_out(s: GameState) -> StateOut:
     # Convert corridor noise to a list of dicts for easier JSON serialization
@@ -97,6 +100,8 @@ def state_to_out(s: GameState) -> StateOut:
         intruders=dict(s.intruders),
         corridor_noise=corridor_noise,
         room_noise=dict(s.room_noise),
+        bag_dev_count=s.bag_dev_count,
+        bag=dict(s.bag),
     )
 
 def action_to_out(a: Action) -> ActionOut:

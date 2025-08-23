@@ -26,6 +26,9 @@ export type StateOut = {
   intruders?: Record<string, number>
   corridor_noise?: { edge: [string, string]; count: number }[]
   room_noise?: Record<string, number>
+  // v1.5 bag development
+  bag_dev_count?: number
+  bag?: Record<string, number>
 }
 
 export type ActionOut = {

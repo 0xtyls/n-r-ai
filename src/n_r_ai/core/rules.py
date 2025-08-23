@@ -419,20 +419,66 @@ class Rules:
                 # Update state with moved intruders
                 new_state = new_state.next(intruders=moved_intruders)
 
-                if new_state.event_deck > 0:
-                    new_state = new_state.next(event_deck=new_state.event_deck - 1)
-                
-                # Add noise based on noise roll
-                noise_target = _noise_roll(state, action)
-                if noise_target == 'corridor':
-                    # deterministic noise: lexicographically smallest neighbor edge
-                    neighs = sorted(_neighbors_open(new_state, new_state.player_room))
-                    if neighs:
-                        edge = _norm_edge(new_state.player_room, neighs[0])
-                        new_noise[edge] = new_noise.get(edge, 0) + 1
-                else:  # noise_target == 'room'
-                    # Add noise to player's room
-                    new_room_noise[new_state.player_room] = new_room_noise.get(new_state.player_room, 0) + 1
+                # ------------------------------------------------------------------
+                # Event card processing (v1.5 skeleton)
+                # ------------------------------------------------------------------
+                card_processed = False
+                if new_state.event_deck_cards:
+                    card = new_state.event_deck_cards[0]
+                    remaining = new_state.event_deck_cards[1:]
+                    new_state = new_state.next(
+                        event_deck=len(remaining),
+                        event_deck_cards=remaining,
+                    )
+                    card_processed = True
+
+                    if card == "NOISE_CORRIDOR":
+                        # same deterministic corridor noise logic
+                        neighs = sorted(_neighbors_open(new_state, new_state.player_room))
+                        if neighs:
+                            edge = _norm_edge(new_state.player_room, neighs[0])
+                            new_noise[edge] = new_noise.get(edge, 0) + 1
+                    elif card == "NOISE_ROOM":
+                        new_room_noise[new_state.player_room] = (
+                            new_room_noise.get(new_state.player_room, 0) + 1
+                        )
+                    elif card == "BAG_DEV":
+                        new_state = new_state.next(bag_dev_count=new_state.bag_dev_count + 1)
+                    elif card == "SPAWN_FROM_BAG":
+                        # deterministic draw: first token with count>0 sorted by name
+                        if new_state.bag:
+                            token_name = sorted(k for k, v in new_state.bag.items() if v > 0)[0]
+                            new_bag = dict(new_state.bag)
+                            new_bag[token_name] -= 1
+                            if new_bag[token_name] <= 0:
+                                new_bag.pop(token_name)
+                            new_state = new_state.next(bag=new_bag)
+
+                            if token_name == "ADULT":
+                                if new_state.player_room not in new_state.intruders:
+                                    intr = dict(new_state.intruders)
+                                    intr[new_state.player_room] = 1
+                                    new_state = new_state.next(intruders=intr)
+                    # unknown card ids are ignored for now
+
+                # ------------------------------------------------------------------
+                # Fallback behaviour when no cards processed
+                # ------------------------------------------------------------------
+                if not card_processed:
+                    if new_state.event_deck > 0:
+                        new_state = new_state.next(event_deck=new_state.event_deck - 1)
+
+                    # Add noise based on noise roll
+                    noise_target = _noise_roll(state, action)
+                    if noise_target == "corridor":
+                        neighs = sorted(_neighbors_open(new_state, new_state.player_room))
+                        if neighs:
+                            edge = _norm_edge(new_state.player_room, neighs[0])
+                            new_noise[edge] = new_noise.get(edge, 0) + 1
+                    else:  # room noise
+                        new_room_noise[new_state.player_room] = (
+                            new_room_noise.get(new_state.player_room, 0) + 1
+                        )
 
             # --- CLEANUP effects ---------------------------------------------
             elif phase == state.phase.__class__.CLEANUP:

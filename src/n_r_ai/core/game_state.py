@@ -1,7 +1,7 @@
 from __future__ import annotations
 from dataclasses import dataclass, field, replace
 from enum import Enum, auto
-from typing import Any, Dict, Set, Tuple
+from typing import Any, Dict, Set, Tuple, List
 
 from .board import Board, RoomId
 
@@ -62,6 +62,15 @@ class GameState:
     intruder_burn_last: int = 0
     # stub for future attack resolution
     attack_deck: int = 10
+
+    # --- v1.5: Event deck & intruder bag -----------------------------------
+    # Full list of upcoming event card identifiers (top of deck is at index 0).
+    # Kept in sync with `event_deck` counter elsewhere in the codebase.
+    event_deck_cards: List[str] = field(default_factory=list)
+    # Intruder bag contents token → count
+    bag: Dict[str, int] = field(
+        default_factory=lambda: {"ADULT": 2, "LARVA": 1}
+    )
 
     def next(self, **changes: Any) -> "GameState":
         return replace(self, **changes)
