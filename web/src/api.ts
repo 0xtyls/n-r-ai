@@ -14,6 +14,11 @@ export type StateOut = {
   round?: number
   event_deck?: number
   intruder_burn_last?: number
+  // v1.3 combat fields
+  ammo?: number
+  ammo_max?: number
+  weapon_jammed?: boolean
+  serious_wounds?: number
 }
 
 export type ActionOut = {

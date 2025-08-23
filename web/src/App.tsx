@@ -102,6 +102,40 @@ export default function App() {
             {'health' in state && state.health !== undefined && (
               <div>Health: <b>{state.health}</b></div>
             )}
+            {'life_support_active' in state && state.life_support_active !== undefined && (
+              <div>
+                Life support:{' '}
+                <b style={{ color: state.life_support_active ? 'green' : 'crimson' }}>
+                  {state.life_support_active ? 'ON' : 'OFF'}
+                </b>
+              </div>
+            )}
+            {'ammo' in state && state.ammo !== undefined && (
+              <div>
+                Ammo:{' '}
+                <b>
+                  {state.ammo}/{state.ammo_max ?? '?'}
+                </b>{' '}
+                {state.weapon_jammed && (
+                  <span
+                    style={{
+                      marginLeft: 6,
+                      padding: '2px 6px',
+                      background: 'crimson',
+                      color: 'white',
+                      borderRadius: 4,
+                      fontSize: 12,
+                      verticalAlign: 'middle',
+                    }}
+                  >
+                    JAMMED
+                  </span>
+                )}
+              </div>
+            )}
+            {'serious_wounds' in state && state.serious_wounds !== undefined && (
+              <div>Serious wounds: <b>{state.serious_wounds}</b></div>
+            )}
             {'actions_in_turn' in state && state.actions_in_turn !== undefined && (
               <div>Actions this turn: <b>{state.actions_in_turn}</b></div>
             )}

@@ -48,6 +48,11 @@ class StateOut(BaseModel):
     round: int
     event_deck: int
     intruder_burn_last: int
+    # v1.3 combat/armory
+    ammo: int
+    ammo_max: int
+    weapon_jammed: bool
+    serious_wounds: int
 
 def state_to_out(s: GameState) -> StateOut:
     return StateOut(
@@ -62,6 +67,10 @@ def state_to_out(s: GameState) -> StateOut:
         round=s.round,
         event_deck=s.event_deck,
         intruder_burn_last=s.intruder_burn_last,
+        ammo=s.ammo,
+        ammo_max=s.ammo_max,
+        weapon_jammed=s.weapon_jammed,
+        serious_wounds=s.serious_wounds,
     )
 
 def action_to_out(a: Action) -> ActionOut:
