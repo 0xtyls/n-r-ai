@@ -9,6 +9,8 @@ from .rng import RNG
 # type aliases
 Edge = Tuple[str, str]
 NoiseTarget = Literal['corridor', 'room']
+# attack resolution
+AttackOutcome = Literal['miss', 'hit', 'crit', 'jam']
 
 
 def _norm_edge(a: str, b: str) -> Edge:
@@ -32,6 +34,20 @@ def _neighbors_open(state: GameState, room: str) -> List[str]:
         if _norm_edge(room, n) not in state.doors:
             neighs.append(n)
     return neighs
+
+# ---------------------------------------------------------------------------#
+# attack helpers                                                             #
+# ---------------------------------------------------------------------------#
+
+def _attack_outcome(attack_deck: int) -> AttackOutcome:
+    """Deterministic placeholder for attack-deck resolution"""
+    if attack_deck <= 0:
+        return 'miss'
+    if attack_deck % 13 == 0:
+        return 'jam'
+    if attack_deck % 7 == 0:
+        return 'crit'
+    return 'hit'
 
 def _noise_roll(state: GameState, action: Action) -> NoiseTarget:
     """
@@ -68,10 +84,10 @@ class Rules:
             
             # Combat actions --------------------------------------------------
             if state.player_room in state.intruders:
-                # MELEE is always possible if intruder shares the room
+                # MELEE always possible
                 actions.append(Action(ActionType.MELEE))
-                # SHOOT requires at least 1 ammo
-                if state.ammo > 0:
+                # SHOOT only if gun ready & ammo
+                if state.ammo > 0 and not state.weapon_jammed:
                     actions.append(Action(ActionType.SHOOT))
             
             # Room actions ----------------------------------------------------
@@ -211,35 +227,44 @@ class Rules:
         # Handle SHOOT
         # --------------------------------------------------------------------
         elif action.type is ActionType.SHOOT:
-            # Can only shoot if intruder is in the same room and player has ammo
             if state.player_room in state.intruders and state.ammo > 0:
                 new_intruders = dict(state.intruders)
                 ammo = state.ammo - 1
                 attack_deck = state.attack_deck
-                
-                # Check if we can draw from attack deck
-                hit = False
-                if attack_deck > 0:
-                    attack_deck -= 1
-                    hit = True
-                
-                # Apply damage if hit
-                if hit:
-                    hp = new_intruders[state.player_room]
-                    hp -= 1
-                    
-                    # Remove intruder if HP <= 0
-                    if hp <= 0:
-                        new_intruders.pop(state.player_room)
-                    else:
-                        new_intruders[state.player_room] = hp
-                
-                new_state = new_state.next(
-                    intruders=new_intruders,
-                    ammo=ammo,
-                    attack_deck=attack_deck
-                )
-                actions_in_turn += 1
+                weapon_jammed = state.weapon_jammed
+
+                if weapon_jammed:
+                    # Jammed gun: consume ammo, but no other effect
+                    new_state = new_state.next(ammo=ammo)
+                    actions_in_turn += 1
+                else:
+                    outcome = _attack_outcome(attack_deck)
+                    if attack_deck > 0:
+                        attack_deck -= 1
+
+                    if outcome == "hit":
+                        hp = new_intruders[state.player_room] - 1
+                        if hp <= 0:
+                            new_intruders.pop(state.player_room)
+                        else:
+                            new_intruders[state.player_room] = hp
+                    elif outcome == "crit":
+                        hp = new_intruders[state.player_room] - 2
+                        if hp <= 0:
+                            new_intruders.pop(state.player_room)
+                        else:
+                            new_intruders[state.player_room] = hp
+                    elif outcome == "jam":
+                        weapon_jammed = True
+                    # miss → no damage
+
+                    new_state = new_state.next(
+                        intruders=new_intruders,
+                        ammo=ammo,
+                        attack_deck=attack_deck,
+                        weapon_jammed=weapon_jammed,
+                    )
+                    actions_in_turn += 1
 
         # --------------------------------------------------------------------
         # Handle MELEE
@@ -258,6 +283,9 @@ class Rules:
                 # Player takes 1 damage
                 if health > 0:
                     health -= 1
+                # Chance of serious wound (simplified deterministic)
+                if health in (3, 1) and new_state.serious_wounds < 3:
+                    new_state = new_state.next(serious_wounds=new_state.serious_wounds + 1)
 
                 new_state = new_state.next(intruders=new_intruders)
                 actions_in_turn += 1
@@ -272,9 +300,13 @@ class Rules:
                 new_state = new_state.next(life_support_active=not state.life_support_active)
                 actions_in_turn += 1
             elif room_type == 'ARMORY':
-                # Reload to maximum ammo capacity
+                updates: Dict[str, Any] = {}
                 if new_state.ammo < new_state.ammo_max:
-                    new_state = new_state.next(ammo=new_state.ammo_max)
+                    updates["ammo"] = new_state.ammo_max
+                if new_state.weapon_jammed:
+                    updates["weapon_jammed"] = False
+                if updates:
+                    new_state = new_state.next(**updates)
                 actions_in_turn += 1
 
         # --------------------------------------------------------------------

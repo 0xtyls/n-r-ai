@@ -35,6 +35,9 @@ class GameState:
     ammo: int = 3
     # maximum ammo capacity (used by Armory reload action)
     ammo_max: int = 3
+    # combat status
+    weapon_jammed: bool = False
+    serious_wounds: int = 0  # simple counter for now
 
     # per-turn counter
     actions_in_turn: int = 0

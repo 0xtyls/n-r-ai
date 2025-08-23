@@ -6,11 +6,11 @@
 | **2. Movement & Noise** | **Partial** | MOVE / MOVE_CAUTIOUS, corridor vs room noise, deterministic `noise_roll` override. Lacks full dice table & technical corridors. Code: `rules.py` (`_noise_roll`, movement block). Tests: `test_rules_v1.py`, `test_noise_room_vs_corridor.py`. |
 | **3. Doors** | **Full** | OPEN_DOOR / CLOSE_DOOR actions, movement blocking, noise cannot cross. Code: `rules.py` door handlers; state field `doors`. Tests: `test_actions_doors_shoot_room.py`. |
 | **4. Encounters & Intruders** | **Partial** | Spawn on noise, intruder HP dict, EVENT path-finding 1-step, burn/fight damage. Missing attack dice, special types, multiple intruders per room. Code: `rules.py` encounter & EVENT sections. Tests: `test_encounter_v1.py`, `test_phases_v1.py`. |
-| **5. Combat (Shooting / Melee)** | **Partial** | SHOOT action with ammo spend + `attack_deck`-gated hit; MELEE action (both player & intruder take 1 dmg). Still lacks criticals, weapon jam, serious wounds. Code: `rules.py` SHOOT / MELEE blocks. Tests: `test_actions_doors_shoot_room.py`, `test_ammo_and_attack_deck.py`. |
+| **5. Combat (Shooting / Melee)** | **Partial** | Attack table via `_attack_outcome`: `hit` (-1 HP), `crit` (-2 HP), `jam` (sets `weapon_jammed`), `miss` (no dmg).<br/>SHOOT: spends ammo, draws outcome, blocked while `weapon_jammed`.<br/>MELEE: −1 HP to intruder, −1 health to player with simple serious-wound counter.<br/>State fields `weapon_jammed`, `serious_wounds`.<br/>Tests: `test_actions_doors_shoot_room.py`, `test_ammo_and_attack_deck.py`. |
 | **6. Hazards (Oxygen / Fire)** | **Partial** | Oxygen loss when life support off, fire damage end-turn + intruder burn counter. No room destruction or lab fires. Code: end-turn block in `rules.py`. Tests: `test_rules_v1.py`. |
 | **7. Event Deck** | **Partial** | Deck counter –, noise placement, intruder move. No full card effects. Code: EVENT phase in `rules.py`. Tests: `test_phases_v1.py`. |
 | **8. Cleanup / Rounds** | **Full** | Round++ every CLEANUP, counters reset. Code: CLEANUP in `rules.py`; state.`round`. Tests: `test_phases_v1.py`. |
-| **9. Rooms & Room Actions** | **Partial** | `room_types` map: CONTROL (toggle life support) and ARMORY (reload to `ammo_max`) implemented via USE_ROOM. Other rooms (Surgery, Engine, etc.) not yet present. Code: `board.py`, `rules.py` USE_ROOM block. Tests: `test_actions_doors_shoot_room.py`. |
+| **9. Rooms & Room Actions** | **Partial** | `room_types`: CONTROL (toggle life support) and ARMORY (reload to `ammo_max` **and clear jams**). Other rooms (Surgery, Engine, etc.) not yet present. Code: `board.py`, `rules.py` USE_ROOM block. Tests: `test_actions_doors_shoot_room.py`. |
 | **10. Objectives** | **Not Implemented** | No objective cards, win checks. |
 | **11. Items / Crafting** | **Not Implemented** | No item deck, crafting, inventory. |
 | **12. Bag Development** | **Not Implemented** | Bag contents & draws absent. |
@@ -26,9 +26,12 @@
 | `RULES.md` | Human-readable rules reference |
 | `RULES_EXTRACT.txt` | Raw rulebook extraction (grep-able) |
 
+### Determinism note
+Current dice / attack results use simple deterministic mappings (e.g., modulo checks in `_noise_roll` and `_attack_outcome`) to keep tests reproducible. Replace with true RNG tables once full rule fidelity is required.
+
 ## Next Priorities
 
-1. Combat: attack dice table, critical hits / weapon jam logic, serious wounds.
+1. Flesh out full attack dice tables (weapon types, ranged/energy), weapon jam clear actions, serious-wound decks.
 2. Implement full Event cards & Bag development loop.
 3. Add additional room types & actions beyond Control/Armory (e.g., Surgery – heal, Engine – self-destruct).
 4. Objective & end-game flow (escape, destruction outcomes).

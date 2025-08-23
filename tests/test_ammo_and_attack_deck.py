@@ -120,5 +120,64 @@ class TestAmmoAndAttackDeck(unittest.TestCase):
             "SHOOT should be legal after reloading in Armory"
         )
 
+    # ------------------------------------------------------------------ #
+    # New tests for crits and jams (attack table)                        #
+    # ------------------------------------------------------------------ #
+
+    def test_shoot_crit_deals_two_damage(self):
+        """Attack-deck value divisible by 7 (but not 13) triggers critical hit (2 dmg)."""
+        state = self.initial_state.next(
+            intruders={"A": 2},  # HP 2 intruder
+            ammo=3,
+            attack_deck=14       # 14 % 7 == 0 → crit
+        )
+
+        legal = self.rules.legal_actions(state)
+        shoot = [a for a in legal if a.type == ActionType.SHOOT][0]
+
+        s1 = self.rules.apply(state, shoot)
+
+        # Intruder should be gone after 2 dmg
+        self.assertNotIn("A", s1.intruders,
+                         "Crit should deal 2 damage and eliminate HP=2 intruder")
+
+    def test_shoot_jam_sets_jammed_and_blocks_shoot(self):
+        """Attack-deck value divisible by 13 triggers weapon jam; SHOOT then blocked until cleared."""
+        state = self.initial_state.next(
+            intruders={"A": 2},
+            ammo=2,
+            attack_deck=13       # 13 % 13 == 0 → jam
+        )
+
+        # First shoot – triggers jam
+        shoot = [a for a in self.rules.legal_actions(state) if a.type == ActionType.SHOOT][0]
+        s1 = self.rules.apply(state, shoot)
+
+        # Ammo spent, no damage done
+        self.assertEqual(s1.ammo, 1, "Ammo should drop by 1")
+        self.assertEqual(s1.intruders.get("A", 0), 2, "No damage on jammed shot")
+        self.assertTrue(s1.weapon_jammed, "Gun should be jammed after jam outcome")
+
+        # SHOOT should now be illegal
+        self.assertFalse(any(a.type == ActionType.SHOOT
+                             for a in self.rules.legal_actions(s1)),
+                         "SHOOT should be unavailable while weapon is jammed")
+
+        # Move to Armory (room C) and use room to clear jam
+        s2 = s1.next(player_room="C")
+        use_room = [a for a in self.rules.legal_actions(s2)
+                    if a.type == ActionType.USE_ROOM][0]
+        s3 = self.rules.apply(s2, use_room)
+
+        # Jam cleared
+        self.assertFalse(s3.weapon_jammed, "Armory reload should clear jammed weapon")
+
+        # SHOOT legal again (ammo > 0 and not jammed)
+        # Move back to the intruder's room (A) to validate legality
+        s4 = s3.next(player_room="A")
+        legal4 = self.rules.legal_actions(s4)
+        self.assertTrue(any(a.type == ActionType.SHOOT for a in legal4),
+                        "SHOOT should be legal again after clearing jam when sharing room with intruder")
+
 if __name__ == "__main__":
     unittest.main()
