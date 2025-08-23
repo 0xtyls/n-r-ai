@@ -1,5 +1,5 @@
 from __future__ import annotations
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Tuple
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -25,6 +25,10 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+def _serialize_edge(edge: Tuple[str, str]) -> List[str]:
+    """Convert an edge tuple to a sorted list for JSON serialization."""
+    return sorted(edge)
 
 class ActionIn(BaseModel):
     type: str
@@ -53,8 +57,23 @@ class StateOut(BaseModel):
     ammo_max: int
     weapon_jammed: bool
     serious_wounds: int
+    # v1.4 board visualization
+    rooms: List[str]
+    edges: List[List[str]]
+    doors: List[List[str]]
+    intruders: Dict[str, int]
+    corridor_noise: List[Dict[str, Any]]
+    room_noise: Dict[str, int]
 
 def state_to_out(s: GameState) -> StateOut:
+    # Convert corridor noise to a list of dicts for easier JSON serialization
+    corridor_noise = []
+    for edge, count in s.noise.items():
+        corridor_noise.append({
+            "edge": _serialize_edge(edge),
+            "count": count
+        })
+    
     return StateOut(
         turn=s.turn,
         phase=s.phase.name,
@@ -71,6 +90,13 @@ def state_to_out(s: GameState) -> StateOut:
         ammo_max=s.ammo_max,
         weapon_jammed=s.weapon_jammed,
         serious_wounds=s.serious_wounds,
+        # Board visualization fields
+        rooms=list(s.board.rooms),
+        edges=[_serialize_edge(edge) for edge in s.board.edges],
+        doors=[_serialize_edge(door) for door in s.doors],
+        intruders=dict(s.intruders),
+        corridor_noise=corridor_noise,
+        room_noise=dict(s.room_noise),
     )
 
 def action_to_out(a: Action) -> ActionOut:

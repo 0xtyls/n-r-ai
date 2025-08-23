@@ -17,6 +17,51 @@ export default function App() {
   const [persona, setPersona] = useState('')
   const [llmLoading, setLlmLoading] = useState(false)
   const [llmResult, setLlmResult] = useState<LLMActOut | null>(null)
+  
+  // State for MOVE_CAUTIOUS parameters
+  const [cautiousTo, setCautiousTo] = useState<string>('')
+  const [cautiousEdge, setCautiousEdge] = useState<[string, string] | null>(null)
+
+  // ---------------------------------------------------------------------
+  // Helpers for board visualisation
+  // ---------------------------------------------------------------------
+  function normEdge(a: string, b: string): [string, string] {
+    return a < b ? [a, b] : [b, a]
+  }
+
+  function edgeEq(e1: [string, string], e2: [string, string]) {
+    return (
+      (e1[0] === e2[0] && e1[1] === e2[1]) ||
+      (e1[0] === e2[1] && e1[1] === e2[0])
+    )
+  }
+
+  function isDoorClosed(edge: [string, string]): boolean {
+    if (!state?.doors) return false
+    return state.doors.some(d => edgeEq(d, edge))
+  }
+
+  const playerNeighbors: [string, string][] = React.useMemo(() => {
+    if (!state?.edges || !state.location) return []
+    return state.edges.filter(e => e[0] === state.location || e[1] === state.location)
+  }, [state?.edges, state?.location])
+
+  // Compute open neighbors (not blocked by doors)
+  const openNeighbors: string[] = React.useMemo(() => {
+    if (!state?.location) return []
+    return playerNeighbors
+      .filter(edge => !isDoorClosed(edge))
+      .map(edge => edge[0] === state?.location ? edge[1] : edge[0])
+  }, [playerNeighbors, state?.location])
+
+  // Compute incident edges for selected cautiousTo
+  const incidentEdges: [string, string][] = React.useMemo(() => {
+    if (!cautiousTo || !state?.edges) return []
+    // Get all edges connected to the destination room that are not closed doors
+    return state.edges
+      .filter(edge => (edge[0] === cautiousTo || edge[1] === cautiousTo))
+      .filter(edge => !isDoorClosed(edge))
+  }, [cautiousTo, state?.edges])
 
   async function refresh() {
     setError(null)
@@ -49,7 +94,7 @@ export default function App() {
     }
   }
 
-  // Execute a chosen action (used by the “Do” buttons in the list)
+  // Execute a chosen action (used by the "Do" buttons in the list)
   async function execAction(action: ActionOut) {
     if (loading) return
     setLoading(true)
@@ -59,6 +104,29 @@ export default function App() {
       setState(next)
       const a = await getActions()
       setActions(a)
+    } catch (e: any) {
+      setError(e?.message ?? String(e))
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  // Execute cautious move with selected parameters
+  async function execCautiousMove() {
+    if (loading || !cautiousTo || !cautiousEdge) return
+    setLoading(true)
+    setError(null)
+    try {
+      const next = await step('MOVE_CAUTIOUS', { 
+        to: cautiousTo, 
+        noise_edge: cautiousEdge 
+      })
+      setState(next)
+      const a = await getActions()
+      setActions(a)
+      // Reset selections after move
+      setCautiousTo('')
+      setCautiousEdge(null)
     } catch (e: any) {
       setError(e?.message ?? String(e))
     } finally {
@@ -153,6 +221,138 @@ export default function App() {
           <div>Loading state…</div>
         )}
       </section>
+
+      {/* ---------------------------------------------------------------- */}
+      {/* Board visualisation                                             */}
+      {/* ---------------------------------------------------------------- */}
+      {state && (
+        <section>
+          <h2>Board</h2>
+          {/* Neighbour doors */}
+          <h3 style={{ marginBottom: 4 }}>Doors around {state.location}</h3>
+          <ul>
+            {playerNeighbors.map((edge, idx) => {
+              const closed = isDoorClosed(edge)
+              const neighbour = edge[0] === state.location ? edge[1] : edge[0]
+              const actionType = closed ? 'OPEN_DOOR' : 'CLOSE_DOOR'
+              const label = closed ? 'Open' : 'Close'
+              return (
+                <li key={idx} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                  <span>
+                    {state.location} ↔ {neighbour}{' '}
+                    {closed ? (
+                      <span style={{ color: 'crimson' }}>(closed)</span>
+                    ) : (
+                      <span style={{ color: 'green' }}>(open)</span>
+                    )}
+                  </span>
+                  <button
+                    onClick={() => execAction({ type: actionType, params: { to: neighbour } })}
+                    disabled={loading}
+                  >
+                    {label}
+                  </button>
+                </li>
+              )
+            })}
+          </ul>
+
+          {/* Cautious Move Form */}
+          {openNeighbors.length > 0 && (
+            <div style={{ marginTop: 16, padding: 12, border: '1px solid #ddd', borderRadius: 4 }}>
+              <h3 style={{ marginTop: 0, marginBottom: 8 }}>Cautious Move</h3>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+                <div>
+                  <label style={{ display: 'block', marginBottom: 4 }}>Destination:</label>
+                  <select 
+                    value={cautiousTo} 
+                    onChange={(e) => {
+                      setCautiousTo(e.target.value)
+                      setCautiousEdge(null) // Reset edge when destination changes
+                    }}
+                    style={{ padding: 4, minWidth: 120 }}
+                  >
+                    <option value="">Select room</option>
+                    {openNeighbors.map(room => (
+                      <option key={room} value={room}>{room}</option>
+                    ))}
+                  </select>
+                </div>
+                
+                {cautiousTo && incidentEdges.length > 0 && (
+                  <div>
+                    <label style={{ display: 'block', marginBottom: 4 }}>Noise edge:</label>
+                    <select 
+                      value={cautiousEdge ? `${cautiousEdge[0]}-${cautiousEdge[1]}` : ''}
+                      onChange={(e) => {
+                        const [a, b] = e.target.value.split('-')
+                        setCautiousEdge(a && b ? [a, b] : null)
+                      }}
+                      style={{ padding: 4, minWidth: 120 }}
+                    >
+                      <option value="">Select edge</option>
+                      {incidentEdges.map((edge, idx) => (
+                        <option key={idx} value={`${edge[0]}-${edge[1]}`}>
+                          {edge[0]} ↔ {edge[1]}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                )}
+                
+                <button 
+                  onClick={execCautiousMove}
+                  disabled={loading || !cautiousTo || !cautiousEdge}
+                  style={{ marginTop: 8, alignSelf: 'flex-start' }}
+                >
+                  Move Cautiously
+                </button>
+              </div>
+            </div>
+          )}
+
+          {/* Intruders */}
+          {state.intruders && Object.keys(state.intruders).length > 0 && (
+            <>
+              <h3 style={{ marginBottom: 4 }}>Intruders</h3>
+              <ul>
+                {Object.entries(state.intruders).map(([room, hp]) => (
+                  <li key={room}>
+                    {room}: HP <b>{hp}</b>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
+
+          {/* Noise */}
+          {(state.corridor_noise?.length || Object.keys(state.room_noise || {}).length) && (
+            <>
+              <h3 style={{ marginBottom: 4 }}>Noise</h3>
+              {state.corridor_noise?.length && (
+                <div>
+                  <b>Corridors:</b>{' '}
+                  {state.corridor_noise.map((n, i) => (
+                    <span key={i} style={{ marginRight: 6 }}>
+                      ({n.edge[0]}-{n.edge[1]}:{n.count})
+                    </span>
+                  ))}
+                </div>
+              )}
+              {state.room_noise && Object.keys(state.room_noise).length > 0 && (
+                <div>
+                  <b>Rooms:</b>{' '}
+                  {Object.entries(state.room_noise).map(([r, c]) => (
+                    <span key={r} style={{ marginRight: 6 }}>
+                      {r}:{c}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </>
+          )}
+        </section>
+      )}
 
       <section style={{ marginTop: 16 }}>
         <h2>Persona</h2>

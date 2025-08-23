@@ -19,6 +19,13 @@ export type StateOut = {
   ammo_max?: number
   weapon_jammed?: boolean
   serious_wounds?: number
+  // v1.4 board visualisation
+  rooms?: string[]
+  edges?: [string, string][]
+  doors?: [string, string][]
+  intruders?: Record<string, number>
+  corridor_noise?: { edge: [string, string]; count: number }[]
+  room_noise?: Record<string, number>
 }
 
 export type ActionOut = {
