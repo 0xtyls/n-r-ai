@@ -8,12 +8,12 @@
 | **4. Encounters & Intruders** | **Partial** | Spawn on noise, intruder HP dict, EVENT path-finding 1-step, burn/fight damage. Missing attack dice, special types, multiple intruders per room. Code: `rules.py` encounter & EVENT sections. Tests: `test_encounter_v1.py`, `test_phases_v1.py`. |
 | **5. Combat (Shooting / Melee)** | **Partial** | Attack table via `_attack_outcome`: `hit` (-1 HP), `crit` (-2 HP), `jam` (sets `weapon_jammed`), `miss` (no dmg).<br/>SHOOT: spends ammo, draws outcome, blocked while `weapon_jammed`.<br/>MELEE: −1 HP to intruder, −1 health to player with simple serious-wound counter.<br/>State fields `weapon_jammed`, `serious_wounds`.<br/>Tests: `test_actions_doors_shoot_room.py`, `test_ammo_and_attack_deck.py`. |
 | **6. Hazards (Oxygen / Fire)** | **Partial** | Oxygen loss when life support off, fire damage end-turn + intruder burn counter. No room destruction or lab fires. Code: end-turn block in `rules.py`. Tests: `test_rules_v1.py`. |
-| **7. Event Deck** | **Partial** | Deck counter –, noise placement, intruder move. No full card effects. Code: EVENT phase in `rules.py`. Tests: `test_phases_v1.py`. |
+| **7. Event Deck** | **Partial** | `event_deck_cards` skeleton implemented – EVENT phase now consumes top card and supports `NOISE_ROOM`, `NOISE_CORRIDOR`, `BAG_DEV`, `SPAWN_FROM_BAG`; graceful fallback when deck empty. Code: EVENT phase in `rules.py`. Tests: `test_phases_v1.py`, `test_event_bag_skeleton.py`. |
 | **8. Cleanup / Rounds** | **Full** | Round++ every CLEANUP, counters reset. Code: CLEANUP in `rules.py`; state.`round`. Tests: `test_phases_v1.py`. |
 | **9. Rooms & Room Actions** | **Partial** | `room_types`: CONTROL (toggle life support) and ARMORY (reload to `ammo_max` **and clear jams**). Other rooms (Surgery, Engine, etc.) not yet present. Code: `board.py`, `rules.py` USE_ROOM block. Tests: `test_actions_doors_shoot_room.py`. |
 | **10. Objectives** | **Not Implemented** | No objective cards, win checks. |
 | **11. Items / Crafting** | **Not Implemented** | No item deck, crafting, inventory. |
-| **12. Bag Development** | **Not Implemented** | Bag contents & draws absent. |
+| **12. Bag Development** | **Partial** | Simple `bag` dict (token→count) with deterministic draw order; `BAG_DEV` event increments `bag_dev_count`; `SPAWN_FROM_BAG` draws and spawns intruders. Code: EVENT phase in `rules.py`. Tests: `test_event_bag_skeleton.py`. |
 | **13. Escape / Win Conditions** | **Not Implemented** | No evacuation pods, hibernation, destruction timer. |
 | **14. LLM Agents / UI** | **Partial** | LLMAgent persona play, REST API. UI now includes: parameterised **MOVE_CAUTIOUS** form (destination + noise-edge picker), door **Open/Close** controls, and board visualisation of rooms, edges, door state, intruders, and noise markers. Still lacks tactical agent logic, graph layout rendering, and multiplayer lobby. Modules: `ai/agents/llm.py`, `server/`, `web/`. |
 
