@@ -15,7 +15,7 @@
 | **11. Items / Crafting** | **Not Implemented** | No item deck, crafting, inventory. |
 | **12. Bag Development** | **Not Implemented** | Bag contents & draws absent. |
 | **13. Escape / Win Conditions** | **Not Implemented** | No evacuation pods, hibernation, destruction timer. |
-| **14. LLM Agents / UI** | **Partial** | LLMAgent persona play, REST API. Server now exposes `ammo`/`ammo_max`, `weapon_jammed`, `serious_wounds`; React UI displays these and generic action buttons (MELEE, OPEN/CLOSE_DOOR, USE_ROOM variants). Still lacks tactical agent logic & multiplayer lobby. Modules: `ai/agents/llm.py`, `server/`, `web/`. |
+| **14. LLM Agents / UI** | **Partial** | LLMAgent persona play, REST API. UI now includes: parameterised **MOVE_CAUTIOUS** form (destination + noise-edge picker), door **Open/Close** controls, and board visualisation of rooms, edges, door state, intruders, and noise markers. Still lacks tactical agent logic, graph layout rendering, and multiplayer lobby. Modules: `ai/agents/llm.py`, `server/`, `web/`. |
 
 ## Quick Navigation
 
@@ -32,7 +32,7 @@ Current dice / attack results use simple deterministic mappings (e.g., modulo ch
 ## Next Priorities
 
 1. Flesh out full attack dice tables (weapon types, ranged/energy), weapon jam clear actions, serious-wound decks.
-2. Server/UI: add parameter UI for MOVE_CAUTIOUS noise_edge selection and edge-picking for door actions; visualise doors/intruders on board.
+2. Server/UI: improve board UX – proper graph layout, click-to-select rooms/edges, and dynamic highlights.
 3. Implement full Event cards & Bag development loop.
 4. Add additional room types & actions beyond Control/Armory (e.g., Surgery – heal, Engine – self-destruct).
 5. Objective & end-game flow (escape, destruction outcomes).
