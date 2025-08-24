@@ -84,6 +84,44 @@ You may, once per game, **choose your Objective** (before/after one of your Acti
 
 ---
 
+## Map & Exploration (Discovery and Sections A/B/C)
+
+### 1. Facility layout & room-tile pools
+
+• The Facility board is divided into **3 Sections**: **A, B, C**.  
+• Component count (rulebook p. 8): **23 Room tiles (3 A, 3 B, 4 C, 13 ‘?’)**.  
+• “Section Rooms” are fixed to their Section; “? rooms” are random and may appear in *any* Section.  
+
+Section-specific rooms named in the rulebook:  
+• **Section A (Entrance)** – Lander Zone; Drilling Room; Life Support Control “A”; Surgery Room.  
+• **Section B (Middle)** – Hibernatorium; Cooling System; Life Support Control “B”; Server Room.  
+• **Section C (Dangerous)** – Life Support Control “C”; Nest; Reactor.  
+*Room Help Sheet* in the official materials lists the full alphabetic room catalogue; the raw text in `RULES_EXTRACT.txt` references it but does not reproduce the sheet itself.
+
+### 2. Discovering new rooms – Exploration Sequence
+
+When a Character **Moves through an *Unexplored* Corridor into an *Undiscovered* Room**, perform the steps below instead of the normal post-movement Noise roll:
+
+1. **Draw an Exploration card.**  
+2. **Set up the Room** – take a random Room tile matching the type printed at the top of the card; if that pool is empty, place a ‘?’ room instead.  
+3. **Set up adjacent Corridors** – for every empty side shown on the card, reveal a random Corridor and orient its Door slot toward the new Room. Do *not* place corridors that would go off-map or overwrite an existing Room.  
+4. **Place markers & tokens** displayed on the card (Noise, Doors, Fire, Malfunction, etc.). If a Noise marker would be placed where one already exists, nothing happens.  
+5. **Movement & Securing reminder** – if you declared **Move Cautiously**, place the Secure token now.  
+6. **Resolve the card’s Entrance Effect** (e.g., “Make a Noise roll”, “Close all Doors around this Room”), then discard the card.  
+
+General rule: the **“ALWAYS ROLL FOR NOISE”** principle still applies—if the Entrance Effect demands a Noise roll, resolve it immediately after step 6. Otherwise the Exploration Sequence replaces the standard Noise step for this movement.
+
+### 3. Quick grep terms in `RULES_EXTRACT.txt`
+
+| Topic | Example search strings |
+|-------|------------------------|
+| Sections & map | `MAP`, `sections`, `Facility is divided into 3 Sections` |
+| Room-tile count | `23 Room tiles (3 A, 3 B, 4 C, 13 ?)` |
+| Exploration seq. | `Exploration Sequence`, `Place a Room of the ? type.` |
+| Entrance effects | `Entrance Effect:` |
+| Specific rooms | `Hibernatorium`, `Cooling System`, `Server Room`, `Nest`, `Reactor`, `Life Support Control` |
+
+
 ## 3. Combat Mechanics
 
 ### 3.1 Shooting (Room)
