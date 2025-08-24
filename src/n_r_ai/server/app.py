@@ -70,6 +70,10 @@ class StateOut(BaseModel):
     # v1.6 self-destruct
     self_destruct_armed: bool
     destruction_timer: int
+    # v1.7 end-game & hazards
+    game_over: bool
+    win: bool
+    fires: List[str]
 
 def state_to_out(s: GameState) -> StateOut:
     # Convert corridor noise to a list of dicts for easier JSON serialization
@@ -107,6 +111,9 @@ def state_to_out(s: GameState) -> StateOut:
         bag=dict(s.bag),
         self_destruct_armed=s.self_destruct_armed,
         destruction_timer=s.destruction_timer,
+        game_over=s.game_over,
+        win=s.win,
+        fires=sorted(list(s.fires)),
     )
 
 def action_to_out(a: Action) -> ActionOut:

@@ -32,6 +32,10 @@ export type StateOut = {
   // v1.6 self-destruct system
   self_destruct_armed?: boolean
   destruction_timer?: number
+  // v1.7 end-game & hazards
+  game_over?: boolean
+  win?: boolean
+  fires?: string[]
 }
 
 export type ActionOut = {

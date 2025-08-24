@@ -248,6 +248,17 @@ export default function App() {
             {'intruder_burn_last' in state && state.intruder_burn_last !== undefined && (
               <div>Intruders burned last phase: <b>{state.intruder_burn_last}</b></div>
             )}
+            {/* Game-over banner --------------------------------------------------- */}
+            {'game_over' in state &&
+              state.game_over !== undefined &&
+              state.game_over && (
+                <div>
+                  Game Over:{' '}
+                  <b style={{ color: state.win ? 'green' : 'crimson' }}>
+                    {state.win ? 'WIN' : 'LOSS'}
+                  </b>
+                </div>
+            )}
           </div>
         ) : (
           <div>Loading state…</div>
@@ -381,6 +392,20 @@ export default function App() {
                   ))}
                 </div>
               )}
+            </>
+          )}
+
+          {/* Fires ------------------------------------------------------------ */}
+          {state.fires && state.fires.length > 0 && (
+            <>
+              <h3 style={{ marginBottom: 4 }}>Fires</h3>
+              <div>
+                {state.fires.map(r => (
+                  <span key={r} style={{ marginRight: 6 }}>
+                    {r}
+                  </span>
+                ))}
+              </div>
             </>
           )}
         </section>
