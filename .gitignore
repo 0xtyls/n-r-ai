@@ -1,2 +1,15 @@
 # Local artifacts not tracked
 RULES_EXTRACT.txt
+# Python caches
+__pycache__/
+*.py[cod]
+
+# macOS finder junk
+.DS_Store
+
+# Front-end dependencies & build output
+web/node_modules
+web/dist
+
+# Local rulebook PDF
+Nemesis_RT_Rulebook.pdf

@@ -1,5 +1,5 @@
 from __future__ import annotations
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Tuple
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -26,6 +26,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+def _serialize_edge(edge: Tuple[str, str]) -> List[str]:
+    """Convert an edge tuple to a sorted list for JSON serialization."""
+    return sorted(edge)
+
 class ActionIn(BaseModel):
     type: str
     params: Optional[Dict[str, Any]] = None
@@ -38,9 +42,79 @@ class StateOut(BaseModel):
     turn: int
     phase: str
     seed: Optional[int] = None
+    # extended fields for UI
+    location: str
+    oxygen: int
+    health: int
+    actions_in_turn: int
+    life_support_active: bool
+    # v1.2 additions
+    round: int
+    event_deck: int
+    intruder_burn_last: int
+    # v1.3 combat/armory
+    ammo: int
+    ammo_max: int
+    weapon_jammed: bool
+    serious_wounds: int
+    # v1.4 board visualization
+    rooms: List[str]
+    edges: List[List[str]]
+    doors: List[List[str]]
+    intruders: Dict[str, int]
+    corridor_noise: List[Dict[str, Any]]
+    room_noise: Dict[str, int]
+    # v1.5 bag development
+    bag_dev_count: int
+    bag: Dict[str, int]
+    # v1.6 self-destruct
+    self_destruct_armed: bool
+    destruction_timer: int
+    # v1.7 end-game & hazards
+    game_over: bool
+    win: bool
+    fires: List[str]
 
 def state_to_out(s: GameState) -> StateOut:
-    return StateOut(turn=s.turn, phase=s.phase.name, seed=s.seed)
+    # Convert corridor noise to a list of dicts for easier JSON serialization
+    corridor_noise = []
+    for edge, count in s.noise.items():
+        corridor_noise.append({
+            "edge": _serialize_edge(edge),
+            "count": count
+        })
+    
+    return StateOut(
+        turn=s.turn,
+        phase=s.phase.name,
+        seed=s.seed,
+        location=s.player_room,
+        oxygen=s.oxygen,
+        health=s.health,
+        actions_in_turn=s.actions_in_turn,
+        life_support_active=s.life_support_active,
+        round=s.round,
+        event_deck=s.event_deck,
+        intruder_burn_last=s.intruder_burn_last,
+        ammo=s.ammo,
+        ammo_max=s.ammo_max,
+        weapon_jammed=s.weapon_jammed,
+        serious_wounds=s.serious_wounds,
+        # Board visualization fields
+        rooms=list(s.board.rooms),
+        edges=[_serialize_edge(edge) for edge in s.board.edges],
+        doors=[_serialize_edge(door) for door in s.doors],
+        intruders=dict(s.intruders),
+        corridor_noise=corridor_noise,
+        room_noise=dict(s.room_noise),
+        bag_dev_count=s.bag_dev_count,
+        bag=dict(s.bag),
+        self_destruct_armed=s.self_destruct_armed,
+        destruction_timer=s.destruction_timer,
+        game_over=s.game_over,
+        win=s.win,
+        fires=sorted(list(s.fires)),
+    )
 
 def action_to_out(a: Action) -> ActionOut:
     return ActionOut(type=a.type.name, params=dict(a.params) if a.params else None)

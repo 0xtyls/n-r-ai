@@ -4,6 +4,38 @@ export type StateOut = {
   turn: number
   phase: string
   seed?: number | null
+  // extended fields (may be omitted by older server versions)
+  location?: string
+  oxygen?: number
+  health?: number
+  actions_in_turn?: number
+  life_support_active?: boolean
+  // v1.2 fields
+  round?: number
+  event_deck?: number
+  intruder_burn_last?: number
+  // v1.3 combat fields
+  ammo?: number
+  ammo_max?: number
+  weapon_jammed?: boolean
+  serious_wounds?: number
+  // v1.4 board visualisation
+  rooms?: string[]
+  edges?: [string, string][]
+  doors?: [string, string][]
+  intruders?: Record<string, number>
+  corridor_noise?: { edge: [string, string]; count: number }[]
+  room_noise?: Record<string, number>
+  // v1.5 bag development
+  bag_dev_count?: number
+  bag?: Record<string, number>
+  // v1.6 self-destruct system
+  self_destruct_armed?: boolean
+  destruction_timer?: number
+  // v1.7 end-game & hazards
+  game_over?: boolean
+  win?: boolean
+  fires?: string[]
 }
 
 export type ActionOut = {

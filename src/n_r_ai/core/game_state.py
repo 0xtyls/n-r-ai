@@ -1,19 +1,88 @@
 from __future__ import annotations
-from dataclasses import dataclass, replace
+from dataclasses import dataclass, field, replace
 from enum import Enum, auto
-from typing import Any
+from typing import Any, Dict, Set, Tuple, List
+
+from .board import Board, RoomId
 
 class Phase(Enum):
     SETUP = auto()
     PLAYER = auto()
     ENEMY = auto()
+    EVENT = auto()
     CLEANUP = auto()
 
 @dataclass(frozen=True)
 class GameState:
+    # core bookkeeping
     turn: int = 0
-    phase: Phase = Phase.SETUP
+    phase: Phase = Phase.PLAYER
     seed: int | None = None
+
+    # board & tokens
+    board: Board = field(
+        default_factory=lambda: Board(
+            rooms={"A", "B", "C"},
+            edges={("A", "B"), ("B", "C"), ("C", "D"), ("D", "E")},
+            room_types={
+                "A": "FIRE_CONTROL",
+                "B": "CONTROL",
+                "C": "ARMORY",
+                "D": "SURGERY",
+                "E": "ENGINE",
+            },
+        )
+    )
+    player_room: RoomId = "A"
+
+    # player resources / hazards
+    oxygen: int = 5
+    health: int = 5
+    ammo: int = 3
+    # maximum ammo capacity (used by Armory reload action)
+    ammo_max: int = 3
+    # combat status
+    weapon_jammed: bool = False
+    serious_wounds: int = 0  # simple counter for now
+
+    # per-turn counter
+    actions_in_turn: int = 0
+
+    # global systems
+    life_support_active: bool = True
+    # overall game status flags
+    game_over: bool = False
+    win: bool = False
+    # self-destruct system (ENGINE room)
+    self_destruct_armed: bool = False
+    destruction_timer: int = 0
+
+    # hazards state
+    fires: Set[RoomId] = field(default_factory=set)
+    noise: Dict[Tuple[RoomId, RoomId], int] = field(default_factory=dict)
+    # per-room noise markers (separate from corridor noise)
+    room_noise: Dict[RoomId, int] = field(default_factory=dict)
+    # closed / blocked doors (undirected edges); movement & noise cannot cross
+    doors: Set[Tuple[RoomId, RoomId]] = field(default_factory=set)
+
+    # --- new v1.1 fields ----------------------------------------------------
+    round: int = 1
+    # Intruders tracked as room → HP
+    intruders: Dict[RoomId, int] = field(default_factory=dict)
+    event_deck: int = 10
+    bag_dev_count: int = 0
+    intruder_burn_last: int = 0
+    # stub for future attack resolution
+    attack_deck: int = 10
+
+    # --- v1.5: Event deck & intruder bag -----------------------------------
+    # Full list of upcoming event card identifiers (top of deck is at index 0).
+    # Kept in sync with `event_deck` counter elsewhere in the codebase.
+    event_deck_cards: List[str] = field(default_factory=list)
+    # Intruder bag contents token → count
+    bag: Dict[str, int] = field(
+        default_factory=lambda: {"ADULT": 2, "LARVA": 1}
+    )
 
     def next(self, **changes: Any) -> "GameState":
         return replace(self, **changes)
