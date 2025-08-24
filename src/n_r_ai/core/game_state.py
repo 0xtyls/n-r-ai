@@ -25,7 +25,7 @@ class GameState:
             rooms={"A", "B", "C"},
             edges={("A", "B"), ("B", "C"), ("C", "D"), ("D", "E")},
             room_types={
-                "A": "DEFAULT",
+                "A": "FIRE_CONTROL",
                 "B": "CONTROL",
                 "C": "ARMORY",
                 "D": "SURGERY",
@@ -50,6 +50,9 @@ class GameState:
 
     # global systems
     life_support_active: bool = True
+    # overall game status flags
+    game_over: bool = False
+    win: bool = False
     # self-destruct system (ENGINE room)
     self_destruct_armed: bool = False
     destruction_timer: int = 0

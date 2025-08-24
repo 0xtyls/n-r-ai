@@ -92,7 +92,7 @@ class Rules:
             
             # Room actions ----------------------------------------------------
             room_type = state.board.room_types.get(state.player_room)
-            if room_type in ('CONTROL', 'ARMORY', 'SURGERY', 'ENGINE'):
+            if room_type in ('CONTROL', 'ARMORY', 'SURGERY', 'ENGINE', 'FIRE_CONTROL'):
                 actions.append(Action(ActionType.USE_ROOM))
             if room_type == 'ENGINE':
                 actions.append(Action(ActionType.ESCAPE))
@@ -332,6 +332,14 @@ class Rules:
                         destruction_timer=3,
                     )
                     actions_in_turn += 1
+            elif room_type == 'FIRE_CONTROL':
+                # Extinguish fire in the current room if present
+                if state.player_room in new_state.fires:
+                    new_fires = set(new_state.fires)
+                    new_fires.discard(state.player_room)
+                    new_state = new_state.next(fires=new_fires)
+                # Using the console always consumes an action
+                actions_in_turn += 1
 
         # --------------------------------------------------------------------
         # Handle ESCAPE
