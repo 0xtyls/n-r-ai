@@ -10,7 +10,7 @@
 | **6. Hazards (Oxygen / Fire)** | **Partial** | Oxygen loss when life support off, fire damage end-turn + intruder burn counter. No room destruction or lab fires. Code: end-turn block in `rules.py`. Tests: `test_rules_v1.py`. |
 | **7. Event Deck** | **Partial** | `event_deck_cards` skeleton implemented – EVENT phase now consumes top card and supports `NOISE_ROOM`, `NOISE_CORRIDOR`, `BAG_DEV`, `SPAWN_FROM_BAG`; graceful fallback when deck empty. Code: EVENT phase in `rules.py`. Tests: `test_phases_v1.py`, `test_event_bag_skeleton.py`. |
 | **8. Cleanup / Rounds** | **Full** | Round++ every CLEANUP, counters reset. Code: CLEANUP in `rules.py`; state.`round`. Tests: `test_phases_v1.py`. |
-| **9. Rooms & Room Actions** | **Partial** | `room_types`: CONTROL (toggle life support) and ARMORY (reload to `ammo_max` **and clear jams**). Other rooms (Surgery, Engine, etc.) not yet present. Code: `board.py`, `rules.py` USE_ROOM block. Tests: `test_actions_doors_shoot_room.py`. |
+| **9. Rooms & Room Actions** | **Partial** | `room_types`:  • CONTROL – toggle life support • ARMORY – reload to `ammo_max` **and clear jams** • **SURGERY – heal 1 HP (to max 5) and clear 1 serious wound** • **ENGINE – arm self-destruct (`self_destruct_armed=True`, `destruction_timer=3`) which decrements each CLEANUP**.  Code: `board.py`, `rules.py` USE_ROOM block & CLEANUP countdown. Tests: `test_actions_doors_shoot_room.py`, `test_rooms_surgery_engine.py`. |
 | **10. Objectives** | **Not Implemented** | No objective cards, win checks. |
 | **11. Items / Crafting** | **Not Implemented** | No item deck, crafting, inventory. |
 | **12. Bag Development** | **Partial** | Simple `bag` dict (token→count) with deterministic draw order; `BAG_DEV` event increments `bag_dev_count`; `SPAWN_FROM_BAG` draws and spawns intruders. Code: EVENT phase in `rules.py`. Tests: `test_event_bag_skeleton.py`. |
@@ -34,6 +34,6 @@ Current dice / attack results use simple deterministic mappings (e.g., modulo ch
 1. Flesh out full attack dice tables (weapon types, ranged/energy), weapon jam clear actions, serious-wound decks.
 2. Server/UI: improve board UX – proper graph layout, click-to-select rooms/edges, and dynamic highlights.
 3. Implement full Event cards & Bag development loop.
-4. Add additional room types & actions beyond Control/Armory (e.g., Surgery – heal, Engine – self-destruct).
+4. Extend room roster and effects (current: Control, Armory, Surgery, Engine); add remaining special rooms and advanced effects.
 5. Objective & end-game flow (escape, destruction outcomes).
 6. Enhance LLMAgent with rule-aware planning (use `core.rules.legal_actions`).
