@@ -92,7 +92,7 @@ class Rules:
             
             # Room actions ----------------------------------------------------
             room_type = state.board.room_types.get(state.player_room)
-            if room_type in ('CONTROL', 'ARMORY'):
+            if room_type in ('CONTROL', 'ARMORY', 'SURGERY', 'ENGINE'):
                 actions.append(Action(ActionType.USE_ROOM))
             
             # Pass is always legal
@@ -308,6 +308,28 @@ class Rules:
                 if updates:
                     new_state = new_state.next(**updates)
                 actions_in_turn += 1
+            elif room_type == 'SURGERY':
+                updates: Dict[str, Any] = {}
+                # heal 1 HP up to max 5
+                if health < 5:
+                    health += 1
+                # clear 1 serious wound if any
+                if new_state.serious_wounds > 0:
+                    updates["serious_wounds"] = new_state.serious_wounds - 1
+                # only apply if something changed
+                if (updates or health != new_state.health):
+                    if health != new_state.health:
+                        updates["health"] = health
+                    new_state = new_state.next(**updates) if updates else new_state
+                    actions_in_turn += 1
+            elif room_type == 'ENGINE':
+                # Arm self-destruct if not already armed
+                if not new_state.self_destruct_armed:
+                    new_state = new_state.next(
+                        self_destruct_armed=True,
+                        destruction_timer=3,
+                    )
+                    actions_in_turn += 1
 
         # --------------------------------------------------------------------
         # Handle PASS
@@ -482,7 +504,14 @@ class Rules:
 
             # --- CLEANUP effects ---------------------------------------------
             elif phase == state.phase.__class__.CLEANUP:
-                new_state = new_state.next(round=new_state.round + 1)
+                # self-destruct countdown
+                timer = new_state.destruction_timer
+                if new_state.self_destruct_armed and timer > 0:
+                    timer -= 1
+                new_state = new_state.next(
+                    round=new_state.round + 1,
+                    destruction_timer=timer,
+                )
 
             # after phase-specific updates new_state variables used below
 

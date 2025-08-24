@@ -23,8 +23,14 @@ class GameState:
     board: Board = field(
         default_factory=lambda: Board(
             rooms={"A", "B", "C"},
-            edges={("A", "B"), ("B", "C")},
-            room_types={"A": "DEFAULT", "B": "CONTROL", "C": "ARMORY"},
+            edges={("A", "B"), ("B", "C"), ("C", "D"), ("D", "E")},
+            room_types={
+                "A": "DEFAULT",
+                "B": "CONTROL",
+                "C": "ARMORY",
+                "D": "SURGERY",
+                "E": "ENGINE",
+            },
         )
     )
     player_room: RoomId = "A"
@@ -44,6 +50,9 @@ class GameState:
 
     # global systems
     life_support_active: bool = True
+    # self-destruct system (ENGINE room)
+    self_destruct_armed: bool = False
+    destruction_timer: int = 0
 
     # hazards state
     fires: Set[RoomId] = field(default_factory=set)

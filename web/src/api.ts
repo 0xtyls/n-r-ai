@@ -29,6 +29,9 @@ export type StateOut = {
   // v1.5 bag development
   bag_dev_count?: number
   bag?: Record<string, number>
+  // v1.6 self-destruct system
+  self_destruct_armed?: boolean
+  destruction_timer?: number
 }
 
 export type ActionOut = {

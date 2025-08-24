@@ -67,6 +67,9 @@ class StateOut(BaseModel):
     # v1.5 bag development
     bag_dev_count: int
     bag: Dict[str, int]
+    # v1.6 self-destruct
+    self_destruct_armed: bool
+    destruction_timer: int
 
 def state_to_out(s: GameState) -> StateOut:
     # Convert corridor noise to a list of dicts for easier JSON serialization
@@ -102,6 +105,8 @@ def state_to_out(s: GameState) -> StateOut:
         room_noise=dict(s.room_noise),
         bag_dev_count=s.bag_dev_count,
         bag=dict(s.bag),
+        self_destruct_armed=s.self_destruct_armed,
+        destruction_timer=s.destruction_timer,
     )
 
 def action_to_out(a: Action) -> ActionOut:

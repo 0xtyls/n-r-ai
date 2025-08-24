@@ -230,6 +230,21 @@ export default function App() {
             {'event_deck' in state && state.event_deck !== undefined && (
               <div>Event deck: <b>{state.event_deck}</b></div>
             )}
+            {/* Self-destruct system ------------------------------------------------ */}
+            {'self_destruct_armed' in state && state.self_destruct_armed !== undefined && (
+              <div>
+                Self-destruct:{' '}
+                {state.self_destruct_armed ? (
+                  <b style={{ color: 'crimson' }}>
+                    ARMED&nbsp;(timer&nbsp;
+                    {state.destruction_timer ?? '?'}
+                    )
+                  </b>
+                ) : (
+                  <b style={{ color: 'green' }}>DISARMED</b>
+                )}
+              </div>
+            )}
             {'intruder_burn_last' in state && state.intruder_burn_last !== undefined && (
               <div>Intruders burned last phase: <b>{state.intruder_burn_last}</b></div>
             )}
