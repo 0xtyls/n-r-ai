@@ -41,6 +41,23 @@ export default function App() {
     return state.doors.some(d => edgeEq(d, edge))
   }
 
+  // Pretty-print an Action for UI lists
+  function formatAction(a: ActionOut): string {
+    let label = a.type
+    const p: any = a.params || {}
+    if (p.to) {
+      label += ` to ${String(p.to)}`
+    }
+    if (
+      p.noise_edge &&
+      Array.isArray(p.noise_edge) &&
+      p.noise_edge.length === 2
+    ) {
+      label += ` [${p.noise_edge[0]}-${p.noise_edge[1]}]`
+    }
+    return label
+  }
+
   const playerNeighbors: [string, string][] = React.useMemo(() => {
     if (!state?.edges || !state.location) return []
     return state.edges.filter(e => e[0] === state.location || e[1] === state.location)
@@ -371,7 +388,7 @@ export default function App() {
           <ul>
             {actions.map((a, i) => (
               <li key={i} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                <code>{a.type}</code>
+                <code>{formatAction(a)}</code>
                 <button
                   onClick={() => execAction(a)}
                   disabled={loading}
