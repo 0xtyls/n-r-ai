@@ -14,8 +14,8 @@
 | **10. Objectives** | **Not Implemented** | No objective cards, win checks. |
 | **11. Items / Crafting** | **Not Implemented** | No item deck, crafting, inventory. |
 | **12. Bag Development** | **Partial** | Simple `bag` dict (token→count) with deterministic draw order; `BAG_DEV` event increments `bag_dev_count` **and now adds an ADULT token**; `SPAWN_FROM_BAG` draws and spawns intruders. Code: EVENT phase in `rules.py`. Tests: `test_event_bag_skeleton.py`. |
-| **13. Escape / Win Conditions** | **Partial** | **ESCAPE action** (legal only in ENGINE room) sets `game_over=True`, `win=True`.<br/>Self-destruct countdown: when timer hits 0 during CLEANUP, `game_over=True`, `win=False`. No evacuation pods / hibernation yet. Code: ESCAPE handler & CLEANUP block in `rules.py`. |
-| **14. LLM Agents / UI** | **Partial** | LLMAgent persona play, REST API. UI now includes: parameterised **MOVE_CAUTIOUS** form (destination + noise-edge picker), door **Open/Close** controls, board visualisation of rooms, edges, door state, intruders, noise markers, **fires**, and **game-over banner**. Still lacks tactical agent logic, graph layout rendering, and multiplayer lobby. Modules: `ai/agents/llm.py`, `server/`, `web/`. |
+| **13. Escape / Win Conditions** | **Partial** | **ESCAPE action** (legal only in ENGINE room) sets `game_over=True`, `win=True`.<br/>Self-destruct countdown: when timer hits 0 during CLEANUP, `game_over=True`, `win=False`. No evacuation pods / hibernation yet. Code: ESCAPE handler & CLEANUP block in `rules.py`. Tests: `tests/test_endgame_and_events.py`. |
+| **14. LLM Agents / UI** | **Partial** | LLMAgent persona play, REST API. UI includes: interactive SVG board (click rooms to **MOVE**, click adjacent edges to toggle doors), cautious-move mode toggle, context action buttons (USE_ROOM / SHOOT / MELEE / PASS / END / NEXT), health & oxygen bars, board visualisation of rooms, edges, door state, intruders, noise, fires, and game-over banner. Layout is a simple circular arrangement; future work: refined graph layout and dynamic highlights. Modules: `ai/agents/llm.py`, `server/`, `web/`. |
 
 ## Quick Navigation
 
@@ -32,9 +32,9 @@ Current dice / attack results use simple deterministic mappings (e.g., modulo ch
 ## Next Priorities
 
 1. Flesh out full attack dice tables (weapon types, ranged/energy), weapon jam clear actions, serious-wound decks.
-2. Server/UI: improve board UX – proper graph layout, click-to-select rooms/edges, and dynamic highlights.
+2. UI: improve graph layout (e.g., dagre), hover/click highlights, and path previews.
 3. Implement full Event cards & Bag development loop.
 4. Extend room roster and effects (current: Control, Armory, Surgery, Engine); add remaining special rooms and advanced effects.
 5. Objective & end-game flow (escape pods, hibernation, destruction outcomes).
 6. Enhance LLMAgent with rule-aware planning (use `core.rules.legal_actions`).
-7. **Testing**: add dedicated tests for ESCAPE victory, OXYGEN_LEAK & FIRE_ROOM event handling, and self-destruct loss (timer = 0). UI now exposes end-game status; ensure regression coverage for these scenarios.
+7. **Testing**: scenario coverage maintained; new tests for ESCAPE, OXYGEN_LEAK, FIRE_ROOM, and self-destruct countdown reside in `tests/test_endgame_and_events.py`.
