@@ -133,6 +133,9 @@ class Rules:
         # mutated noise maps we will return with the new state
         new_noise: Dict[Edge, int] = dict(old_noise)
         new_room_noise: Dict[str, int] = dict(old_room_noise)
+        # track secure tokens and fires that may change during this action
+        secure_tokens = set(state.secure_tokens)
+        new_fires = set(state.fires)
         actions_in_turn = state.actions_in_turn
         phase = state.phase
         oxygen = new_state.oxygen
@@ -157,7 +160,55 @@ class Rules:
             actions_in_turn += 1
 
             # Noise placement based on noise roll
-            noise_target = _noise_roll(state, action)
+            # Exploration Sequence -----------------------------------------
+            skip_standard_noise = False
+            if to_room not in state.discovered_rooms:
+                # Mark room as discovered
+                disc = set(state.discovered_rooms)
+                disc.add(to_room)
+
+                # Draw exploration card
+                if state.exploration_deck_cards:
+                    card = state.exploration_deck_cards[0]
+                    remaining_cards = state.exploration_deck_cards[1:]
+                else:
+                    card = None
+                    remaining_cards = []
+
+                # Apply entrance effects
+                if card == "ENTRANCE_NOISE_ROOM":
+                    new_room_noise[to_room] = new_room_noise.get(to_room, 0) + 1
+                    skip_standard_noise = True
+                elif card == "ENTRANCE_NOISE_CORRIDOR":
+                    new_noise[move_edge] = new_noise.get(move_edge, 0) + 1
+                    skip_standard_noise = True
+                elif card == "ENTRANCE_CLOSE_DOORS":
+                    for nb in state.board.neighbors(to_room):
+                        doors.add(_norm_edge(to_room, nb))
+                    skip_standard_noise = True
+                elif card == "ENTRANCE_FIRE_ROOM":
+                    new_fires.add(to_room)
+                    skip_standard_noise = True
+                else:
+                    # No card or unhandled card id -> no extra effect
+                    skip_standard_noise = True  # default exploration replaces noise
+
+                # Secure token for cautious move
+                if action.type is ActionType.MOVE_CAUTIOUS:
+                    secure_tokens.add(move_edge)
+
+                # Update state with exploration changes
+                new_state = new_state.next(
+                    discovered_rooms=disc,
+                    exploration_deck_cards=remaining_cards,
+                    fires=new_fires,
+                )
+
+            # --------------------------------------------------------------
+            if skip_standard_noise:
+                noise_target = None  # type: ignore
+            else:
+                noise_target = _noise_roll(state, action)
             
             if noise_target == 'corridor':
                 # Add noise to corridor
@@ -176,7 +227,7 @@ class Rules:
                                 chosen_edge_param = maybe_edge
                     if chosen_edge_param:
                         new_noise[chosen_edge_param] = new_noise.get(chosen_edge_param, 0) + 1
-            else:  # noise_target == 'room'
+            elif noise_target == 'room':
                 # Add noise to destination room
                 new_room_noise[to_room] = new_room_noise.get(to_room, 0) + 1
 
@@ -606,12 +657,14 @@ class Rules:
         new_state = new_state.next(
             noise=new_noise,
             room_noise=new_room_noise,
+            fires=new_fires,
             actions_in_turn=actions_in_turn,
             oxygen=oxygen,
             health=health,
             turn=state.turn + 1,
             phase=phase,
             doors=doors,
+            secure_tokens=secure_tokens,
         )
 
         return new_state

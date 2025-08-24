@@ -84,5 +84,18 @@ class GameState:
         default_factory=lambda: {"ADULT": 2, "LARVA": 1}
     )
 
+    # --- v1.8: Map & Exploration -------------------------------------------
+    # Rooms whose tile has been discovered / revealed.  For now we start
+    # with the full fixed test-map so existing movement/tests are unchanged.
+    discovered_rooms: Set[RoomId] = field(
+        default_factory=lambda: {"A", "B", "C", "D", "E"}
+    )
+    # Exploration deck (top card at index 0) – separate from the Event deck.
+    exploration_deck_cards: List[str] = field(default_factory=list)
+    # Corridors where the player placed a Secure token after a Cautious move.
+    secure_tokens: Set[Tuple[RoomId, RoomId]] = field(default_factory=set)
+    # Pre-defined Reinforced corridors (purely informational for now).
+    reinforced_corridors: Set[Tuple[RoomId, RoomId]] = field(default_factory=set)
+
     def next(self, **changes: Any) -> "GameState":
         return replace(self, **changes)
