@@ -1,0 +1,7260 @@
+rulebook
+
+table of contents
+
+standard-sized cards
+
+reactor overheating
+
+Remove the other Objective from the game to:
+Remove the other Objective from the game to:
+Progress the Objective Choice track once 
+Progress the Objective Choice track once 
+and draw  A  accordingly.
+
+scent of prey
+
+All 
+
+ in each 
+
+Then, all 
+
+, 
+
+, and 
+ in every Room move.
+
+ move.
+
+Weak spot
+
+Deal 1 Hit to an 
+
+. 
+
+Then, Shoot or Melee Attack it.
+CONTRACTOR: CONSULTANT
+
+ACTION
+ACTION
+
+Sprint
+
+Move.
+Then, you may spend 1
+Then, you may spend 1 to Move again.
+R E C O N
+R E C O N
+
+60 Action cards 
+(10 per Character)
+
+Place a Room of the ? type.
+
+Place a Room of the ? type.
+
+Reminder: 
+Place 1  if you are Moving Cautiously.
+
+Entrance Effect:
+Close all Doors around this Room.
+Remove this card from the game.
+
+Reminder: 
+Place 1  if you are Moving Cautiously.
+
+Entrance Effect:
+Close all Doors around this Room.
+Make a Noise roll.
+Remove this card from the game.
+
+EXPLORATION
+EXPLORATION
+PRIMEBLOOD
+PRIMEBLOOD
+
+If a 
+
+ is in the Cooling System 
+
+Room or the Reactor Room, Activate 
+the Autodestruction Procedure.
+
+Then, place a 
+
+ in each of these Rooms.
+ in each of these Rooms.
+ in each of these Rooms.
+
+Reshuffle the Event deck.
+
+EVENT
+EVENT
+PRIMEBLOOD
+PRIMEBLOOD
+
+All 
+Then, all 
+
+ in each 
+ in every Room move.
+
+ move.
+
+Resolve each 
+
+ adjacent to a 
+
+.
+
+Each 
+
+ makes a Noise roll.
+
+20 Event cards
+
+2+
+
+primary samples
+
+All 
+
+ who Escape from the Facility 
+
+must be carrying at least 2 Eggs 
+in total among them
+(no matter if they Survive after Escaping).
+(no matter if they Survive after Escaping).
+
+MISSION 
+MISSION 
+MISSION 
+TASK
+TASK
+
+MISSION TASK
+
+3+
+
+reconnaissance
+
+All Rooms of the A, B, and C type 
+must be Discovered.
+
+MISSION TASK
+MISSION TASK
+
+Remove the other Objective from the game to:
+Progress the Objective Choice track once 
+and draw  A  accordingly.
+
+2+
+
+official order
+
+The Mission Task must be fulfilled.
+
+MISSION OBJECTIVE
+
+OBJECTIVE
+OBJECTIVE
+OBJECTIVE
+
+2+
+
+the great hunt
+
+The Queen must be dead.
+PRIVATE OBJECTIVE
+
+22 Objective cards 
+(7 Mission Objectives 
+and 15 Private Objectives)
+
+pick officer
+pick officer
+pick officer
+pick officer
+pick officer
+pick officer
+pick officer
+pick officer
+pick officer
+pick officer
+pick officer
+pick officer
+pick officer
+pick officer
+pick officer
+pick officer
+pick officer
+pick officer
+pick officer
+pick officer
+pick officer
+pick officer
+pick officer
+pick officer
+pick officer
+pick officer
+
+Character draft
+draft
+Character 
+
+pick recon
+pick recon
+pick recon
+pick recon
+pick recon
+pick recon
+pick recon
+pick recon
+pick recon
+pick recon
+pick recon
+
+6 Character Draft cards
+
+-   h e l p   c a r d   -
+You Are player
+You Are player
+
+Deadly Claws
+
+pass
+pass
+
+You are skipped in turn order,
+You are skipped in turn order,
+wait for other players to pass.
+wait for other players to pass.
+
+INTRUDER PHASE
+INTRUDER PHASE
+1) Intruders Burning
+ Intruders Burning
+ Intruder Attacks
+2) Intruder Attacks
+EVENT PHASE
+EVENT PHASE
+ Event Card Resolution
+3) Event Card Resolution
+ Bag Development
+4) Bag Development
+CLEANUP PHASE
+CLEANUP PHASE
+ Starting Player Change
+5) Starting Player Change
+ Drawing Action Cards
+6) Drawing Action Cards
+ Time Advancement
+7) Time Advancement
+end of round
+end of round
+
+11
+1
+
+PLAYER PHASE
+PLAYER PHASE
+PLAYER PHASE
+Each Player in order takes a Turn:
+1) Perform 2 Actions.
+
+-   h e l p   c a r d   -
+You Are player
+You Are player
+2) If in a Section with an 
+
+: 
+
+: 
+
+Lose 1 .
+
+3) If in a Room with a 
+Lose 1
+
+.
+
+2
+
+PLAYER PHASE
+PLAYER PHASE
+Each Player in order takes a Turn:
+1) Perform 2 Actions.
+
+2) If in a Section with an 
+
+Lose 1 .
+Lose 1
+3) If in a Room with a 
+Lose 1
+
+.
+
+: 
+
+: 
+
+Bite
+
+Lose 2
+Lose 2
+
+.
+.
+
+ADULT
+ADULT
+ADULT
+
+Gain 1 Contamination.
+Gain 1 Contamination.
+
+DRONE
+DRONE
+DRONE
+DRONE
+DRONE
+
+If you are Heavily Injured, you die.
+If you are Heavily Injured, you die.
+If you are Heavily Injured, you die.
+If you are Injured, 
+If you are Injured, 
+gain 1 Serious Wound.
+gain 1 Serious Wound.
+Otherwise, gain 2 Serious Wounds.
+Otherwise, gain 2 Serious Wounds.
+Otherwise, gain 2 Serious Wounds.
+Otherwise, gain 2 Serious Wounds.
+Otherwise, gain 2 Serious Wounds.
+Otherwise, gain 2 Serious Wounds.
+Otherwise, gain 2 Serious Wounds.
+
+QUEEN
+QUEEN
+QUEEN
+QUEEN
+QUEEN
+
+Gain 1 Contamination.
+Gain 1 Contamination.
+
+Lose 2
+Lose 2
+
+.
+.
+
+ADULT
+
+DRONE
+
+QUEEN
+
+If you are Heavily Injured, 
+you die.
+Otherwise, gain 
+1 Serious Wound 
+and 1 Contamination.
+
+ATTACK
+ATTACK
+PRIMEBLOOD
+PRIMEBLOOD
+PRIMEBLOOD
+PRIMEBLOOD
+
+12 Exploration cards
+
+8 Mission Task cards
+
+5 Help cards
+
+20 Intruder Attack cards
+
+Can't be discarded for Actions. 
+Can't be discarded for Actions. 
+Can't be discarded for Actions. 
+You may discard this card when you Pass.
+You may discard this card when you Pass.
+You may discard this card when you Pass.
+You may discard this card when you Pass.
+
+ContAmination
+ContAmination
+ContAmination
+
+INMWSESD
+INMWSESD
+IVDFWEDD
+IVDFWEDD
+IGHWAEFD
+IGHWAEFD
+ISDVLZED
+ISDVLZED
+INFECTED
+INFECTED
+INFECTED
+INFECTED
+Can't be discarded for Actions. 
+You may discard this card when you Pass.
+
+ContAmination
+
+ICSNBAJD
+ICSNBAJD
+ICSNBAJD
+ICSNBAJD
+ICSNBAJD
+INFECTED
+INFECTED
+INFECTED
+INFECTED
+IBSACSFD
+IBSACSFD
+IBSACSFD
+IGHWAEFD
+IGHWAEFD
+IGHWAEFD
+IYSFEWED
+IYSFEWED
+IYSFEWED
+
+ACTION
+ACTION
+ACTION
+
+27 Contamination cards
+Note: Although they 
+share a common back 
+with Action cards, they 
+form a separate deck.
+
+small cards
+
+Automatic shotgun
+RANGED WEAPON, HEAVY
+
+tactical hatchet
+MELEE WEAPON, HEAVY
+
+duct tape
+ONE USE ONLY
+Discard a 
+Discard a 
+Discard a 
+OR
+OR
+
+..
+.
+
+ Before Shooting, deal 1 Hit more.
+ Before Shooting, deal 1 Hit more.
+Shoot: Before Shooting, deal 1 Hit more.
+
+: Spend 
+: Spend 
+: Spend 
+
+ if able.
+ if able.
+ if able.
+
+ITEM
+
+military taser
+ONE USE ONLY, HEAVY
+
+Place 1 Heavy Item above 
+Place 1 Heavy Item above 
+Place 1 Heavy Item above 
+Place 1 Heavy Item above 
+another Heavy Item in your 
+another Heavy Item in your 
+another Heavy Item in your 
+another Heavy Item in your 
+another Heavy Item in your 
+Hand slot (
+Hand slot (effectively carrying 
+Hand slot (effectively carrying 
+effectively carrying 
+effectively carrying 
+2 Heavy Items in 1 Hand).
+2 Heavy Items in 1 Hand
+2 Heavy Items in 1 Hand
+2 Heavy Items in 1 Hand
+2 Heavy Items in 1 Hand
+2 Heavy Items in 1 Hand).
+2 Heavy Items in 1 Hand).
+
+RECON
+CHARACTER ITEM
+
+Melee Attack: Deal
+Melee Attack: Deal
+Melee Attack: Deal
+the Shoot die, and place a 
+the Shoot die, and place a 
+the Shoot die, and place a 
+
+sonic gun
+RANGED WEAPON, REQUIRES NO AMMO, HEAVY
+instead of rolling 
+instead of rolling 
+instead of rolling 
+
+ on this Weapon.
+ on this Weapon.
+
+Burst: Treat  3  and  4  as  2 .
+ in your Room.
+, 
+
+: Place a 
+
+ from the Room.
+
+HEAVY GUN OPERATOR
+HEAVY GUN OPERATOR
+CHARACTER ITEM
+
+SUPPORT EQUIPMENT
+SUPPORT EQUIPMENT
+
+Repel 1
+
+OR
+
+ of your choice discards all  A .
+
+I
+I
+I
+
+T
+T
+T
+E
+E
+E
+M
+M
+M
+
+A
+
+arm
+arm
+
+You only have 1 Hand slot. 
+You only have 1 Hand slot. 
+You only have 1 Hand slot. 
+You only have 1 Hand slot. 
+You only have 1 Hand slot. 
+You only have 1 Hand slot. 
+If you have Items in both 
+If you have Items in both 
+If you have Items in both 
+If you have Items in both 
+If you have Items in both 
+Hand slots, you must immediately 
+Hand slots, you must immediately 
+Hand slots, you must immediately 
+Hand slots, you must immediately 
+Hand slots, you must immediately 
+discard Items from one of them.
+discard Items from one of them.
+discard Items from one of them.
+discard Items from one of them.
+discard Items from one of them.
+discard Items from one of them.
+discard Items from one of them.
+discard Items from one of them.
+discard Items from one of them.
+discard Items from one of them.
+
+EYES
+
++1 to all your Shoot results.
+
+SERIOUS
+SERIOUS
+SERIOUS
+WOUND
+WOUND
+
+90 Item cards 
+(30 cards of each type)
+
+technical robot
+technical robot
+
+server robot
+
+Move the 
+Move the 
+
+ up to 2 times.
+OR
+OR
+
+Discard a 
+Discard a 
+
+ or a 
+
+from the Room with the 
+from the Room with the 
+
+Move the 
+
+ up to 3 times.
+OR
+ is in a 
+If the 
+the Room (even with a 
+
+ Room, use 
+).
+
+.
+
+ROBOT
+
+7 Character Item cards
+
+24 Support Equipment cards
+
+27 Serious Wound cards
+
+Discard
+
+0additional cards.
+0additional cards.
+
+additional cards.
+
+Repel the Queen.
+Repel the Queen.
+Repel the Queen.
+
+Discard
+
+1
+1additional card.
+
+Add all Queen tokens to the bag.
+Add all Queen tokens to the bag.
+
+QUEEN HEALTH
+PRIMEBLOOD
+
+6 Robot cards
+
+12 Queen Health cards
+
+main components
+
+k
+k
+k
+s
+s
+s
+
+n ta
+n ta
+n ta
+sio
+sio
+sio
+mis
+mis
+mis
+
+4
+4
+4
+1
+1
+1
+
+r
+r
+e
+e
+b
+b
+m
+m
+u
+u
+n
+n
+y
+y
+n
+n
+a
+a
+n
+n
+i
+i
+a
+a
+G
+G
+
+s
+s
+n
+n
+e
+e
+k
+k
+o
+o
+t
+t
+r
+r
+a
+a
+e
+e
+G
+G
+l
+l
+a
+a
+c
+c
+i
+i
+t
+t
+c
+c
+a
+a
+T
+T
+f
+f
+o
+o
+
+.
+.
+s
+s
+t
+t
+o
+o
+l
+l
+s
+s
+d
+d
+e
+e
+t
+t
+c
+c
+e
+e
+n
+n
+n
+n
+o
+o
+c
+c
+e
+e
+h
+h
+t
+t
+m
+m
+o
+o
+r
+r
+f
+f
+
+R
+R
+O
+O
+
+.
+.
+
+l
+l
+l
+l
+l
+l
+o
+o
+o
+r
+r
+r
+e
+e
+e
+s
+s
+s
+i
+i
+i
+o
+o
+o
+N
+N
+N
+a
+a
+a
+e
+e
+e
+k
+k
+k
+a
+a
+a
+M
+M
+M
+
+e
+e
+e
+h
+h
+h
+t
+t
+t
+o
+o
+o
+t
+t
+t
+n
+n
+n
+i
+i
+i
+t
+t
+t
+e
+e
+e
+g
+g
+g
+o
+o
+o
+t
+t
+t
+
+e
+e
+e
+e
+e
+oic
+oic
+oic
+oic
+oic
+e
+e
+e
+n
+n
+n
+o
+o
+o
+z
+z
+z
+h
+h
+h
+h
+h
+g
+g
+g
+n
+n
+n
+e c
+e c
+e c
+e c
+e c
+i
+i
+i
+d
+d
+d
+n
+n
+n
+a
+a
+a
+tiv
+tiv
+tiv
+tiv
+tiv
+l
+l
+l
+R 
+R 
+E
+E
+:
+c
+c
+c
+c
+c
+K
+K
+A
+A
+R
+R
+W 
+bje
+bje
+bje
+bje
+bje
+A
+A
+E M
+E M
+A
+R
+D D
+V
+V
+o
+o
+o
+o
+o
+O
+O
+N
+M
+M
+A
+
+inactive
+anti-aircraft
+
+001
+
+queen's hits
+Eggs in THE Nest
+If there are no Eggs here:
+If there are no Eggs here:
+If there are no Eggs here:
+The Nest is now destroyed.
+
+001 001
+
+4
+4
+4
+
+5
+5
+
+6
+6
+
+77
+7
+
+88
+8
+
+9
+9
+
+0
+0
+0
+1
+1
+1
+
+3
+3
+
+1
+1
+1
+1
+1
+1
+
+2
+2
+2
+2
+2
+1
+1
+
+3
+3
+2
+2
+2
+1
+1
+
+4
+4
+111
+1
+1
+
+N
+
+e
+p
+a
+c
+s
+e
+
+e
+l
+t
+t
+u
+h
+s
+
+1 2 3
+
+0
+0
+02
+02
+
+02
+0
+
+hibernatorium
+hibernatorium
+hibernatorium
+
+life support
+life support
+life support
+
+1818
+18
+
+004
+004
+
+15
+
+20
+
+queen health cards
+If there are no cards here:
+robot card
+robot card
+robot card
+robot card
+Remove the Queen’s model 
+and flip the Intruder Help sheet 
+hibernatorium
+hibernatorium
+hibernatorium
+hibernatorium
+hibernatorium
+hibernatorium
+Remote Activation:
+Remote Activation:
+Remote Activation:
+Remote Activation:
+to the black side.
+ Room 
+ Room 
+ Room 
+you may discard 1A more 
+you may discard 1A more 
+Make a Noise roll to Hibernate.
+Make a Noise roll to Hibernate.
+Make a Noise roll to Hibernate.
+Make a Noise roll to Hibernate.
+The Queen is now dead.
+to perform the “Activate 
+to perform the “Activate 
+to perform the “Activate 
+If you are in a 
+If you are in a 
+If you are in a 
+If you are in a 
+you may discard 1
+you may discard 1
+the Robot” Action – even 
+the Robot” Action – even 
+the Robot” Action – even 
+ is not 
+ is not 
+in your Room.
+in your Room.
+if the 
+if the 
+
+life support
+
+004
+
+003
+
+life support
+
+003
+003
+
+life support control "a" 
+life support control "a" 
+life support control "a" 
+life support control "a" 
+life support control "a" 
+
+ in Section A.
+
+Flip an 
+
+/
+
+OR
+ from any Room 
+2323
+23
+
+Discard a 
+
+in the Facility.
+
+reactor
+reactor
+Remove 
+Remove 
+, 
+, 
+and both Anti-Aircraft tokens 
+and both Anti-Aircraft tokens 
+from the game.
+from the game.
+
+all 
+
+, 
+, 
+
+, 
+
+server room 
+server room 
+Use any Discovered 
+Use any Discovered 
+Use any Discovered 
+in the Facility.
+OR
+Gain a Data token
+(if you don’t have one).
+
+01
+
+ Room 
+ Room 
+
+Sprinklers Control 
+Discard all 
+from a chosen Section.
+
+3 Round track border pieces
+
+3 Section border pieces
+
+23 Room tiles 
+(3 A, 3 B, 4 C, 13 ?)
+
+1
+
+101
+
+3
+
+305305
+
+2
+
+202
+202
+
+4
+
+402402402
+
+101
+101
+
+1
+1
+11
+
+305 305
+
+3
+
+202
+
+402
+
+22
+2
+
+4
+
+40 Corridor tiles 
+(10 each of values 1,2,3 and 4)
+
+contractor
+contractor
+contractor
+contractor
+contractor
+contractor
+contractor
+contractor
+
+medical support
+medical support
+medical support
+medical support
+medical support
+medical support
+medical support
+medical support
+medical support
+medical support
+medical support
+medical support
+medical support
+medical support
+
+heavy gun operator
+heavy gun operator
+heavy gun operator
+heavy gun operator
+heavy gun operator
+heavy gun operator
+heavy gun operator
+heavy gun operator
+
+recon
+
+combat engineer
+
+officer
+
+5 Character boards
+
+6 Character tiles
+
+1 Scanner
+
+1 Intruder bag
+
+2 six-sided Shoot dice, 
+2 eight-sided Burst dice, 
+2 ten-sided Noise dice
+
+6 colored plastic rings
+
+Standees/models
+Standees/models
+
+5 numbered Backpack 
+card holders
+
+1 Intruder Help sheet
+
+Note: Depending on your version of the game, 
+you will ﬁnd either models or standees in your box.
+
+6 Characters
+
+8 Drones in 4 poses
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+markers and tokens:
+
+9 Fire markers
+
+14 Malfunction markers
+
+30 Noise markers
+
+30 Universal markers
+
+1 Round marker
+
+5 Egg tokens
+
+1 Autodestruction and 
+1 Lander token
+
+20 Secure tokens
+
+14 Door tokens
+
+5 Data tokens
+
+1 Hibernatorium token
+
+3 Life Support tokens
+
+undiscovered hibernatorium
+
+The 
+Never place 
+
+ in this Room cannot be Activated.
+
+ on Corridors to the Hibernatorium.
+
+When any Room is connected to the Hibernatorium: 
+reveal the Robot card 
+(Robot can now be Activated) 
+and discard this token.
+
+inactive
+
+active
+
+Suffocating
+Next time you
+Next time you
+Next time you
+Next time you
+Next time you
+loseloseloselose
+lose
+, you die.
+Discard this 
+Discard this 
+Discard this 
+Discard this 
+Suffocating
+Suffocating
+Suffocating
+Suffocating
+Suffocating
+token when:
+token when:
+token when:
+token when:
+token when:
+Next time you
+Next time you
+Next time you
+Next time you
+Next time you
+Next time you
+Next time you
+Next time you
+Next time you
+Next time you
+you gain
+you gain
+you gain
+you gain
+you gainloseloselose
+you gain
+you gain
+you gain
+lose , you die.
+lose
+lose
+lose
+lose
+loseloselose
+, you die.
+, you die.
+, you die.
+OR end Turn in 
+OR end Turn in 
+OR end Turn in 
+OR end Turn in 
+OR end Turn in 
+OR end Turn in 
+a Section with 
+a Section with 
+a Section with 
+a Section with 
+a Section with 
+a Section with 
+Discard this 
+Discard this 
+Discard this 
+Discard this 
+token when:
+token when:
+token when:
+token when:
+token when:
+.
+you gain
+you gain
+you gain
+you gain
+OR end Turn in 
+OR end Turn in 
+OR end Turn in 
+OR end Turn in 
+a Section with 
+a Section with 
+a Section with 
+an 
+
+an 
+an 
+
+.
+
+Suffocating
+Next time you
+Next time you
+lose , you die.
+lose
+Discard this 
+token when:
+you gain
+you gain
+OR end Turn in 
+a Section with 
+
+an 
+
+.
+
+1 Undiscovered 
+Hibernatorium tile
+
+80 Tactical Gear tokens 
+(20 Ammo, 20 Grenades, 
+20 Oxygen, 20 Medpack)
+
+2 Anti-Aircraft tokens
+
+5 Suffocating tokens
+
+ADULT
+
+QUEEN
+
+ADULT
+
+LARVA
+LARVA
+
+DRONE
+
+7
+
+6
+5
+00 7
+6
+00
+04
+00
+33 11
+3
+2 1
+22 11
+5
+55555555555
+7
+6
+04
+444444
+33
+3
+2 1
+5
+04
+2 1
+
+3
+
+Starting Player token
+
+40 Intruder tokens
+(1 Blank, 9 Queens, 
+8 Drones, 16 Adults, 6 Larvae)
+
+5 Oxygen counters (to be as-
+sembled with Character boards)
+
+1 Robot
+
+36 Adults in 6 poses
+
+6 Larvae
+
+1 Queen
+
+introduction
+
+Nemesis: Retaliation is a semi-cooperative board game designed for 1-5 players, which focuses on emergent narrative and the tension of 
+the action-horror genre. Each player assumes the role of a marine squad member equipped with professional gear. They are sent to a Facility 
+infested with deadly alien life forms and tasked with different missions – often conﬂicting with one another. But their primary objective is 
+simple. Survive, above all.
+
+simple gameplay overview
+
+During  a  standard  game  of  Nemesis:  Retaliation,  you  will  take 
+on  the  role  of  a  member  of  a  marines  squad,  being  dropped  in 
+the  middle  of  a  Facility  infested  with  hordes  of  Intruders.  You  will 
+Move around the Facility, slowly Exploring it by entering new Rooms 
+and new Sections. You’ve got no intel on the layout of the Facility, 
+so it’s up to you to discover how all Corridors connect.
+
+Between an ofﬁcial Mission Task and a Private Objective, you will have 
+to choose what’s more important to you. Most of the time, it will re-
+quire careful cooperation with other marines, but sometimes you may 
+be forced to leave someone behind or even go against them – after 
+all, personal grudges and corruption happen even in the best of teams.
+
+Throughout the game, you will be able to prepare for what’s to come 
+in  a  variety  of  ways.  You  will  Search  for  essential  Items,  Secure 
+Rooms and Reinforce Corridors. All of it, just to create a small illusion 
+of safety. At times, you will use the functions of Rooms in the Facility, 
+or even the Facility’s Robot.
+
+PRIMEBLOODS ARE INTRUDERS
+PRIMEBLOODS ARE INTRUDERS
+Intruders is a name for all alien races in the Nemesis universe. 
+Intruders is a name for all alien races in the Nemesis universe. 
+Intruders is a name for all alien races in the Nemesis universe. 
+This box contains a race called Primebloods. During the game 
+This box contains a race called Primebloods. During the game 
+consider  terms  Primebloods  and  Intruders 
+consider  terms  Primebloods  and  Intruders 
+consider  terms  Primebloods  and  Intruders 
+  as  being 
+  as  being 
+  as  being 
+equivalent.
+equivalent.
+
+Sooner or later, you will come upon the voracious Intruders, and with 
+time,  more  and  more  will  come.  You  will  have  to  Shoot  and  Burst 
+at them, throw Grenades, and use every other tool at your disposal 
+to  resist  the  relentless  assault.  Be  ready  to  run  and  hide  just  as 
+much. The Intruders are deadly and unpredictable, even one of them 
+in the same Room as you may result in your untimely demise. When 
+you do manage to escape, be careful of Contaminations! A scratch 
+may  not  seem  signiﬁcant  now  but  may  result  in  something  much 
+worse with time.
+
+However, Intruders are not your only problem. There is also the topic 
+of running out of Oxygen. 
+
+You will have to ﬁnd additional Oxygen Supplies and, hopefuly, turn on 
+Life Support Systems to even survive. Then, you’d better ﬁnd the con-
+trols for the Anti-Aircraft Systems or the way to Activate the Hiberna-
+torium.  Being  dropped  into  the  Facility  was  easy,  but  the  Lander  will 
+have to actually land to take you off the Facility. Alternatively, just freeze 
+yourself and wait for backup. Sooner, or later it will come right?
+
+At some point, all Characters either Escape or end up dead. That’s 
+where the story will conclude, by everyone checking if they managed 
+to survive the Intruder Contamination and whether they fulﬁlled their 
+hidden Objective. Hopefully, that will be you.
+
+6
+
+endgame conditions
+winning and losing
+
+A game of Nemesis may end up with multiple winners, but it is not 
+a  cooperative  game.  Each  player,  in  the  end,  ﬁghts  for  their  own 
+agenda.  Each  Character  not  only  strives  to  fulﬁll  one  of  the  two 
+Objectives they start with, but they also must give their all to survive 
+this mission, and ﬁnally ﬁnd a safe place.
+
+All players that meet all following conditions are considered winners:
+
+1.
+
+Fulﬁlls  one  of  the  Objectives  –  At  the  start  of  the  game, 
+each player is dealt 2 hidden Objectives – Private and Mission. 
+
+a. Private  Objectives  show  a  unique  Objective 
+
+for 
+
+a Character.
+
+b. Mission  Objectives  correspond  to  a  team’s  common 
+Mission described on another card  – Mission task.
+
+During the game each player will choose one of their Objec-
+tives in hand to fulﬁll.
+
+For details see: Objectives (page X).
+
+2.
+
+Escapes  the  Facility  –  Each  Character  must  ensure  their 
+safety before the game ends. Not only does it mean not dying, 
+but  also  using  a  Room  that  brings  them  to  a  safe  location 
+such as:
+
+a. Returning  to  the  main  ship  by  using  the  Lander  in 
+
+the Landing Zone.
+
+b. Locking  themselves  in  a  pod  by  Hibernating  in  the 
+
+Hibernatorium.
+
+c. Returning to the ship through the Escape Shuttle.
+
+For details see: Escape Procedure (page X).
+
+3.
+
+Survives the Infection and Eclosion Procedures – These 
+two end game procedures check if Characters die as a result 
+of being infected.
+
+For  details  see:  Infection  Procedure  (page  X)  and  Eclosion 
+Procedure (page X).
+
+A player loses the game if they fail to meet at least one of the condi-
+tions listed above, or they die.
+
+end of the game conditions
+The game ends when one of the following takes place:
+
+At the end of Round 14 – Too much time has passed and all Characters 
+remaining in the Facility are beyond saving and are considered dead.
+
+OR
+
+All players have died or performed an Escape Procedure – In such 
+a case there are no more players left in the game and the game ends.
+
+In any of those cases the  game proceeds to  the  End of the  Game 
+to determine winners.
+
+For details see: End of the Game (page X).
+
+7
+
+INTRODUCTION
+Page 6
+
+ENDGAME 
+CONDITIONS
+Page 7
+
+SETUP 
+Pages
+Pages 8-13
+Pages 8-13
+
+GAME ROUND 
+STRUCTURE 
+Pages
+Pages 14-17
+Pages 14-17
+
+CHARACTER 
+Pages
+Pages 18-20
+Pages 18-20
+
+MAP 
+Pages
+Pages 21-25
+Pages 21-25
+
+CHARACTER 
+MOVEMENT 
+Pages
+Pages 26-29
+Pages 26-29
+
+ITEMS 
+Pages
+Pages 30-31
+Pages 30-31
+
+INTRUDERS 
+Pages
+Pages 32-34
+Pages 32-34
+
+COMBAT 
+Pages
+Pages 35-36
+Pages 35-36
+
+THE QUEEN 
+Page
+Page 37
+Page 37
+
+CONTAMINATION 
+CARDS 
+Page 38
+
+ROBOT 
+Page 39
+
+PROCEDURES 
+Page 39
+
+LANDER AND 
+ANTI-AIRCRAFT 
+Page
+Page 40
+Page 40
+
+END OF 
+THE GAME 
+Page
+Page 40
+Page 40
+
+OBJECTIVE AND 
+MISSION TASK 
+Page
+Page 41
+Page 41
+
+ADDITIONAL 
+MODES 
+Page
+Page 42
+Page 42
+
+ICON GLOSSARY 
+Page 44
+
+setup
+
+Setup is divided into two parts – Game Setup and Player Setup.
+
+Game Setup is straightforward and can be done in advance.
+
+Player Setup involves drafting Characters and Support Equipment. Since it requires player choices, it should be done with all players gathered 
+at the table.
+
+game setup
+
+A fully setup game can be seen on the next pages. To set up the game perform the following in order:
+
+a. sections setup
+
+1.
+
+2.
+
+3.
+4.
+5.
+6.
+7.
+
+8.
+
+9.
+
+Find 3 Section border pieces and 3 Round track border pieces, connect them to each other and place them on the table. The built 
+structure is the Facility and creates the borders of the map.
+Place the Undiscovered Hibernatorium tile on top of the Hibernatorium.
+This tile rests there until Characters reach the Hibernatorium. Until then, the Hibernatorium is considered Undiscovered. Noise tokens 
+cannot be placed on the connected Corridors and the Robot cannot be Activated.
+
+Place the Round marker on the 1st slot of the Round track.
+Place the Lander token on the “10” slot of the Round track.
+Place the Autodestruction token on the corresponding slot above the Round track.
+Place 1 Universal marker on the top-most space of the Objective Choice section of the bottom Round track border piece.
+Place all 3 Life Support tokens and the Hibernatorium token Inactive side up (
+the 3 Section border pieces.
+Shufﬂe all Robot cards, draw 1 of them without looking at it and place it face down on the slot of the Section “A” border piece. Leave 
+the rest of the Robot cards unseen in the box.
+Place 1 Ammo token (full side up) and 1 Oxygen token on the slots next to the Robot card.
+
+) on the corresponding slots of 
+
+ and 
+
+AMMO TOKENS
+AMMO TOKENS
+Ammo tokens are two-sided – portraying a full side and a half-full side. All Ammo tokens (including during 
+Ammo tokens are two-sided – portraying a full side and a half-full side. All Ammo tokens (including during 
+the game) are placed on the full side at the start.
+the game) are placed on the full side at the start.
+
+10. Assemble the Robot model and place it on the Hibernatorium.
+
+Note: If you have the Terrain Expansion, do not assemble the Robot now. In the Hibernatorium place only the base Robot part and wait 
+for the Robot to be revealed to assemble the other part.
+
+11. Shufﬂe and place both Anti-Aircraft tokens face down, one on top of the other, in the Anti-Aircraft slot on the Section “B” border piece.
+12. Place 5 Egg tokens in the Eggs space on the Section “C” border piece.
+13. Take 4 Ammo tokens (full side up), 4 Grenade tokens, 4 Oxygen tokens and 4 Medpack tokens and place them on their corresponding 
+
+slots next to the Landing Zone (on the middle Round track piece).
+
+14. Shufﬂe all Corridor tiles, put them inside a Corridor insert and place it near the Round track. 
+
+You will be drawing Corridors from that insert throughout the game in a way to avoid seeing the fronts of the Corridors  (the side with 
+the non-zero value) before they are drawn.
+
+15. One by one draw 3 Corridor tiles and connect them to the Landing Zone – place them face up (showing the side with the non-zero 
+
+values). 
+– If any of those Corridors have a Door slot, they should be placed with the slot on an entrance to the Landing Zone.
+
+16. Take all Room tiles. Sort them by their backs to 4 stacks – “A”, “B”, “C” and “?”. Shufﬂe each stack and place it face down near 
+
+the Corridor tiles.
+
+8
+
+HARD MODE
+Note that some Corridors contain a second, smalller Noise value.
+
+This value is used only in a Hard mode – see page XXX.
+
+b. intruder setup
+
+1.
+
+2.
+
+3.
+
+4.
+5.
+
+6.
+
+7.
+
+Take the Exploration deck, shufﬂe it and place it face down 
+near the Room stacks. Leave space for a discard pile.
+Take all Intruder tokens and separate them into piles by their 
+Intruder type. Shufﬂe each pile separately and place it icon side 
+up above the Section border pieces.
+Take the Intruder bag and put inside:
+– 1 Blank token
+– 2 Larva tokens
+– 3 random Adult tokens
+– 1 additional random Adult token for each Character tak-
+
+ing part in the game
+
+Place the bag by the remaining Intruder token piles.
+
+Take an insert with the Intruder models and place it nearby.
+Take  the  Intruder  Attack  and  the  Event  decks,  shufﬂe 
+and place each one on the right side of the Facility face down. 
+Leave space for discard piles.
+Shufﬂe  all  Queen  Health  cards  and  place  them  num-
+bers-side down on the Queen Health cards space of the Sec-
+tion “C” border piece.
+Place  a  Universal  marker  on  the  “0”  space  of  the  Queen’s 
+Hits track.
+
+Take the Intruder Help sheet and place it on the “Queen is 
+Alive” side near the bag. This component provides a quick ref-
+erence to the effects of drawing tokens from the Intruder bag.
+
+c. remaining Components 
+
+1.
+
+•
+•
+•
+
+Take the following decks:
+
+3 Item decks
+Contamination deck
+Serious Wound deck
+
+Shufﬂe each deck separately and place it on the right side of the Fa-
+cility face down. Leave space for discard piles for each deck.
+
+2.
+
+Take the insert with the following components and place it 
+in easy reach:
+
+• Noise markers
+•
+Fire markers
+• Malfunction markers
+• Door tokens (with standees)
+•
+• Tactical Gear tokens (Ammo, Oxygen, Grenade and Medpack 
+
+Secure tokens
+
+•
+
+3.
+
+tokens)
+Universal markers
+
+Take  all  6  dice  and  the  remaining  tokens  and  place  them 
+nearby.
+
+INTRODUCTION
+Page
+Page 6
+Page 6
+
+ENDGAME 
+CONDITIONS
+Page 7
+
+SETUP 
+Pages 8-13
+
+GAME ROUND 
+STRUCTURE 
+Pages
+Pages 14-17
+Pages 14-17
+
+CHARACTER 
+Pages
+Pages 18-20
+Pages 18-20
+
+MAP 
+Pages
+Pages 21-25
+Pages 21-25
+
+CHARACTER 
+MOVEMENT 
+Pages
+Pages 26-29
+Pages 26-29
+
+ITEMS 
+Pages
+Pages 30-31
+Pages 30-31
+
+INTRUDERS 
+Pages
+Pages 32-34
+Pages 32-34
+
+COMBAT 
+Pages
+Pages 35-36
+Pages 35-36
+
+THE QUEEN 
+Page
+Page 37
+Page 37
+
+CONTAMINATION 
+CARDS 
+Page 38
+
+ROBOT 
+Page 39
+
+PROCEDURES 
+Page 39
+
+LANDER AND 
+ANTI-AIRCRAFT 
+Page
+Page 40
+Page 40
+
+END OF 
+THE GAME 
+Page
+Page 40
+Page 40
+
+OBJECTIVE AND 
+MISSION TASK 
+Page
+Page 41
+Page 41
+
+ADDITIONAL 
+MODES 
+Page
+Page 42
+Page 42
+
+ICON GLOSSARY 
+Page 44
+
+9
+
+10
+
+INTRODUCTION
+Page
+Page 6
+Page 6
+
+ENDGAME 
+CONDITIONS
+Page 7
+
+SETUP 
+Pages 8-13
+
+GAME ROUND 
+STRUCTURE 
+Pages
+Pages 14-17
+Pages 14-17
+
+CHARACTER 
+Pages
+Pages 18-20
+Pages 18-20
+
+MAP 
+Pages
+Pages 21-25
+Pages 21-25
+
+CHARACTER 
+MOVEMENT 
+Pages
+Pages 26-29
+Pages 26-29
+
+ITEMS 
+Pages
+Pages 30-31
+Pages 30-31
+
+INTRUDERS 
+Pages
+Pages 32-34
+Pages 32-34
+
+COMBAT 
+Pages
+Pages 35-36
+Pages 35-36
+
+THE QUEEN 
+Page
+Page 37
+Page 37
+
+CONTAMINATION 
+CARDS 
+Page 38
+
+ROBOT 
+Page 39
+
+PROCEDURES 
+Page 39
+
+LANDER AND 
+ANTI-AIRCRAFT 
+Page
+Page 40
+Page 40
+
+END OF 
+THE GAME 
+Page
+Page 40
+Page 40
+
+OBJECTIVE AND 
+MISSION TASK 
+Page
+Page 41
+Page 41
+
+ADDITIONAL 
+MODES 
+Page
+Page 42
+Page 42
+
+ICON GLOSSARY 
+Page 44
+
+11
+
+player setup
+objective setup 
+and character draft
+To setup the players, perform the following:
+
+1.
+
+2.
+
+Find Help cards with numbers corresponding to the number 
+of players taking part in the game (e.g. if there are 3 players 
+in  the  game,  ﬁnd  cards  “1”,  “2”,  and  “3”).  Shufﬂe  them 
+and deal one Help card to each player. Each player reveals 
+their card. 
+
+The number shown on the Help card is used in the following 
+Character Draft, as well as for determining some Objectives 
+during the game.
+
+Take all Objective cards and divide them into 2 decks – Pri-
+vate and Mission. Also, take the Mission Task deck. From 
+each  deck  remove  all  cards  with  a  number  on  the  bottom 
+higher than the number of players taking part in the game. 
+Then, shufﬂe each deck separately and:
+
+a. Deal face-down 1 random Private Objective card and 1 ran-
+dom Mission Objective card to each player. Put the rest of 
+those cards back in the box.
+
+Keep your Objectives hidden, don’t reveal them to other 
+players.
+players.
+
+OBJECTIVE CARDS
+Objective  cards  are  secret  information  and  should 
+never  be  revealed  to  other  players.  They  can  be 
+discussed and lied about, however.
+
+b. Draw 1 random Mission Task card and place it face-up on 
+the Mission Task slot on the bottom Round track tile. Put 
+the rest back in the box unseen.
+
+3.
+
+Shufﬂe  all  Character  draft  cards.  Deal  2  of  those  cards  in 
+secret  to  Player  1.  That  player  chooses  one  of  those  cards 
+and reveals it. The other card is shufﬂed back into the deck 
+unseen. Perform this sequence likewise for each other player 
+in ascending order.
+
+character setup
+Each player performs the following:
+
+1.
+
+2.
+
+3.
+4.
+
+5.
+
+6.
+
+Take 1 Character board and place it in front of you. Then, 
+place the Character tile matching your chosen Character in 
+the Character board.
+Take 1 Universal marker and place it in the left-most slot of 
+the Health track on the bottom of the Character board.
+Set your Oxygen counter to the max value – 7.
+Take your chosen Character’s miniature, place it in a match-
+ing colored ring, and place the miniature in the Landing Zone.
+Take  the  Backpack  card  holder  with  your  player  number 
+and place it above your Character board.
+Take  all  Action  cards  for  your  Character,  shufﬂe  them 
+and  place  them  to  the  left  of  your  Character  board,  face 
+down – leave some space to the right of your Character board 
+
+7.
+
+for an Action cards discard pile.
+Take your Character Item card – If it’s a Heavy Item, place 
+it on one of the Hands slots of your Character board. If it’s 
+Armor, place it in the Armor slot on the Heavily Injured part 
+of the Health track. 
+– Then, if the Item has Ammo slots, place 1 Ammo token 
+
+from the supply full-side up on each such  slot.
+
+Note: The Contractor starts with 2 Character Items.
+
+8.
+
+Finally, take all Character Draft cards and put them back 
+into the box.
+
+support Equipment draft
+Perform the following. 
+
+These  steps  only  apply  to  Characters  other  than  the  Contractor. 
+Since the Contractor already starts with 2 Items, they do not take 
+part in the Support Equipment draft.
+
+1.
+
+2.
+
+3.
+
+4.
+
+Take the Support Equipment deck, shufﬂe it, draw 7 cards 
+from it and reveal them to all players.
+The  player  with  the  highest  player  number  chooses  1  of 
+those  cards  and  places  it  in  the  appropriate  place  in  their 
+player area – Heavy Items in Hand slots, Armor in the Heavily 
+Injured Health track slot.
+Each other player, in descending order, chooses 1 Equipment, 
+until all players have 1 Support Equipment.
+If  any  of  the  chosen  Equipment  have  empty  Tactical  Gear 
+slots,  ﬁll  them  with  appropriate  Tactical  Gear  tokens  from 
+the supply.
+the supply.
+
+TACTICAL GEAR SLOTS
+TACTICAL GEAR SLOTS
+TACTICAL GEAR SLOTS
+Tactical Gear slots are colored depending on which to-
+Tactical Gear slots are colored depending on which to-
+ken can be placed in them. Gray slots indicate that any 
+ken can be placed in them. Gray slots indicate that any 
+chosen token can be placed there. 
+chosen token can be placed there. 
+chosen token can be placed there. 
+
+5.
+
+Leave  the  rest  of  the  Support  Equipment  close  to  the  Item 
+decks. They may be used during the game.
+
+6. As  the  last  step,  each  player  starts  with  4  Tactical  Gear 
+tokens of their choice in any combination, and places them 
+in their Tactical Belt on the left side of the Character board. 
+Ammo tokens are placed full-side up. 
+
+Note: For the ﬁrst game we recommend starting with 1 token 
+of each type. This choice can be done simultaneously, but if 
+necessary perform it in descending player number order.
+
+beginning of the game
+
+1.
+
+2.
+3.
+
+Each  player  draws  5  Action  cards  to  their  hand  from  their 
+Action deck.
+Player 1 receives the Starting Player token.
+The game begins with the Starting Player!
+
+12
+
+INTRODUCTION
+Page
+Page 6
+Page 6
+
+ENDGAME 
+CONDITIONS
+Page 7
+
+SETUP 
+Pages 8-13
+
+GAME ROUND 
+STRUCTURE 
+Pages
+Pages 14-17
+Pages 14-17
+
+CHARACTER 
+Pages
+Pages 18-20
+Pages 18-20
+
+MAP 
+Pages
+Pages 21-25
+Pages 21-25
+
+CHARACTER 
+MOVEMENT 
+Pages
+Pages 26-29
+Pages 26-29
+
+ITEMS 
+Pages
+Pages 30-31
+Pages 30-31
+
+INTRUDERS 
+Pages
+Pages 32-34
+Pages 32-34
+
+COMBAT 
+Pages
+Pages 35-36
+Pages 35-36
+
+THE QUEEN 
+Page
+Page 37
+Page 37
+
+CONTAMINATION 
+CARDS 
+Page 38
+
+ROBOT 
+Page 39
+
+PROCEDURES 
+Page 39
+
+LANDER AND 
+ANTI-AIRCRAFT 
+Page
+Page 40
+Page 40
+
+END OF 
+THE GAME 
+Page
+Page 40
+Page 40
+
+OBJECTIVE AND 
+MISSION TASK 
+Page
+Page 41
+Page 41
+
+ADDITIONAL 
+MODES 
+Page
+Page 42
+Page 42
+
+ICON GLOSSARY 
+Page 44
+
+13
+
+game round structure
+
+The game is played in a series of Rounds.
+
+Each Round is divided into 4 separate Phases.
+
+players' turns
+During their Turn a player must resolve the 3 following steps in order:
+
+Perform 2 Actions
+
+1.
+2. Oxygen Loss
+Fire Damage
+3.
+
+Players may also, once per game, choose an Objective during their 
+Turn – this does not count as an Action.
+
+For details see: Choosing Objective on the next page.
+
+1. RESOLVING ACTIONS
+In  a  given  Turn  a  player  must  perform  2  Actions  choosing  from 
+the list below. Players may perform the same Action multiple times 
+in any given Turn.
+
+When  an  Action  is  performed,  the  player  discards  the  appropriate 
+number of Action cards from hand (without resolving their effects) 
+to their discard pile, face-up, and then resolves the corresponding 
+effect of the chosen Action.
+
+NOT IN COMBAT 
+NOT IN COMBAT 
+NOT IN COMBAT 
+When a Character is in a Room with at least 1 Intruder they are 
+When a Character is in a Room with at least 1 Intruder they are 
+considered In Combat. Some Actions cannot be taken whilst In 
+considered In Combat. Some Actions cannot be taken whilst In 
+Combat and these are marked with the symbol 
+Combat and these are marked with the symbol 
+Combat and these are marked with the symbol 
+
+.
+.
+
+Basic Action (costing 0 Action cards):
+
+-- Actions List --
+
+•
+•
+
+Play an Action card
+Pass
+
+Costing 1 Action card:
+
+Place 1 
+Fire a Shot in a Room – See Shooting (page X)
+Fire a Burst at a Corridor – See Bursting (page X)
+Perform a Melee Attack – See Melee Attack (page X)
+Use an Item – See Use Item (page X)
+Activate the Robot – See Activating Robot (page X)
+
+• Make a Move – See Movement (page X)
+•
+ – See Secure token (page X)
+•
+•
+•
+•
+•
+• Trade – See Trade (page X) 
+•
+
+Use any Tactical Gear – See Tactical Belt (page X)
+
+Costing 2 Action cards:
+
+Use the Room – See Rooms (page X) 
+
+•
+• Make a Move Cautiously – See Movement (page X) 
+
+Important: A player that has performed 2 Actions in a Turn and is 
+left with no more cards does NOT Pass. They have to wait for another 
+Turn to do so, since Pass is an Action.
+
+2. OXYGEN LOSS
+If you are in a Section with an Inactive Life Support System 
+If you are in a Section with an Inactive Life Support System 
+lose 1 Oxygen
+lose 1 Oxygen
+
+.
+
+ , 
+
+For details see: Oxygen (page X).
+
+3. FIRE DAMAGE
+If you are in a Room with a Fire marker 
+
+For details see: Fire (page X).
+
+, lose 1 Health Point 
+
+ .
+
+Player Phase – players take Turns to perform Actions.
+
+Intruder Phase – Intruders Attack and take damage from Fire.
+
+Event Phase – an Event card is resolved and the Intruders, colony 
+develops.
+
+Cleanup Phase – prepares the game for the next Round.
+
+In  the  following  pages  you  will  ﬁnd  the  four  Phases  described  in 
+detail. Below you can see the whole Round structure with a short 
+description of each step.
+
+PLAYER PHASE
+Beginning  with  the  player  who  has  the  Starting  Player  token    and 
+continuing clockwise, players take Turns during which they resolve 
+the following 3 steps:
+
+1.
+
+Perform 2 Actions – Perform 2 Actions of your choice listed on 
+the Character board.
+Oxygen Loss – If you are in a Section with Inactive Life Sup
+2. Oxygen Loss – If you are in a Section with Inactive Life Sup-
+port Systems 
+ lose 1 Oxygen
+ lose 1 Oxygen
+Fire  Damage  –  If  you  are  in  a  Room  with  Fire 
+1 Health Point 
+
+  lose 
+
+3.
+
+.
+
+.
+
+This process repeats until all players have Passed.
+
+INTRUDER PHASE
+
+1.
+
+2.
+
+Intruders Burning – Intruders in Rooms with Fire 
+1 Hit.
+Intruder Attacks – Intruders Attack Characters in the same 
+Rooms.
+
+ receive 
+
+EVENT PHASE
+
+3.
+4.
+
+Event Card Resolution – an Event card is resolved.
+Bag Development – Intruders’ colony develops.
+
+CLEANUP PHASE
+
+5.
+
+Starting Player Change – the next player in clockwise order 
+becomes the Starting Player.
+
+6. Drawing Action Cards – Each Character reﬁlls their hand by 
+
+drawing cards. 
+Time Advancement – A new Round begins.
+
+7.
+
+player phase
+
+During  this  Phase  players  will  take  their  Turns  in  clockwise  order, 
+beginning with the player with the Starting Player token. If a given 
+player has Passed, they are skipped in Turn order. 
+
+Important: Player Numbers on Help cards do not matter in the Turn 
+order. That number is only used for the purposes of Objective cards.
+order. That number is only used for the purposes of Objective cards.
+
+COMMON TIEBREAKER
+COMMON TIEBREAKER
+Turn order is the most common way to break ties in Nemesis.
+Turn order is the most common way to break ties in Nemesis.
+Turn order is the most common way to break ties in Nemesis.
+
+Rules may call out the Character ﬁrst in Turn order. In any such 
+Rules may call out the Character ﬁrst in Turn order. In any such 
+case  it  describes  the  player  that  currently  holds  the  Starting 
+case  it  describes  the  player  that  currently  holds  the  Starting 
+Player token or is closest to one in the Turn order.
+Player token or is closest to one in the Turn order.
+
+When all players have Passed the Player Phase ends and the Intruder 
+Phase begins.
+
+14
+
+reactions
+Some Action cards can be used outside of normal Turn order to react 
+to something happening in the game – they are Reactions.
+
+At any point a player is able to play a Reaction card if the conditions 
+described on the card are met. In such a case, the Reaction card is 
+placed in front of that player, the card’s effect is resolved, and ﬁnally 
+the card is placed on top of the discard pile.
+
+Reactions are not Actions and do not count toward the Actions limit.
+
+A
+
+B
+
+c
+c
+
+D
+D
+
+e
+e
+
+Duck and cover
+Duck and cover
+Duck and cover
+
+Discard 1 A  to Move. 
+Discard 1 A  to Move. 
+During that Movement, 
+During that Movement, 
+Prevent 1 Intruder Attack.
+Prevent 1 Intruder Attack.
+
+When you would be Attacked 
+When you would be Attacked 
+When you would be Attacked 
+ in a Room with another 
+ in a Room with another 
+
+ Attacks the other 
+ Attacks the other 
+ Attacks the other 
+ Attacks the other 
+
+: 
+: 
+ instead.
+ instead.
+ instead.
+ instead.
+ instead.
+
+by an 
+by an 
+The 
+The The 
+The 
+
+CONTRACTOR: CONSULTANT
+CONTRACTOR: CONSULTANT
+CONTRACTOR: CONSULTANT
+CONTRACTOR: CONSULTANT
+CONTRACTOR: CONSULTANT
+CONTRACTOR: CONSULTANT
+CONTRACTOR: CONSULTANT
+
+I
+
+N
+O
+T
+C
+A
+E
+R
+
+An Action card is divided into the following parts:
+
+A. Not  In  Combat
+
+  –  some  Action  cards  may  have 
+
+this symbol here – they can not be used in Combat.
+
+B. Name
+C.
+
+Effects – cards may have more than 1 effect to choose 
+from.
+
+D. Reaction – some cards may have a Reaction available.
+E. Character  –  speciﬁes  which  Character  this  card 
+
+belongs to.
+
+playing action cards
+When an Action card is played it is revealed and placed in front of 
+the player, the card’s effect is resolved, and then the card is placed 
+on top of the discard pile.
+
+To play a card the player must be able to resolve its effect entirely.
+
+passing
+When a player Passes, they may discard any number of cards from 
+their  hand  (for  example,  Contamination  cards)  and  then  their  Turn 
+ends. 
+
+From that point on, their Turns are skipped for the rest of the current 
+Round.
+
+They can still, however, use Reactions.
+
+choosing an objective
+During their Turns, players may also choose their Objective.
+
+This can only be done once per game, when a given player still has 
+2 Objective cards.
+
+An Objective may be chosen before or after any of the 2 Actions in 
+a Turn, but not in a middle of one, and it is NOT considered an Action 
+for any purposes.
+
+When an Objective is chosen, the player takes 1 of their Objective 
+cards and removes it from the game. Then, the marker on the Ob-
+jective choice track is moved by 1 and the player draws Action cards 
+according to the marker.
+
+Effectively,  each  Objective  choice  reduces  the  number  of  cards 
+drawn by the next player that decides to choose an Objective.
+
+The ﬁrst player draws 3 Action cards, the second 2 cards and so on.
+
+The chosen Objective card must be fulﬁlled before the game ends 
+for that player to be considered a winner.
+
+orders and commands
+Some effects allow Characters to perform an Action using another 
+Character.  The  owner  of  that  Action  makes  all  choices  during 
+that Action.
+
+For  example  –  if  you  command  a  Character  to  Burst,  you  decide 
+which  Corridor  that  Character  is  Bursting  at,  and  which  Weapon 
+to use.
+
+NO SELF-HARM COMMANDS
+NO SELF-HARM COMMANDS
+  You  are  never  allowed  to  perform  an  Action  using  another 
+  You  are  never  allowed  to  perform  an  Action  using  another 
+  You  are  never  allowed  to  perform  an  Action  using  another 
+Character that would result in an opportunity Intruder Attack, 
+Character that would result in an opportunity Intruder Attack, 
+such as ordering another Character to Move through a Corridor 
+such as ordering another Character to Move through a Corridor 
+with Intruders.
+with Intruders.
+
+15
+
+INTRODUCTION
+Page
+Page 6
+Page 6
+
+ENDGAME 
+CONDITIONS
+Page 7
+
+SETUP 
+Pages
+Pages 8-13
+Pages 8-13
+
+GAME ROUND 
+STRUCTURE 
+Pages 14-17
+
+CHARACTER 
+Pages
+Pages 18-20
+Pages 18-20
+
+MAP 
+Pages
+Pages 21-25
+Pages 21-25
+
+CHARACTER 
+MOVEMENT 
+Pages
+Pages 26-29
+Pages 26-29
+
+ITEMS 
+Pages
+Pages 30-31
+Pages 30-31
+
+INTRUDERS 
+Pages
+Pages 32-34
+Pages 32-34
+
+COMBAT 
+Pages
+Pages 35-36
+Pages 35-36
+
+THE QUEEN 
+Page
+Page 37
+Page 37
+
+CONTAMINATION 
+CARDS 
+Page 38
+
+ROBOT 
+Page 39
+
+PROCEDURES 
+Page 39
+
+LANDER AND 
+ANTI-AIRCRAFT 
+Page
+Page 40
+Page 40
+
+END OF 
+THE GAME 
+Page
+Page 40
+Page 40
+
+OBJECTIVE AND 
+MISSION TASK 
+Page
+Page 41
+Page 41
+
+ADDITIONAL 
+MODES 
+Page
+Page 42
+Page 42
+
+ICON GLOSSARY 
+Page 44
+
+pass
+pass
+
+You are skipped in turn order,
+You are skipped in turn order,
+wait for other players to pass.
+wait for other players to pass.
+
+- help card -
+You Are player
+You Are player
+
+INTRUDER PHASE
+INTRUDER PHASE
+ Intruders Burning
+1) Intruders Burning
+2) Intruder Attacks
+2) Intruder Attacks
+EVENT PHASE
+EVENT PHASE
+3) Event Card Resolution
+ Event Card Resolution
+4) Bag Development
+4) Bag Development
+CLEANUP PHASE
+CLEANUP PHASE
+5) Starting Player Change
+5) Starting Player Change
+6) Drawing Action Cards
+6) Drawing Action Cards
+7) Time Advancement
+7) Time Advancement
+end of round
+end of round
+
+1
+
+PLAYER PHASE
+PLAYER PHASE
+Each Player in order takes a Turn:
+1) Perform 2 Actions.
+2) If in a Section with an 
+Lose 1
+Lose 1 .
+3) If in a Room with a 
+Lose 1
+
+: 
+
+: 
+
+.
+
+short circuit
+short circuit
+
+All 
+All 
+
+Then, all 
+Then, all 
+Then, all 
+
+ move.
+ move.
+
+ in each 
+ in each 
+ in every Room move.
+ in every Room move.
+ in every Room move.
+
+In Sections with an 
+In Sections with an 
+
+: 
+: 
+ in each Room with a 
+ in each Room with a 
+ in each Room with a 
+
+Place a 
+Place a 
+Place a 
+
+Each 
+Each 
+
+ in a Room without a 
+ in a Room without a 
+resolves 
+resolves 
+
+.
+.
+
+A
+
+b
+
+c
+
+..
+.
+
+intruder phase
+
+In the Intruder phase, Intruders will appear, move and attack.
+
+The Intruder Phase is divided into 2 shorter steps that should be re-
+solved in order. When the last step is resolved an Event Phase begins.
+
+1. intruders burning
+Intruders burn from nearby Fires.
+
+Each Intruder in a Room with 
+1 Egg is destroyed.
+
+ is dealt 1 Hit. If 
+
+ is in the Nest, 
+
+For details see: Fire markers (Page X) and Intruder’s Health (Page X).
+
+Note: Since no die is rolled, this Hit can never kill an Intruder.
+
+2. intruder attacks
+Intruders in Rooms Attack.
+
+Each Intruder in a Room with at least 1 Character Attacks the Char-
+acter ﬁrst in Turn order. Each Attack is resolved separately starting 
+with the Room on the top-left of the Facility. If there is more than 
+one Intruder in a Room, start with the largest Intruders ﬁrst  – they 
+all Attack the same Character.
+
+For details see: Intruder Attacks (page X).
+
+event phase 
+
+  In  this  Phase,  an  Event  card  is  drawn  which  can  drastically  alter 
+the situation in the game, and then the Intruders colony will develop 
+modifying future possibilities of encounters.
+
+3. event card resolution
+Hordes move and unexpected things happen around the Facility.
+
+Draw a card from the Event deck and resolve it in the following way. 
+If the card describes effects that are impossible to resolve, ignore 
+them.
+
+1.
+
+Intruder Movement – Intruders described by the card move 
+towards the closest Characters 
+
+. 
+
+a.
+
+  –  Intruders  in  Corridors  of  the  shown 
+
+orientation move.
+
+INTRUDER MOVEMENT
+INTRUDER MOVEMENT
+Intruders move in different ways depending if they enter a Room 
+Intruders move in different ways depending if they enter a Room 
+with a Character or an empty Room.
+with a Character or an empty Room.
+
+The Event card is divided into the following parts:
+
+It is described in detail on page X.
+page X.
+It is described in detail on page X
+
+A. Movement  –  these  icons  describe  which  Intruders 
+
+move during an Event Phase. 
+Main  Effect  –  major  effect  severely  impacting 
+B. Main  Effect  –  major  effect  severely  impacting 
+the game.
+the game.
+Secondary  Effect  –  lesser  effect,  mostly  revolving 
+Secondary  Effect  –  lesser  effect,  mostly  revolving 
+  –  lesser  effect,  mostly  revolving 
+C. Secondary  Effect  –  lesser  effect,  mostly  revolving 
+Secondary  Effect  –  lesser  effect,  mostly  revolving 
+Secondary  Effect
+Secondary  Effect
+C. Secondary  Effect
+around adding Noise markers to Corridors.
+around adding Noise markers to Corridors.
+
+2.
+3.
+
+Resolve the Main Effect.
+Resolve the Secondary Effect.
+
+a. All effects mentioning Characters should be done in Turn 
+
+order.
+
+b. All  effects  mentioning  Noise  markers  in  Unexplored 
+Corridors  should  be  resolved  from  the  top  of  the  map 
+to the bottom, left to right.
+
+4.
+4.
+
+Discard the card.
+Discard the card.
+
+4. bag development
+4. bag development
+4. bag development
+The Intruders’ colony evolves.
+The Intruders’ colony evolves.
+The Intruders’ colony evolves.
+
+Draw  a  random  Intruder  token  from  the  bag,  resolve  it  according 
+Draw  a  random  Intruder  token  from  the  bag,  resolve  it  according 
+Draw  a  random  Intruder  token  from  the  bag,  resolve  it  according 
+to  the  Intruder  Help  sheet,  and  then  discard  it  to  the  bottom  of 
+to  the  Intruder  Help  sheet,  and  then  discard  it  to  the  bottom  of 
+to  the  Intruder  Help  sheet,  and  then  discard  it  to  the  bottom  of 
+the matching Intruder token pile. 
+the matching Intruder token pile. 
+the matching Intruder token pile. 
+
+At  this  point  you  are  only  interested  in  the  token’s  front  –  you 
+At  this  point  you  are  only  interested  in  the  token’s  front  –  you 
+At  this  point  you  are  only  interested  in  the  token’s  front  –  you 
+
+should completely disregard the back of these tokens.
+should completely disregard the back of these tokens.
+should completely disregard the back of these tokens.
+
+Note: Effects on tokens may change upon Queen death.
+Note: Effects on tokens may change upon Queen death.
+Note: Effects on tokens may change upon Queen death.
+
+16
+
+cleanup phase
+5. starting player change
+The Turn order changes.
+
+AUTODESTRUCTION TOKEN
+If  a  Round  token  enters  a  space  with  the  Autodestruction  token, 
+the Facility explodes and the game ends. All Characters still inside 
+the Facility (as well as Hibernating ones) die, every Room is consid-
+ered destroyed and all Intruders are considered dead.
+
+The Starting Player token passes clockwise to the next player.
+
+For details see: Autodestruction Procedure (page X).
+
+6. drawing Action cards
+Characters prepare for the future.
+
+Each  player  draws  Action  cards  from  their  deck  until  they  have  5 
+cards in hand.
+
+ACTION DECK RESHUFFLE
+Whenever there are no more cards in your Action deck to be 
+drawn  and  you  need  to  draw  another  one  (even  in  another 
+phase) – ﬁrst reshufﬂe all cards from your discard pile, form 
+a new Action deck and continue drawing.
+
+7. time advancement
+Time passes.
+
+LANDER TOKEN 
+If a Round token enters a space with a Lander token, the Lander tries 
+to land in the Landing Zone Room. Check the Anti-Aircraft Systems by 
+revealing the top Anti-Aircraft token: 
+
+•
+
+If  it  is  Inactive  (or  Anti-Aircraft  tokens  have  been  removed 
+from  the  game),  the  Lander  lands  succesfully  –  place  it  in 
+the Landing Zone Room.
+
+• Otherwise,  the  Lander  is  destroyed  –  remove  it  from 
+
+the game.
+
+If the Lander landed, it is available to Characters from that point on 
+and they may Escape the Facility using it.
+
+For details see: Anti-Aircraft Systems (page X) and Escape Procedure 
+(page X).
+
+Progress the Round marker by 1. If the Round marker is already on 
+the last space, proceed to the End of the Game instead.
+
+begin a new round
+Now, start a new Round with the Player Phase.
+
+For details see: End of the Game (page X).
+
+If  the  Round  token  enters  a  space  with  another  token,  resolve  it 
+immediately.
+
+ADULT
+ADULT
+ADULT
+
+DRONE
+
+Drone token 
+Drone token 
+and Adult token
+Add 2 Queen tokens 
+to the bag.
+
+LARVA
+
+Larva token
+Add 2 random Drone 
+tokens to the bag.
+
+Blank token
+Add 2 random Adult 
+tokens to the bag. Return 
+the Blank token to the bag.
+
+QUEEN
+
+Queen token
+If the Queen is on the map 
+– Activate the Queen.
+
+Otherwise – Add 2 Larva 
+tokens to the bag.
+
+For details see: Queen 
+Activation (page X).
+
+Important: Blank token is the only token that is returned to the bag. 
+All other tokens are discarded upon being resolved.
+
+17
+
+INTRODUCTION
+Page
+Page 6
+Page 6
+
+ENDGAME 
+CONDITIONS
+Page 7
+
+SETUP 
+Pages
+Pages 8-13
+Pages 8-13
+
+GAME ROUND 
+STRUCTURE 
+Pages 14-17
+
+CHARACTER 
+Pages
+Pages 18-20
+Pages 18-20
+
+MAP 
+Pages
+Pages 21-25
+Pages 21-25
+
+CHARACTER 
+MOVEMENT 
+Pages
+Pages 26-29
+Pages 26-29
+
+ITEMS 
+Pages
+Pages 30-31
+Pages 30-31
+
+INTRUDERS 
+Pages
+Pages 32-34
+Pages 32-34
+
+COMBAT 
+Pages
+Pages 35-36
+Pages 35-36
+
+THE QUEEN 
+Page
+Page 37
+Page 37
+
+CONTAMINATION 
+CARDS 
+Page 38
+
+ROBOT 
+Page 39
+
+PROCEDURES 
+Page 39
+
+LANDER AND 
+ANTI-AIRCRAFT 
+Page
+Page 40
+Page 40
+
+END OF 
+THE GAME 
+Page
+Page 40
+Page 40
+
+OBJECTIVE AND 
+MISSION TASK 
+Page
+Page 41
+Page 41
+
+ADDITIONAL 
+MODES 
+Page
+Page 42
+Page 42
+
+ICON GLOSSARY 
+Page 44
+
+GOLDEN RULES
+Nightmare Rule – If you are at any point unsure about a certain 
+ruling, order of effects, or cannot ﬁnd an answer to your questions, 
+you  should  always  resolve  the  particular  situation  in  the  worst 
+possible scenario for the players.
+
+If  the  situation  is  still  unclear,  perform  it  in  the  worst  possible 
+scenario for the ﬁrst player in Turn order.
+
+Local Effects – Every effect in the game (unless speciﬁed oth-
+erwise)  is  local  –  meaning  it  is  resolved  in  the  same  Room  as 
+the Character performing the effect.
+
+For  example:  “Place  a  Malfunction  marker”  means  you  place 
+a Malfunction marker in the Room your Character is currently in.
+
+Component  Limits  –  Most  components  are  limited  and  have 
+special rules on what happens if they run out. For any other com-
+ponents, consider them limited with no special rules – if they are 
+to be used, and no more are available, nothing happens instead.
+
+For  example:  Characters  cannot  gain  Ammo  tokens  if  all  are  al-
+ready in players’ possession.
+
+detailed rules
+
+A
+A
+
+DD
+D
+
+A
+
+A
+
+G
+
+e
+
+G
+
+C
+
+A
+A
+
+medical support
+medical support
+medical support
+medical support
+medical support
+
+B
+B
+
+character 
+
+During  game  setup  Character  tiles  are  placed  into  universal  Char-
+acter boards. From that point on they are referred to as a singular 
+Character board.
+
+A  Character  board  is  a  component  showing  all  possible  Actions 
+that can be performed by a Character. All effects, Wounds and other 
+statuses impacting the Character are also placed there.
+
+a. name and rank
+Each  Character  has  their  Rank.  Several  effects  may  interact  with 
+the Rank, for example, by allowing Characters of higher Rank to com-
+mand Characters of lower Rank by the use of speciﬁc Action cards. 
+
+For example: The Medical Support shown above has a Rank of 2.
+
+b. health track
+The Health track shows the current vitality of the Character  –  how many 
+Injuries they have taken so far, their exhaustion, etc.
+
+For details see: Health and Wounds (page X).
+
+c. tactical belt
+Each Character has their own Tactical Belt – it consists of 4 Tactical 
+Gear slots, which can hold Tactical Gear tokens. 
+
+TACTICAL GEAR SLOTS
+You may ﬁnd Tactical Gear slots not just on your Tactical Belt but also 
+on your Weapons and other Items.
+
+USE ANY TACTICAL GEAR ACTION
+When this Action is performed, choose any number of your Tactical 
+Gear tokens and use them applying their effects. Then, discard all 
+chosen tokens. 
+
+You  may  also  move  any  number  of  your  tokens  between  your 
+Tactical slots.
+
+GAINING TACTICAL GEAR TOKENS
+GAINING TACTICAL GEAR TOKENS
+GAINING TACTICAL GEAR TOKENS
+When a Tactical Gear token is gained it can be placed in any 
+When a Tactical Gear token is gained it can be placed in any 
+Tactical Gear slot. Ammo tokens can be immediately placed 
+Tactical Gear slot. Ammo tokens can be immediately placed 
+in your Weapons.
+in your Weapons.
+
+AMMO TOKENS 
+Ammo  tokens  are  2-sided.  One  side  shows  a  Full  Ammo  token, 
+and the other shows a Half Ammo token.
+
+Using  an  Ammo  token  allows  you  to  Reload  a  Weapon  –  choose 
+a  Weapon  and  move  an  Ammo  token  from  your  Tactical  Belt  onto 
+the slot on the chosen Weapon. 
+
+Important: You may never use an Ammo token that is already loaded 
+into a Weapon – Ammo cannot be swapped between Weapons.
+
+OXYGEN TOKENS 
+Oxygen tokens are used to replenish a Character’s Oxygen Supplies. 
+
+When an Oxygen token is used, the Character gains 3
+When an Oxygen token is used, the Character gains 3
+rotate the Oxygen dial to indicate that.
+
+(Oxygen) – 
+
+18
+
+GRENADE TOKENS 
+Grenades  are  an  effective  way  of  ﬁghting  against  large  groups  of 
+Intruders.
+
+When a Grenade is used, the Character chooses an adjacent Corridor, 
+rolls a Burst die, and adds 2 to the result. Then deal that many Hits 
+in the chosen Corridor (in most cases it will mean killing that many 
+Intruders).
+
+This  roll  does  not  count  as  a  Character  Bursting  (Weapons  do  not 
+apply to the result) and rolling 
+
+ does not have any effect.
+
+For details see: Combat (page X).
+
+MEDPACK TOKENS 
+Medpacks are used by Characters to patch up their light wounds.
+
+When  a  Medpack  is  used,  the  Character  restores  2  Health 
+Points 
+
+.
+
+For details see: Health and Wounds on page X.
+
+d. hand slots
+All Characters have 2 Hand slots on the top part of their Character 
+board.
+
+All  Heavy  Items  must  be  carried  in  Hands  –  1  Heavy  Item  can  be 
+carried in 1 Hand slot at any moment.
+
+For details see: Heavy Items (page X).
+
+e. oxygen
+
+7
+
+6
+5
+04
+2 1
+
+3
+
+Even  though  there  is  Oxygen  in 
+the Facility, it is heavily contami-
+nated and cannot be used without 
+Life Support Systems working.
+
+Each Character starts with some 
+personal  of  supplies  of  Oxygen 
+but  it’s  going  to  dwindle  every 
+turn.  Gaining  Oxygen  supplies 
+on  the  other  hand  is  not  gonna 
+be so easy.
+
+At the end of each Turn (which includes Passing), if a Character is 
+in  a  Section  with  an  Inactive  Life  Support  System 
+in  a  Section  with  an  Inactive  Life  Support  System 
+,  they 
+lose 1
+lose 1
+
+.
+
+For details see: Sections (page X).
+
+SPENDING OXYGEN
+Some Items or effects may instruct you to spend Oxygen by 
+rotating your Oxygen dial an appropriate number of times.
+
+You are unable to use Actions that require you to spend Oxy-
+gen if you would drop below 0 as a result.
+
+On  the  other  hand,  staying  in  a  Section  with  Active  Life  Support 
+Systems does NOT replenish Oxygen supplies. To replenish Oxygen 
+Characters must ﬁnd appropriate Items or Tactical Gear tokens.
+
+Suffocating
+Next time you
+Next time you
+lose , you die.
+lose
+
+Discard this 
+token when:
+you gain
+you gain
+
+OR end Turn in 
+a Section with 
+
+an 
+
+.
+
+When an Oxygen Counter reaches 
+When an Oxygen Counter reaches 
+  the  Character  gains  a  Suffo-
+cating  token  and  follows  its  in-
+structions.  Effectively,  the  Char-
+acter  has  1  more  Turn  to  ﬁnd 
+Oxygen to not die.
+
+For details see: Death (page X).
+
+f. actions list
+This  Section  lists  all  available 
+Actions in the game.
+
+For  details  see:  Player  Turns 
+(page X).
+
+g. action cards deck 
+and discard
+The  Action  cards  deck  is  placed  here  (on  the  left)  face  down 
+along with the Action cards discard pile (on the right) – face up.
+
+DISCARDING TACTICAL GEAR TOKENS AND ITEMS
+DISCARDING TACTICAL GEAR TOKENS AND ITEMS
+All Characters are allowed to discard any number of their Tac
+All Characters are allowed to discard any number of their Tac-
+All Characters are allowed to discard any number of their Tac-
+tical Gear tokens and/or Items at any point.
+tical Gear tokens and/or Items at any point.
+
+Tokens are placed back into the pool and Items are placed in 
+Tokens are placed back into the pool and Items are placed in 
+the Items discard pile.
+the Items discard pile.
+
+19
+
+INTRODUCTION
+Page
+Page 6
+Page 6
+
+ENDGAME 
+CONDITIONS
+Page 7
+
+SETUP 
+Pages
+Pages 8-13
+Pages 8-13
+
+GAME ROUND 
+STRUCTURE 
+Pages
+Pages 14-17
+Pages 14-17
+
+CHARACTER 
+Pages 18-20
+
+MAP 
+Pages
+Pages 21-25
+Pages 21-25
+
+CHARACTER 
+MOVEMENT 
+Pages
+Pages 26-29
+Pages 26-29
+
+ITEMS 
+Pages
+Pages 30-31
+Pages 30-31
+
+INTRUDERS 
+Pages
+Pages 32-34
+Pages 32-34
+
+COMBAT 
+Pages
+Pages 35-36
+Pages 35-36
+
+THE QUEEN 
+Page
+Page 37
+Page 37
+
+CONTAMINATION 
+CARDS 
+Page 38
+
+ROBOT 
+Page 39
+
+PROCEDURES 
+Page 39
+
+LANDER AND 
+ANTI-AIRCRAFT 
+Page
+Page 40
+Page 40
+
+END OF 
+THE GAME 
+Page
+Page 40
+Page 40
+
+OBJECTIVE AND 
+MISSION TASK 
+Page
+Page 41
+Page 41
+
+ADDITIONAL 
+MODES 
+Page
+Page 42
+Page 42
+
+ICON GLOSSARY 
+Page 44
+
+A
+
+A
+
+A
+
+health and wounds
+
+A Character’s Health track is divided into 3 Sections:
+
+serious wounds
+
+• Healthy
+•
+Injured
+• Heavily Injured
+
+A Character is considered of a given state when their Health marker 
+is on one of the slots of that Section. These Sections do not affect 
+the game on their own, but Intruder Attacks frequently interact with 
+the current state of the Attacked Character, sometimes even killing 
+them outright.
+
+Characters may lose or restore 
+simply move your Health marker to the right or left accordingly.
+
+ during the game. In such cases, 
+
+When  a  Health  marker  moves  to  a  Section  with  an  Armor  Item, 
+that Armor is discarded in addition to the Health lost – Armor does 
+not prevent any damage unless speciﬁed by the Item itself.
+
+For details see: Armor Items (page X).
+
+When a Health marker is moved from the last slot, the Character dies.
+
+death
+When a Character dies, remove their miniature from the board. All of 
+their Items and Objects they were carrying are lost as a result. They 
+lost the game and no longer take part in it.
+
+SERIOUS
+WOUND
+WOUND
+
+EYES
+EYES
+
++1 to all your Shoot results.
++1 to all your Shoot results.
+
+A
+
+A
+
+Characters can sometimes gain Serious Wounds (mostly as a result of 
+Intruder Attacks). Serious Wounds are cards introducing major nega-
+tive effects to the Character, as well as reducing current and max 
+. 
+They can only be healed using certain Items and Rooms.
+
+A
+A
+
+EYES
+EYES
+
++1 to all your Shoot results.
++1 to all your Shoot results.
+
+Whenever a Character gains a Serious Wound, a random card is drawn from the and placed in the leftmost Health Section.
+
+If the Health marker is in a Section where a Serious Wound card is being placed, move the Health marker to the ﬁrst empty slot in the next 
+Section.
+
+Note: This may result in discarding an Armor Item.
+
+discarding serious wounds
+There are multiple ways to discard Serious Wounds – most commonly found on Items and Rooms.
+
+Whenever a Character resolves an effect that discards a Serious Wound and they have more than one, they may choose which one to discard. 
+In such a case slide the remaining Serious Wounds to the leftmost Health Sections. 
+
+This does not move the Health marker in any way.
+
+20
+
+map
+
+The  Map  in  Nemesis  shows  a  Facility  which  is  divided  into  3  Sec-
+tions  –  A,  B  and  C.  The  Facility  consists  of  Rooms,  which  are 
+always placed in one of the 3 Sections. The Rooms are connected 
+by adjacent Corridors.
+
+Characters can only be placed and perform Actions in Rooms, while 
+Intruders may be placed both in Rooms and in Corridors.
+
+FACILITY SIZE
+The Section border pieces and the Round track border pieces create 
+the  borders  of  the  Facility.  No  Room  and  no  Corridor  can  ever  be 
+placed on those tiles or outside of those borders. This also applies 
+to the right and the bottom side of the Facility.
+
+sections
+
+There are 2 important pieces of information about each Section:
+
+•
+
+•
+
+Each one has its own Life Support System that may be either 
+Active 
+. Changing the status of 
+those  systems  is  possible  in  Life  Support  Control  Rooms 
+which are situated in every Section. 
+
+ or Inactive 
+
+For details see: Room List (page X).
+
+Each Section has its own key Section Rooms described be-
+low. Those Rooms are frequently required to fulﬁll Objectives. 
+All other Rooms are random and may appear in any Section.
+
+section a
+Section  A  is  an  Entrance  Section  –  there  you  will  start  your 
+include:
+mission  and  most 
+Lander Zone – One of the ways of Escaping the Facility and a place 
+where Characters can restock their supplies.
+
+Important  Rooms 
+
+likely  end 
+
+it. 
+
+Drilling Room – A Room which allows drilling new Corridors. 
+
+Life  Support  Control  A  –  Turns  on/off  Life  Support  Systems  in 
+that Section.
+
+Surgery  Room  –  Provides  the  easiest  way  to  deal  with  Serious 
+Wounds and even a Larva Infection if it were to occur.
+
+section b
+Section B is the middle Section with the Hibernatorium – one way 
+to safely ﬁnish the mission in the Facility. Important Rooms include:
+
+Hibernatorium – Provides a way to ensure safety for multiple Char-
+acters. It is both turned off 
+ and Undiscovered at the start 
+– the Hibernatorium can be turned on in Life Support Control C.
+
+Cooling System – Allows you to turn on the Autodestruction system 
+in case of emergencies.
+
+For details see: Autodestruction Procedure (page X).
+
+Life Support Control B – You can check and change the status of 
+Anti-Aircraft systems here and turn on/off Life Support Systems in 
+that Section. 
+
+For details see: Anti-Aircraft system (page X).
+
+Server Room – Its most important function is allowing  you to gather 
+Data required for some Objectives.
+
+section c
+Section C is the most dangerous Section. Important Rooms include:
+
+Life Support Control C – Turns on the Hibernatorium and turns on/
+off Life Support Systems in that Section. 
+
+The Nest – Dangerous Room with Intruder eggs. 
+
+For details see: Nest on the next page.
+
+The  Reactor  –  An  extremely  treacherous  Room.  This  completely 
+shuts off the Power in the Facility, turning off (and preventing from 
+turning on again) all Support Control Systems, the Autodestruction 
+system and the Anti-Aircraft system.
+
+21
+
+INTRODUCTION
+Page
+Page 6
+Page 6
+
+ENDGAME 
+CONDITIONS
+Page 7
+
+SETUP 
+Pages
+Pages 8-13
+Pages 8-13
+
+GAME ROUND 
+STRUCTURE 
+Pages
+Pages 14-17
+Pages 14-17
+
+CHARACTER 
+Pages 18-20
+
+MAP 
+Pages 21-25
+
+CHARACTER 
+MOVEMENT 
+Pages
+Pages 26-29
+Pages 26-29
+
+ITEMS 
+Pages
+Pages 30-31
+Pages 30-31
+
+INTRUDERS 
+Pages
+Pages 32-34
+Pages 32-34
+
+COMBAT 
+Pages
+Pages 35-36
+Pages 35-36
+
+THE QUEEN 
+Page
+Page 37
+Page 37
+
+CONTAMINATION 
+CARDS 
+Page 38
+
+ROBOT 
+Page 39
+
+PROCEDURES 
+Page 39
+
+LANDER AND 
+ANTI-AIRCRAFT 
+Page
+Page 40
+Page 40
+
+END OF 
+THE GAME 
+Page
+Page 40
+Page 40
+
+OBJECTIVE AND 
+MISSION TASK 
+Page
+Page 41
+Page 41
+
+ADDITIONAL 
+MODES 
+Page
+Page 42
+Page 42
+
+ICON GLOSSARY 
+Page 44
+
+nest
+The Nest is a special Room with a big signiﬁcance for the game.
+
+The Nest has its own space on Section border piece C which contains 
+5 Egg tokens at the start of the game. This space is considered to be 
+an extension of the Nest Room tile, meaning Characters in the Nest 
+Room  can  interact  with  Egg  tokens  and  are  considered  to  be  in 
+a Room with Egg tokens.
+
+Eggs are Heavy Items and can be picked up using the Nest Room 
+Action.
+
+For details see: Heavy Items (page X) and Room List (page X).
+
+You can destroy the Nest by removing all Eggs from the Section C 
+border  piece  (by  using  the  Nest’s  Room  Action).  When  there  are 
+no more Eggs there, place a Universal marker in the Nest space on 
+the Section C border piece – this signiﬁes the Nest being destroyed. 
+It stays destroyed even if other effects would add new Eggs there.
+
+FIRE DESTROYING EGGS
+If a Fire marker  
+there during each Intruder Burning Phase step.
+
+  is in the Nest, it removes 1 Egg token from 
+
+E
+
+202020
+
+C
+
+F
+
+A
+
+B
+
+server room 
+server room 
+server room 
+server room 
+server room 
+
+D
+
+Use any Discovered 
+Use any Discovered 
+Use any Discovered 
+
+ Room 
+ Room 
+ Room 
+ Room 
+
+in the Facility.
+in the Facility.
+OR
+OR
+Gain a Data token
+Gain a Data token
+(if you don’t have one).
+(if you don’t have one).
+
+rooms
+
+Rooms are the main structure of the game – Characters Move be-
+tween neighboring Rooms. Each Room has plenty of Icons related 
+to available Actions. 
+
+Rooms are divided into 2 types – Section Rooms (A, B and C) which 
+belong  to  an  associated  Section  and  always  appear  in  the  game, 
+and random Rooms, which are not certain to appear in the game.
+
+Room tiles contain the following information:
+
+A. Name
+B.
+
+Effect – A short description of the Room’s effect when Using 
+a Room – many different Actions can do so.
+
+For details see: Room List found on the Room Help Sheet.
+
+C.
+
+Item  Icons  –  Shows  which  Items  are  available  in  a  given 
+Room. Mostly referenced by the Search Action card.
+
+D. Computer Icon – Shows whether the Room contains a con-
+nection to the server. The Icon does nothing on its own but is 
+frequently referenced by other Actions.
+
+E. Room  Type  and  Room  ID  –  Shows  whether  the  Room  is 
+a  Section  Room  or  a  random  Room  Identyfying  Number  is 
+used for various tie-breakers.
+
+F. Other  Icons  –  Rooms  may  also  feature  some  other  Icons, 
+
+showing special rules:
+
+ – Such Rooms are never Secured and can never have 
+
+Secure tokens placed on them.
+For details see: Secure tokens (page X).
+
+  –  These  Rooms  can  never  be  broken.  A  Malfunction 
+
+marker is never placed on them.
+For details see: Malfunction markers (page X).
+
+22
+
+corridors
+
+To Move from Room to Room Characters will use through adjacent 
+Corridors. As a result of Movement and other Actions, Noise markers 
+are placed in Corridors alerting you to incoming danger. 
+
+In contrast to Rooms, Corridors may sometimes be placed on a bor-
+der of 2 Sections. In such a case, that Corridor is considered to be 
+in both Sections.
+
+Noise may ﬁnally turn into Intruders, which will be placed in Corri-
+dors – such Intruders then will move between Corridors and Rooms.
+
+A Corridor can hold:
+
+•
+
+A Queen and up to 2 Adults/Drones
+
+page X
+page X
+page X
+page X).
+page X
+).
+) and Event card (
+) and Event card (
+) and Event card (
+) and Event card (page X
+page X
+page X
+page X
+page X) and Event card (
+page X
+page X
+For details see: Noise roll (
+For details see: Noise roll (
+For details see: Noise roll (page X
+For details see: Noise roll (page X
+For details see: Noise roll (page X) and Event card (page X).
+
+OR
+
+•
+
+Up to 6 Adults and Drones in total
+
+OR
+
+•
+
+A Noise marker
+
+intruders interacting 
+with noise markers
+When  an  Intruder  is  placed  or  moved  to  a  Corridor  with  a  Noise 
+marker, discard the Noise marker ﬁrst. 
+
+Noise markers are never placed in Corridors containing Intruders.
+
+common corridor keywords:
+EMPTY CORRIDOR
+A  Corridor  is  considered  Empty,  when  there  are  no  Intruders    in 
+that Corridor. A Corridor containing Noise markers is also Empty.
+
+UNEXPLORED CORRIDOR
+A Corridor which is connected with only 1 Room tile is considered 
+Unexplored.
+Unexplored.
+
+FRONT
+
+b
+110 b
+110
+
+1
+1
+1
+4
+4
+4
+
+A
+A
+
+BACK
+
+D
+D
+
+101101
+
+D
+
+c
+
+110
+
+AA
+
+101
+
+4
+1
+
+0
+0
+
+0
+
+A. Corridor  Noise  value  –  Used  when  making  Noise  rolls  – 
+
+Noise markers are placed in corresponding Corridors.
+B. Hard mode Noise value – some Corridors contain a second 
+
+Noise value used only in a Hard mode.
+
+C. Door slot – Shows where Doors are available. They can be 
+
+D.
+
+Open, Closed or Destroyed.
+ID number – Identifying number. Used to break ties during 
+Intruder  movements.  Note  that  this  number  always  starts 
+with the Corridor Noise value.
+
+Each  Corridor  connected  to  a  Room  is  considered  adjacent 
+to that Room regardless of other components on the board (such as 
+Intruders or Doors). 
+
+REINFORCED CORRIDOR
+Empty Corridors can be Reinforced by Characters during the game. 
+
+This is most commonly found on Action cards.
+
+When a Corridor is Reinforced, discard a Noise marker from it and ﬂip 
+it to the other side. That side has a “0” value shown. Noise marker 
+won’t be placed on such a Corridor as a result of a Noise roll (since 
+there is no 0 on the die).
+
+However, Intruders can still move into such a Corridor.
+
+Note: Corridors leading to the Hibernatorium can never be Reinforced.
+
+INTRUDERS LIMITS
+INTRUDERS LIMITS
+There is a limit of 6 Intruders in a given Corridor (with the Queen counting as 4 Intruders in such cases). 
+There is a limit of 6 Intruders in a given Corridor (with the Queen counting as 4 Intruders in such cases). 
+
+If at any point Intruders are supposed to move or be placed in a Corridor and there is not enough space for them, instead:
+If at any point Intruders are supposed to move or be placed in a Corridor and there is not enough space for them, instead:
+
+• Move/place as many as you can, prioritizing the largest Intruders ﬁrst.
+• The larger Intruders swap places with lower forms if necessary:
+
+– When Moving, simply swap their places (this DOES NOT cause Intruder Attacks).
+– When Moving, simply swap their places (this DOES NOT cause Intruder Attacks).
+– When placing, remove the smaller Intruders from the Corridor as neccessary to place larger Intruders in their place.
+– When placing, remove the smaller Intruders from the Corridor as neccessary to place larger Intruders in their place.
+
+• Leave the rest without moving/placing them.
+• Leave the rest without moving/placing them.
+
+23
+
+INTRODUCTION
+Page
+Page 6
+Page 6
+
+ENDGAME 
+CONDITIONS
+Page 7
+
+SETUP 
+Pages
+Pages 8-13
+Pages 8-13
+
+GAME ROUND 
+STRUCTURE 
+Pages
+Pages 14-17
+Pages 14-17
+
+CHARACTER 
+Pages
+Pages 18-20
+Pages 18-20
+
+MAP 
+Pages 21-25
+
+CHARACTER 
+MOVEMENT 
+Pages
+Pages 26-29
+Pages 26-29
+
+ITEMS 
+Pages
+Pages 30-31
+Pages 30-31
+
+INTRUDERS 
+Pages
+Pages 32-34
+Pages 32-34
+
+COMBAT 
+Pages
+Pages 35-36
+Pages 35-36
+
+THE QUEEN 
+Page
+Page 37
+Page 37
+
+CONTAMINATION 
+CARDS 
+Page 38
+
+ROBOT 
+Page 39
+
+PROCEDURES 
+Page 39
+
+LANDER AND 
+ANTI-AIRCRAFT 
+Page
+Page 40
+Page 40
+
+END OF 
+THE GAME 
+Page
+Page 40
+Page 40
+
+OBJECTIVE AND 
+MISSION TASK 
+Page
+Page 41
+Page 41
+
+ADDITIONAL 
+MODES 
+Page
+Page 42
+Page 42
+
+ICON GLOSSARY 
+Page 44
+
+doors
+
+Some  Corridors  may  come  with 
+Door slots – this means that there 
+are Open Doors there. With appro-
+priate effects Doors can be Closed 
+- signiﬁed by placing Door tokens.
+
+A Room and a Corridor joined by 
+a  Door  are  considered  adjacent 
+(and  2  Rooms  with  a  Door  in 
+between  are  still  considered 
+neighboring),  but  the  Door  im-
+poses some limitations – such as 
+preventing Movement or Bursting.
+
+Important: All Corridors, at the moment of placement, are oriented 
+with a Door slot in direction of the Room just placed.
+
+blocking path
+Closed  Doors  block  the  access  to  anything  (with  the  exception  of 
+a Noise marker) on the other side. Characters cannot perform any 
+Actions that inﬂuence objects behind Closed Doors. 
+
+Note:  Effects  that  speciﬁcally  call  out  “any  object  in  the  Facility”,  like 
+Moving to any Room in the Facility, still work and allow you to Move even 
+to a Room closed by Doors from all sides.
+
+Characters  cannot  Move  through  a  Corridor  with  Closed  Doors  – 
+they must Open or Destroy the given Door ﬁrst (mostly as a result of 
+using Action or Item cards).
+
+Intruders, when attempting to move through Closed Doors, Destroy 
+them instead.
+
+INTERACTING WITH DOORS
+Doors may become: 
+
+• Closed – Doors can only be Closed in places with Door slots. 
+
+When Closing a Door, simply place a Door token there.
+
+• Opened – Remove the Door token from the board.
+• Destroyed – If there is a closed Door, it may be Destroyed 
+– lay the Door token down. Such a Door is now considered to 
+be the same as Open, but cannot be Closed again.
+
+DOORS AND SPREADING FIRE 
+Event  cards  and  other  effects  may  Spread  Fire    between  Rooms. 
+If  Fire  would  spread  between  2  Rooms  blocked  by  Closed  Doors, 
+ignore that spread instead – Doors block spreading Fire.
+
+24
+
+map markers 
+and tokens
+
+In Nemesis various markers and tokens can be placed in the Facility 
+portraying various states of Rooms and Corridors.
+
+Noise markers can be placed in Corridors and are explained more 
+in the Character Movement part of the Rulebook.
+
+Malfunction  markers,  Fire  markers  and  Secure  tokens  are 
+placed in Rooms and only affect them.
+
+fire markers
+Fires  are  a  common  occurence  in  destroyed  Facilities.  They  are 
+equally dangerous for humans and Intruders alike. Yet, the biggest 
+danger is the possibility of Fires spreading and enveloping the whole 
+base.
+
+Fire markers 
+ are placed in Rooms. Each Room may contain only 
+1 Fire marker. If a Fire marker is to be placed in a Room with one 
+already, simply ignore it.
+
+If at any point you must place a Fire marker and there are no more 
+Fire markers available, the Facility is destroyed and the game ends. 
+
+For details see: End of the Game (page X).
+
+Fire markers affect the game in three ways:
+
+1. When  a  Character  ends  their  Turn  in  a  Room  with  a  Fire 
+
+marker, they lose 1
+
+.
+
+For details see: Player Turn (page X).
+
+2. During the Event Phase each Intruder in a Room with a Fire 
+
+marker is dealt 1 Hit.
+
+For details see: Intruders Burning (page X).
+
+3.
+
+Fire markers may spread as a result of some Events. Spread-
+ing Fire means placing Fire markers in neighboring Rooms 
+according to the instructions on a given card. 
+
+Doors prevent Fire from spreading.
+
+malfunction markers
+Malfunction  markers 
+  represent  something  being  broken 
+and impossible to use. They can be placed on many different compo-
+nents such as Rooms, Heavy Items and Robot cards.
+
+Regardless  what  they  are  placed  on,  that  component  cannot  be 
+used. You can ﬁnd speciﬁc information on how Malfunction markers 
+interact with components below.
+
+ON ROOMS
+Each Room may only contain 1 Malfunction marker. If a Malfunction 
+marker is to be placed in a Room with one already, simply ignore it. 
+
+If a Room has a Malfunction marker its Room Action is unavailable, 
+and cannot be performed in any way.
+
+ON HEAVY ITEMS
+When a Malfunction marker is placed on a Heavy Item, it cannot be 
+used in any way (its Action cannot be used, and that Item cannot be 
+used to Shoot nor Burst) and is treated as if that Item had no text 
+and no icons.
+
+When a Malfunction marker is to be placed on an Item with one already 
+there, the Item is destroyed and must be discarded instead. The Mal-
+function markers go back to the pool.
+
+ON A ROBOT
+When placed on a Robot card, the Robot cannot be used in any way 
+(neither Rooms interacting with the Robot, nor Robot Actions). Treat 
+the Robot card as having no text and no icons.
+
+If a Malfunction marker is to be placed on a Robot when there is one 
+there already, simply ignore it.
+
+DISCARDING MALFUNCTION MARKERS
+Many  effects  allow  you  to  discard  Malfunction  markers  –  you 
+can do so from the Room your Character is in, or any Item/Robot in 
+that Room (unless the effect states otherwise).
+
+MALFUNCTION MARKERS LIMIT
+MALFUNCTION MARKERS LIMIT
+If  at  any  point  you  have  to  place  a  Malfunction  marker 
+If  at  any  point  you  have  to  place  a  Malfunction  marker 
+and there are no more markers available, place a Fire marker 
+and there are no more markers available, place a Fire marker 
+in the Room instead, if possible.
+
+Example:  You  have  to  place  a  Malfunction  marker  on  your 
+Example:  You  have  to  place  a  Malfunction  marker  on  your 
+Weapon and there are no more markers available. You instead 
+Weapon and there are no more markers available. You instead 
+place a Fire marker in your Room.
+place a Fire marker in your Room.
+
+secure tokens
+Securing Rooms is one of the Actions that allow Characters to pre-
+pare for Intruder Attacks. Secure tokens 
+ protect Characters from 
+Attacks directed by Intruders entering Room. 
+
+Many Actions may place Secure tokens in Rooms. There is a limit of 
+3 Secure tokens in any given a Room.
+
+Important: Characters can never Secure a Room with an Intruder 
+inside.
+
+Note:  Some  Rooms  may  be  impossible  to  Secure  (such  as  a  Nest 
+Room)  and  some  Rooms  are  always  Secured  (such  as  a  Shelter 
+Room).
+
+RESOLVING SECURE TOKENS:
+Whenever  an  Intruder  enters  a  Room  with  at  least  1  Character 
+and a Secure token, 1 Secure token is discarded instead of resolving 
+the Intruder Attack.
+
+Discarding Secure tokens is a result of Intruder movement and can 
+never be prevented.
+
+INTRODUCTION
+Page
+Page 6
+Page 6
+
+ENDGAME 
+CONDITIONS
+Page 7
+
+SETUP 
+Pages
+Pages 8-13
+Pages 8-13
+
+GAME ROUND 
+STRUCTURE 
+Pages
+Pages 14-17
+Pages 14-17
+
+CHARACTER 
+Pages
+Pages 18-20
+Pages 18-20
+
+MAP 
+Pages 21-25
+
+CHARACTER 
+MOVEMENT 
+Pages
+Pages 26-29
+Pages 26-29
+
+ITEMS 
+Pages
+Pages 30-31
+Pages 30-31
+
+INTRUDERS 
+Pages
+Pages 32-34
+Pages 32-34
+
+Secure tokens do NOT protect from Intruder Attacks that are already 
+in a Room (for example, during the Intruder Attack step).
+
+COMBAT 
+Pages
+Pages 35-36
+Pages 35-36
+
+THE QUEEN 
+Page
+Page 37
+Page 37
+
+CONTAMINATION 
+CARDS 
+Page 38
+
+ROBOT 
+Page 39
+
+PROCEDURES 
+Page 39
+
+LANDER AND 
+ANTI-AIRCRAFT 
+Page
+Page 40
+Page 40
+
+END OF 
+THE GAME 
+Page
+Page 40
+Page 40
+
+OBJECTIVE AND 
+MISSION TASK 
+Page
+Page 41
+Page 41
+
+ADDITIONAL 
+MODES 
+Page
+Page 42
+Page 42
+
+ICON GLOSSARY 
+Page 44
+
+25
+
+For details, see the next page.
+
+There are 2 exceptions to this step:
+
+Exploration  cards  facilitate  that  –  they  show  new  Corridors 
+and Rooms that will appear on the board. Even though they are used 
+as  a  result  of  Movement,  the  cards  do  not  show  the  the  Corridor 
+the Character Moved through.
+
+The  Exploration  Sequence  is  resolved  by  drawing  an  Exploration 
+card  and  resolving  it  in  the  empty  space  of  the  Unexplored  Corri-
+dor, in the following order. The Exploration card should be oriented 
+the same way as the board – do not rotate it.
+
+1.
+
+Set  up  the  Room  –  Check  the  type  of  Room  described 
+on  the  top  of  the  card,  draw  a  random  Room  of  that  type 
+and place it face up in an empty space opposite the Corridor 
+you are Moving through.
+– If there are no more Rooms of the required type, place 
+
+the “?” Room instead.
+
+2.
+
+Set up the Corridors – Around the new Room, place a ran-
+dom Corridor face up in each space shown on the card, if its 
+not already there. 
+
+If a Corridor has a Door slot – place it so the Door slot con-
+nects with the newly Explored Room. 
+
+a. No Corridors lead out of the Facility – if a Corridor leads 
+to a space that could not hold a Room, it is not set up.
+b. No Corridors lead to already placed Rooms – if a Corridor 
+leads to a Room that is already placed on the map, it is 
+not set up.
+
+Note:  Since  there  was  never  a  Corridor  leading  out  of 
+an  established  Room,  one  should  not  appear  around  it 
+out of nowhere.
+
+3.
+
+Set up markers and tokens – Place all markers and tokens 
+on Corridors and Rooms shown on the card. 
+
+a. You  cannot  place  a  Noise  marker  in  a  Corridor  that  al-
+
+ready has one – nothing happens in that case.
+
+4. Movement  and  Securing  Reminder  –  If  a  Character  is 
+Moving Cautiously, the Secure token should be placed at this 
+point.
+Exploration  Effect  –  Some  cards  may  have  an  additional 
+effect that should be resolved at this point.
+Insider icon – this icon is not used in the base game, ignore it.
+Discard the card.
+
+6.
+7.
+
+5.
+
+EMPTY EXPLORATION DECK
+EMPTY EXPLORATION DECK
+If  you  ever  need  to  draw  from  the  Exploration  deck  and  it’s 
+If  you  ever  need  to  draw  from  the  Exploration  deck  and  it’s 
+empty,  reshufﬂe  all  Exploration  cards  and  then  draw  the  re-
+empty,  reshufﬂe  all  Exploration  cards  and  then  draw  the  re-
+quired card.
+quired card.
+quired card.
+
+character movement
+movement sequence
+
+Characters  may  Move  as  a  result  of  many  different  effects,  most 
+commonly  by  performing  the  “Make  a  Move”  Action.  Character 
+Movement is always done from a Room to another Room. Characters 
+are never placed in Corridors.
+
+The Movement sequence goes as follows:
+
+1.
+
+Choose Direction – Choose an adjacent Corridor your Char-
+acter is going to Move through.
+
+2. Resolve Opportunity Attacks – If there are any Intruders in 
+the same Room as the Character OR in the Corridor the Char-
+acter  wants  to  Move  through  –  resolve  an  Intruder  Attack 
+for each Intruder starting with the largest Intruders (but no 
+more than 3 Attacks).
+
+For details see: Intruder Attacks (page X).
+
+3.
+
+See the impact of your Movement 
+
+If you are Moving to an already Discovered Room – Move 
+the  Character  (and  place  a 
+  if  you  are  Moving  Cau-
+tiously) and make a Noise roll. 
+
+a.
+
+b.
+
+If  you  are  Moving  through  an  Unexplored  Corridor 
+to  an  Undiscovered  Room  –  Resolve  the  Exploration 
+Sequence.
+
+For details, see below.
+
+Sometimes an effect (such as a Technical Corridor Entrance Room) 
+may allow a Character to Move to a speciﬁc Room regardless of dis-
+tance. In such a case resolve the sequence above with the exception 
+of the Choose Direction step.
+
+For details see: Room List (page X).
+
+exploration sequence
+
+At  the  start  of  the  game,  the  Facility  is  mostly  unexplored.  New 
+Rooms and Corridors appear as a result of Characters Moving to un-
+charted territory and exploring on their own.
+
+Place a Room of the ? type.
+Place a Room of the ? type.
+
+Reminder: 
+Reminder: 
+Place 1  if you are Moving Cautiously.
+Place 1  if you are Moving Cautiously.
+
+Entrance Effect:
+Entrance Effect:
+Entrance Effect:
+Close all Doors around this Room.
+Close all Doors around this Room.
+Remove this card from the game.
+Remove this card from the game.
+
+1
+1
+
+2
+
+3
+
+4
+
+5
+5
+6
+6
+
+Whenever a Character Moves through an Unexplored Corridor they 
+must  resolve  an  Exploration  Sequence  (as  mentioned  in  the  Move-
+ment section above).
+
+26
+
+noise roll
+
+A Noise roll is performed as a result of many different Actions and ef-
+fects (most commonly as a result of Movement) and is also the main 
+way of Noise markers 
+
+ appearing on the board.
+
+ALWAYS ROLL FOR NOISE
+A Noise roll is resolved even when Moving to a Room contain-
+ing another Character and/or Intruder.
+
+When  making  a  Noise  roll,  take  the  Noise  die,  roll  it  and  resolve 
+effects depending on the result of the roll:
+
+•
+
+1 ,  2 ,  3 ,  4  Number result  – Find all Corridors ad-
+jacent to the Room your Character is in that share the rolled 
+value. For each such Corridor, resolve in the following order:
+– If the Corridor contains at least 1 Intruder – One Intruder 
+managed  to  breach  your  defenses.  The  largest  Intruder 
+from  that  Corridor  moves  to  the  Room  containing 
+the Character.
+
+– If the Corridor already contains a Noise marker – Intrud-
+  (Noise 
+
+ers  appeared  in  the  Corridor.  Resolve  the 
+marker) there – see below.
+
+– If  the  Corridor  has  NO  Noise  markers  –  You’ve  heard 
+something. Place a Noise marker there (even on the other 
+side of a Door).
+
+Reminder:  When  an  Intruder  is  placed  in  your  Room,  it 
+immediately tries to Attack you – for details see: Intruder 
+Attack (page X).
+
+– If there is no Corridor of the corresponding value – noth-
+
+ing happens.
+
+•
+
+Hazard result – An Intruder appears in the Room out 
+of  nowhere.  Draw  an  Intruder  token  from  the  Intruder  bag 
+and resolve it according to the table below. 
+
+You are only interested in the icon on the drawn token – it 
+shows  you  what  kind  of  Intruder  is  placed  in  your  Room. 
+Disregard completely the value on the token. 
+
+Discard the token afterwards.
+
+Reminder: When an Intruder is placed in your Room, it immediately 
+tries to Attack you – for details see: Intruder Attack (page X).
+
+RESOLVING NOISE MARKERS 
+Noise  markers  are  resolved  most  frequently  as  a  result  of  rolling 
+the Noise die, but may also occur from other effects, such as from 
+Event  cards.  Resolving  a  Noise  marker  is  understood  as  Intruders 
+appearing before you in Corridors.
+
+To resolve a Noise marker remove it, draw a random Intruder token 
+from  the  Intruder  bag  and  resolve  it  according  to  the  table  below. 
+The number on the token’s back shows you how many Intruders are 
+placed in the Corridor. 
+
+Then, discard the token (unless stated otherwise). 
+
+27
+
+INTRODUCTION
+Page
+Page 6
+Page 6
+
+ENDGAME 
+CONDITIONS
+Page 7
+
+SETUP 
+Pages
+Pages 8-13
+Pages 8-13
+
+GAME ROUND 
+STRUCTURE 
+Pages
+Pages 14-17
+Pages 14-17
+
+CHARACTER 
+Pages
+Pages 18-20
+Pages 18-20
+
+MAP 
+Pages
+Pages 21-25
+Pages 21-25
+
+CHARACTER 
+MOVEMENT 
+Pages 26-29
+
+ITEMS 
+Pages
+Pages 30-31
+Pages 30-31
+
+INTRUDERS 
+Pages
+Pages 32-34
+Pages 32-34
+
+COMBAT 
+Pages
+Pages 35-36
+Pages 35-36
+
+THE QUEEN 
+Page
+Page 37
+Page 37
+
+CONTAMINATION 
+CARDS 
+Page 38
+
+ROBOT 
+Page 39
+
+PROCEDURES 
+Page 39
+
+LANDER AND 
+ANTI-AIRCRAFT 
+Page
+Page 40
+Page 40
+
+END OF 
+THE GAME 
+Page
+Page 40
+Page 40
+
+OBJECTIVE AND 
+MISSION TASK 
+Page
+Page 41
+Page 41
+
+ADDITIONAL 
+MODES 
+Page
+Page 42
+Page 42
+
+ICON GLOSSARY 
+Page 44
+
+movement example
+
+28
+
+INTRODUCTION
+Page
+Page 6
+Page 6
+
+ENDGAME 
+CONDITIONS
+Page 7
+
+SETUP 
+Pages
+Pages 8-13
+Pages 8-13
+
+GAME ROUND 
+STRUCTURE 
+Pages
+Pages 14-17
+Pages 14-17
+
+CHARACTER 
+Pages
+Pages 18-20
+Pages 18-20
+
+MAP 
+Pages
+Pages 21-25
+Pages 21-25
+
+CHARACTER 
+MOVEMENT 
+Pages
+Pages 26-29
+Pages 26-29
+
+ITEMS 
+Pages
+Pages 30-31
+Pages 30-31
+
+INTRUDERS 
+Pages
+Pages 32-34
+Pages 32-34
+
+COMBAT 
+Pages
+Pages 35-36
+Pages 35-36
+
+THE QUEEN 
+Page
+Page 37
+Page 37
+
+CONTAMINATION 
+CARDS 
+Page 38
+
+ROBOT 
+Page 39
+
+PROCEDURES 
+Page 39
+
+LANDER AND 
+ANTI-AIRCRAFT 
+Page
+Page 40
+Page 40
+
+END OF 
+THE GAME 
+Page
+Page 40
+Page 40
+
+OBJECTIVE AND 
+MISSION TASK 
+Page
+Page 41
+Page 41
+
+ADDITIONAL 
+MODES 
+Page
+Page 42
+Page 42
+
+ICON GLOSSARY 
+Page 44
+
+29
+
+gaining items
+
+search
+search
+search
+
+For each Item Icon in your Room 
+For each Item Icon in your Room 
+draw 1 Item of the corresponding type. 
+draw 1 Item of the corresponding type. 
+You may keep 1 of them and discard the rest.
+You may keep 1 of them and discard the rest.
+19
+C O M B AT   E N G I N E E R
+
+life support control "b"
+life support control "b"
+
+Flip an 
+
+/
+
+ in Section B.
+
+OR
+Items are most commonly gained by using the Search Action card. 
+Look at both Anti-Aircraft tokens 
+Some  other  cards  and  effects  work  very  similarly  to  the  Search 
+and place them 
+Action card allowing Characters to ﬁnd even more Items.
+in any order.
+
+, 
+
+, and 
+
+The Search Action card allows you to draw 1 Item card for each Item 
+Icon (
+) on the Room you are Searching in. Then, 
+you pick 1 of those cards to keep and discard the rest to the bottom 
+of their respective decks. (Items that were Searched but not chosen 
+should not be revealed to other players).
+
+For example: By Searching Life Support Control “B” you will draw 1 
+. Then, choose 1 of those cards to keep, and discard 
+
+ and 1
+
+the other one to the bottom of its corresponding deck.
+
+tactical gear slots
+Various  Items  offer  slots  for  Tactical  Gear  tokens.  Most  Weapons 
+have slots for Ammo tokens, since they require loading with Ammo 
+to be shot with.
+
+Tactical  Gear  slots  can  also  be  found  on  other  Items.  The  color  of 
+the slot shows which Tactical tokens can be placed in such a slot.
+
+As a result of losing an Item, Character also loses all Tactical Gear 
+tokens from that Item.
+
+grenade launcher 
+RANGED WEAPON, HEAVY
+
+Burst: You may use any number of 
+
+from this Weapon before 
+from this Weapon before 
+or instead of a normal Burst.
+or instead of a normal Burst.
+
+1 Tactical Gear slot 
+1 Tactical Gear slot 
+for Ammo token
+
+2 Tactical Gear slots 
+2 Tactical Gear slots 
+for Grenade tokens
+
+items
+
+Items  come  in  many  different  shapes  and  sizes.  Each  Character 
+starts  the  game  with  their  own  Character  Item.  During  setup  they 
+also get a Support Equipment, and throughout the game they may 
+ﬁnd other regular Items.
+
+All Item cards are either:
+
+• Heavy – with a horizontal layout, that can only be placed in 
+
+Hand slots.
+
+• Armor – with a vertical layout marked on the top of the card. 
+Armor is always placed in a Heavily Injured Health track slot.
+• Regular – with a vertical layout. The broadest type of Items, 
+
+which are placed in the Backpack.
+
+All Items are either Active or Passive.
+
+Passive Items provide effects that can always be applied at an own-
+er’s discretion. Those Items can never be used by performing a “Use 
+an Item” Action.
+
+Active Items, on the other hand, must be used for their effects to be 
+applied. Most of these Items are also discarded upon use.
+
+Traits – on various Items you may ﬁnd some traits, which describe 
+how a given Item can be used . Besides the Armor and the Heavy 
+Traits, there are:
+
+•
+
+Ranged Weapon, Melee Weapon – these Traits are common 
+and simply describe the Item. They have no effect on their 
+own, but many Actions may reference them. Weapons Found 
+During the Game:
+
+During the game Weapons are always found with all Tactical 
+Gear slots ﬁlled.
+
+• One Use Only – These Items are discarded when Used.
+•
+
+Requires  no  Ammo  –  Weapons  with  this  Trait  are  special 
+and require no Ammo tokens to Shoot and Burst. 
+
+Note:  For  the  sake  of  Actions  that  require  Weapons  with 
+Ammo tokens, those Items are considered as always having 
+an Ammo token on them.  
+
+backpack
+All  regular  Items  are  always  placed  in  a  Backpack  card  holder 
+and can be used by performing the “Use Item” Action. There is no 
+limit to the number of regular Items that can be held in the Backpack.
+
+30
+
+duct tape
+ONE USE ONLY
+
+Discard a 
+
+.
+
+OR
+
+Place 1 Heavy Item above 
+Place 1 Heavy Item above 
+another Heavy Item in your 
+another Heavy Item in your 
+Hand slot (effectively carrying 
+Hand slot (effectively carrying 
+2 Heavy Items in 1 Hand).
+2 Heavy Items in 1 Hand
+2 Heavy Items in 1 Hand).
+2 Heavy Items in 1 Hand).
+
+Regular Items
+
+military taser
+military taser
+ONE USE ONLY, HEAVY
+ONE USE ONLY, HEAVY
+
+Repel 1
+
+ from the Room.
+
+OR
+
+A
+
+ of your choice discards all  A .
+
+Heavy Items
+
+heavy armor
+ARMOR
+
+Whenever you would gain 
+a Serious Wound, you may lose 
+
+2
+2
+
+ instead.
+ instead.
+
+Armor
+
+regular items
+The most common type of Items are regular Items. When these Items 
+are used, simply resolve their effect. All regular Items are One Use 
+Only – meaning they are discarded upon use to an Item discard pile.
+
+When a regular Item card is gained, simply place it in the Backpack 
+card holder.
+
+heavy items
+All Items with a horizontal layout are Heavy Items. Heavy Items are 
+too big to ﬁt in a Backpack and must be held in one of the Hand slots.
+
+If such an Item is gained when all Hand slots are already taken, you 
+may ﬁrst discard one of the held Items to make space for the new 
+Item.
+
+Weapons (both Ranged and Melee) are an important subtype of Heavy 
+Items.  Ranged  Weapons  are  necessary  to  Shoot  and  Burst.  Melee 
+Attacks  can  be  done  with  either  type  of  weapon,  although  Melee 
+Weapons can do so much better.
+
+Intruder Eggs are also considered Heavy Items.
+
+For details see: Nest (page X).
+
+armor
+Armor  Items  are  all  Items  with  the  special  triple  arrow  symbol  on 
+the top. When gained, an Armor Item is always placed on the Heavily 
+Injured section of the Health track. 
+
+Only one Armor Item can be worn at any moment. When a Character 
+gains an Armor Item while already using one, they may ﬁrst discard 
+the Armor Item from their Health track to gain the new Armor. Armor 
+does not ﬁt into a Backpack card holder.
+
+When  a  Health  marker  is  to  be  moved  to  a  Health  track  section 
+with an Armor Item, that Armor Item breaks and must be discarded, 
+and then the rest of damage is applied.
+
+trade and interplay
+
+In Nemesis most effects (from Actions and Items) are used on your 
+own  Character.  The  same  way,  most  of  the  time  interaction  with 
+Items belonging to other Characters does not happen.
+
+It is possible to use an Item on another Character in the same Room, 
+if the Character in the same Room allows you to do so, and the Item 
+has one of the following effects:
+
+Restoring 
+
+•
+• Discarding Serious Wounds
+• Discarding 
+Discarding 
+Gaining 
+• Gaining 
+
+ (from Items belonging to another Character)
+
+For any other effect, you must Trade the Item to another Character, 
+so that they can use it themselves.
+
+Trading
+When a Character uses the Trade Action, all Characters in the same 
+Room  may,  with  mutual  consent,  reveal  and  exchange  Items  and/
+or Tactical Gear tokens with each other. A Character may choose to 
+give an Item and/or Tactical Gear token without asking for anything 
+in return.
+
+31
+
+INTRODUCTION
+Page
+Page 6
+Page 6
+
+ENDGAME 
+CONDITIONS
+Page 7
+
+SETUP 
+Pages
+Pages 8-13
+Pages 8-13
+
+GAME ROUND 
+STRUCTURE 
+Pages
+Pages 14-17
+Pages 14-17
+
+CHARACTER 
+Pages
+Pages 18-20
+Pages 18-20
+
+MAP 
+Pages
+Pages 21-25
+Pages 21-25
+
+CHARACTER 
+MOVEMENT 
+Pages
+Pages 26-29
+Pages 26-29
+
+ITEMS 
+Pages 30-31
+
+INTRUDERS 
+Pages
+Pages 32-34
+Pages 32-34
+
+COMBAT 
+Pages
+Pages 35-36
+Pages 35-36
+
+THE QUEEN 
+Page
+Page 37
+Page 37
+
+CONTAMINATION 
+CARDS 
+Page 38
+
+ROBOT 
+Page 39
+
+PROCEDURES 
+Page 39
+
+LANDER AND 
+ANTI-AIRCRAFT 
+Page
+Page 40
+Page 40
+
+END OF 
+THE GAME 
+Page
+Page 40
+Page 40
+
+OBJECTIVE AND 
+MISSION TASK 
+Page
+Page 41
+Page 41
+
+ADDITIONAL 
+MODES 
+Page
+Page 42
+Page 42
+
+ICON GLOSSARY 
+Page 44
+
+intruders
+
+QUEEN
+QUEEN
+
+DRONE
+DRONE
+
+ADULT
+ADULT
+
+LARVA
+LARVA
+
+Intruders are an alien species that humanity knows very little about. 
+They  are  aggressive  and  intelligent  creatures.  Intruders  come  in 
+many different types described below. All rules regarding Intruders 
+will be explained from the perspective of Adults since they are most 
+commonly met in Nemesis, but they apply to Intruders of all types, 
+unless strictly described otherwise.
+
+intruder movement
+
+Intruders  move  between  Corridors  and  Rooms  in  many  different 
+situations.  Below  you  may  ﬁnd  general  rules  that  apply  to  most 
+movements,  followed  by  a  quick  summary  of  all  possibilities 
+that may occur, and then an in-depth description of each situation 
+on the following pages.
+
+intruder types
+
+Intruders in Nemesis come in 4 different types seen above. Starting 
+from the largest:
+
+The Queen – there is only one, an extremely durable and aggressive 
+enemy.
+
+Drones are rare but more dangerous than typical Adults.
+
+Adults are the most standard type seen very frequently. They com-
+monly hunt with other Intruders as a group.
+
+Larvae  can  sometimes  be  found  in  the  Facility  –  they  are  not  as 
+deadly as the other Intruders, but come with a nasty surprise.
+
+INTRUDERS LIMIT
+INTRUDERS LIMIT
+Intruders  can  be  placed  in  both  Rooms  and  Corridors.  While 
+Intruders  can  be  placed  in  both  Rooms  and  Corridors.  While 
+Rooms can hold any number of Intruders, the maximum num-
+Rooms can hold any number of Intruders, the maximum num-
+ber of Intruders that can be placed in any Corridor is 6 (with 
+the Queen counting as 4 Intruders).
+
+For details see: Corridors (page X).
+
+Intruder models are a limited component – if you are ever in-
+Intruder models are a limited component – if you are ever in-
+structed to place more models of a certain type than available, 
+structed to place more models of a certain type than available, 
+place as many as you can and ignore the rest – it cannot get 
+place as many as you can and ignore the rest – it cannot get 
+worse.
+worse.
+
+general rules:
+
+•
+
+Intruders  move  to  the  closest  Character  using  the 
+shortest route – Intruders always move as the group in the 
+direction  of  closest  Character  (unless  speciﬁed  otherwise) 
+using the shortest possible route.
+– Doors  are  completely  disregarded  when  determining 
+
+which route is the shortest.
+
+– In case of 2 or more Characters being the same distance 
+away,  Intruders  move  to  the  Character  closest  in  Turn 
+order.
+
+•
+
+Intruders  move  between  Rooms  and  Corridors  – If 
+the moving Intruders are in a Corridor, they move to a Room. If 
+they are in a Room, they move to a Corridor.
+
+•
+
+• Only 1 Intruder enters a Room with a Character – When-
+ever  Intruders  move  to  a  Room  with  a  Character,  only 
+the largest Intruder moves to that Room instead.
+Intruders  Attack  when  moving  to  a  Room  with  a  Char-
+acter – Whenever an Intruder enters a Room with a Charac-
+ter – they always try to Attack (some effects may allow you 
+to prevent that Attack, that as Secure tokens).
+Intruders  stay  in  Combat  –  Intruders  never  move  when 
+they are in the same Room as a Character. They do not move 
+away from Combat.
+
+•
+
+intruder bag
+
+During many different Phases you will draw tokens from the Intruder 
+bag – any time that happens resolve the token according to the In-
+truder Help sheet and remove the token from the bag. Tokens are 
+always removed upon being resolved, with the only exception being 
+the Blank token, which is speciﬁcally called out by the Intruder Help 
+sheet.
+
+Speciﬁc instructions on how to resolve the Intruder bag can be found 
+on page X (Bag development).
+
+summary 
+of possible movements
+Event cards – Intruders move according to the icons on the Event 
+card.
+
+Noise  roll  –  May  sometimes  result  in  Intruders  entering  a  Room 
+from an adjacent Corridor.
+
+Repelling – Different effects may result in Intruders moving away 
+from Characters.
+
+Queen  Activation  –  One  of  the  possible  effects  of  the  Queen’s 
+Activation may result in her movement.
+
+32
+
+event cards
+event cards
+
+noise roll
+For details see: Noise roll (page X).
+
+short circuit
+
+All 
+
+Then, all 
+
+ move.
+
+ in each 
+ in every Room move.
+
+In Sections with an 
+
+: 
+ in each Room with a 
+
+Place a 
+
+.
+
+Each 
+
+ in a Room without a 
+resolves 
+
+.
+
+The ﬁrst part of an Event card always moves Intruders in the Facility. 
+You may ﬁnd 2 types of effects there:
+
+ in each 
+
+All 
+cility that are currently in a Corridor of the shown orientation.
+
+ move – Move all Intruders in the Fa-
+
+/
+
+/
+
+Whenever a Character makes a Noise roll, if Intruders are in adjacent 
+Corridors indicated by the result of the roll, one of the Intruders (priori-
+tizing the largest forms) from each such Corridor enters the Character’s 
+Room and Attacks them.
+
+repelling
+Many different effects may cause Intruders to be repelled. If a Char-
+acter repels an Intruder in an adjacent Corridor – that Intruder moves 
+away from that Character (or any other source of the repel effect).
+
+If an Intruder is being repeled, and its farther away from the source of 
+that effect, it moves to the Corridor/Room with the lowest ID number. 
+
+Repelling may result in:
+
+•
+
+•
+
+•
+
+An Intruder moving out of the Unexplored Corridor outside of 
+the visible map. In that case, the Intruder stays where they 
+are. It is impossible to Repel them further.
+An  Intruder  trying  to  move  through  Doors  –  they  Destroy 
+them instead.
+An Intruder entering a Room with Characters – in that case, 
+they Attack the ﬁrst Character in Turn order in that Room.
+
+queen's activation
+For details see: Queen’s Activation (page X).
+
+Drawing a Queen token may result in the Queen’s Activation – which 
+will result in either the Queen Attacking or moving if there is nothing 
+to Attack. The Queen moves exactly the same as other Intruders.
+
+  in  every  Room  move  –  Move  all  Intruders  currently  in 
+
+All 
+Rooms, regardless of Section.
+
+When resolving Intruder movement apply the General Rules (always 
+move towards the closest Character, using the shortest route) – start 
+from the top-left corner of the Facility and move each group of In-
+truders individually.
+
+INTRUDERS MOVING THROUGH DOORS
+INTRUDERS MOVING THROUGH DOORS
+
+1. When deciding on the path the Intruders will move through, use the shortest route regardless if Doors are in the way, or not.
+1. When deciding on the path the Intruders will move through, use the shortest route regardless if Doors are in the way, or not.
+2. Whenever Intruders would move through a closed Door, they destroy that Door and do not move instead.
+2. Whenever Intruders would move through a closed Door, they destroy that Door and do not move instead.
+
+rare movement exceptions and tiebreaks
+rare movement exceptions and tiebreaks
+
+1.
+1.
+
+2.
+2.
+
+In a situation when Intruders try to move to the closest Character, 2 different routes may be the same length – in such cases 
+In a situation when Intruders try to move to the closest Character, 2 different routes may be the same length – in such cases 
+Intruders move using the shortest route that starts with a Corridor/Room with the a lowest ID number. 
+Intruders move using the shortest route that starts with a Corridor/Room with the a lowest ID number. 
+It is possible that Intruders are unable to move because the Corridor they would move to cannot contain all of them (Corridors can 
+It is possible that Intruders are unable to move because the Corridor they would move to cannot contain all of them (Corridors can 
+ﬁt 6 Intruders maximum). If there is another route of equal length, they will move using that one instead. 
+ﬁt 6 Intruders maximum). If there is another route of equal length, they will move using that one instead. 
+
+If there is no such route, all Intruders that are able to move to that Corridor will do so, and the rest will simply wait (it is possible 
+If there is no such route, all Intruders that are able to move to that Corridor will do so, and the rest will simply wait (it is possible 
+that no Intruders move in that case).
+that no Intruders move in that case).
+
+33
+
+INTRODUCTION
+Page
+Page 6
+Page 6
+
+ENDGAME 
+CONDITIONS
+Page 7
+
+SETUP 
+Pages
+Pages 8-13
+Pages 8-13
+
+GAME ROUND 
+STRUCTURE 
+Pages
+Pages 14-17
+Pages 14-17
+
+CHARACTER 
+Pages
+Pages 18-20
+Pages 18-20
+
+MAP 
+Pages
+Pages 21-25
+Pages 21-25
+
+CHARACTER 
+MOVEMENT 
+Pages
+Pages 26-29
+Pages 26-29
+
+ITEMS 
+Pages
+Pages 30-31
+Pages 30-31
+
+INTRUDERS 
+Pages 32-34
+
+COMBAT 
+Pages
+Pages 35-36
+Pages 35-36
+
+THE QUEEN 
+Page
+Page 37
+Page 37
+
+CONTAMINATION 
+CARDS 
+Page 38
+
+ROBOT 
+Page 39
+
+PROCEDURES 
+Page 39
+
+LANDER AND 
+ANTI-AIRCRAFT 
+Page
+Page 40
+Page 40
+
+END OF 
+THE GAME 
+Page
+Page 40
+Page 40
+
+OBJECTIVE AND 
+MISSION TASK 
+Page
+Page 41
+Page 41
+
+ADDITIONAL 
+MODES 
+Page
+Page 42
+Page 42
+
+ICON GLOSSARY 
+Page 44
+
+intruder attacks
+
+infecting
+
+A
+
+ADULT
+ADULT
+ADULT
+
+DRONE
+DRONE
+DRONE
+
+QUEEN
+QUEEN
+QUEEN
+
+b
+
+Lose 2
+Lose 2
+
+.
+.
+
+Gain 1 Contamination. 
+Gain 1 Contamination. 
+If you are not infected 
+If you are not infected 
+with a Larva, place 1 Larva 
+with a Larva, place 1 Larva 
+on your Character board.
+on your Character board.
+
+Intruders will attack Characters on many different occasions. Most 
+commonly  this  happens  when  an  Intruder  enters  a  Room  with 
+a Character.
+
+standard attacks
+Whenever an Intruder Attacks a Character, draw a random Intruder 
+Attack  card  (with  the  exception  of  Larvae  Attacks,  which  are  de-
+scribed below). 
+
+The  card  is  resolved  by  ﬁnding  an  icon  matching  the  Attacking  In-
+truder type (A) and resolving the associated effect (B). Then, the card 
+is discarded.
+
+The  Intruder  Attack  deck  is  only  reshufﬂed  when  instructed  by 
+the game.
+
+LARVA ATTACKS
+When a Larva is Attacking a Character instead perform the following:
+
+1.
+
+2.
+
+Place the Attacking Larva on the Character board. If the At-
+tacked  Character  already  has  a  Larva  on  their  Character 
+board – simply discard the Attacking Larva instead.
+The  Attacked  Character  gains  1  Contamination  card 
+and places it on their discard pile.
+
+For details see: Contamination cards (page X).
+
+GOLDEN RULES OF INTRUDER ATTACKS
+Whenever an Intruder enters a Room with at least 1 Character, 
+the Intruder resolves an Intruder Attack (unless prevented by 
+a Secure token or another in-game effect). 
+If the Intruder entered as a result of a player Action, they Attack 
+that Character if possible. 
+Otherwise, they Attack the Character ﬁrst in Turn order.
+
+PREVENTING ATTACKS
+Various effects on Action cards and Items may allow a Character to 
+Prevent an Intruder Attack.
+
+If that happens, ignore the entire Intruder Attack – do not apply any 
+additional effects and do NOT draw an Intruder Attack card.
+
+34
+
+intruder health and combat
+
+Characters  can  ﬁght  Intruders  in  many  different  ways.  They  can 
+use  precise,  single  shots  at  Intruders  in  the  same  Room  or  Burst 
+at the hordes charging through Corridors. In the direst of situations 
+Melee Attacks are also an option.
+
+No matter which type of Combat occurs, the effect of such will always 
+result in assigning Hits to Intruders. When Intruders are in Corridors 
+each  Hit  will  kill  a  single  Intruder  (by  simply  removing  them  from 
+the map). When they are in a Room each Hit should be understood as 
+a Injury dealt (by placing Universal markers by the Intruder’s model). 
+
+WEAPONS
+Nearly  all  Combat  in  Nemesis  is  done  using  Weapons.  When 
+a Weapon is chosen to be used in an Action, all effects and modiﬁers 
+from the chosen Weapon must be applied, unless stated otherwise. 
+Effects of rolling a speciﬁc result are done in addition to the standard 
+result provided below.
+
+ATTACKING OTHER CHARACTERS
+ATTACKING OTHER CHARACTERS
+To  prevent  serious  conﬂict  among  the  crew,  humanity  has 
+To  prevent  serious  conﬂict  among  the  crew,  humanity  has 
+equipped their members with implants which create a  strong 
+equipped their members with implants which create a  strong 
+psychic barrier and inhibit direct violence against homo sapi-
+ens. This is why directly attacking is impossible.
+
+Characters  cannot  directly  Attack  other  Characters.  Yet  it  is 
+still possible (accidentally or intentionally) to harm other Char-
+still possible (accidentally or intentionally) to harm other Char-
+acters as a side effect of Actions. 
+acters as a side effect of Actions. 
+
+After all, trapping someone in a Room on ﬁre is not an Attack.
+After all, trapping someone in a Room on ﬁre is not an Attack.
+
+shooting
+
+bursting
+
+Shooting at very agile Intruders in 
+cramped Rooms is a difﬁcult task. 
+Shooting  in  Nemesis  will  produce 
+singular  Hits.  Each  Hit  increases 
+the likelihood of an Intruder dying, 
+but that is never certain.
+
+Characters  may  only  Shoot  at 
+the  same  Room 
+Intruders 
+and a Shot may only be done if the Character, in one of their Hand 
+slots,  has  a  Weapon  with  no  Malfunction  marker  and  at  least  1 
+Ammo token on it.
+
+in 
+
+For details see: Heavy Items (page X).
+
+Shooting  does  not,  however,  use  Ammo  (except  for  one  speciﬁc 
+result  of  the  roll,  see  further  below)  –  Characters  use  advanced 
+equipment where a single bullet loss is not signiﬁcant, unless it was 
+the last one.
+
+Shooting is resolved in the following way:
+
+1.
+
+Choose  a  Weapon  and  a  target  –   Choose  a  Weapon  in 
+a  Hand  slot.  That  Weapon  must  have  at  least  1  Ammo  to-
+ken  on  it.  Then,  choose  an  Intruder  in  the  same  Room  as 
+the Character.
+
+2. Deal 1 Hit – place 1 Universal marker next to the Intruder’s 
+
+base.
+
+3. Make a Shoot roll – Roll a Shoot die and resolve the result.
+
+a.
+
+b.
+
+c.
+
+: Critical hit. The Intruder dies. Place it back in the In-
+
+truder pool.
+
+1
+
+2
+
+3
+
+4 :  Normal  hit.  If  the  number  rolled  is 
+lower than the number of Hits on the Intruder, the Intruder 
+dies – place it back in the Intruder pool.
+ – A hit with your last bullet. Spend 
+
+.
+
+Note: Larvae and the Queen are dealt Hits the same way, but their 
+Health is resolved differently. For more see: Queen Health (page X) 
+and Larvae Health (page X).
+
+SPEND 
+An Ammo token can be used twice before it’s depleted. If you 
+have a full Ammo token and the game instructs you to spend 
+it – ﬂip it.
+If you have a half-empty Ammo token and the game instructs 
+you to spend it – discard it.
+
+When  Intruders  are  cramped  in 
+a  narrow  Corridor  it’s  best  to  use 
+Burst  ﬁre.  It  uses  a  signiﬁcant 
+amount  of  Ammo,  but  it’s  well 
+worth it. 
+
+A  Burst  may  only  be  ﬁred 
+if 
+the Character, in one of their Hand 
+slots,  has  a  Weapon  with  no  Mal-
+
+function marker and at least 1 Ammo token on it. 
+
+For details see: Heavy Items (page X).
+
+Bursts  are  always  ﬁred  at  an  adjacent  Corridor  of  a  Characters 
+choice and will result in Hits that are applied to Intruders in that Cor-
+ridor.  Hits  applied  will  kill  Intruders  –  different  types  of  Intruders 
+require different numbers of Hits to be killed.
+
+For details see: Queen’s Health (page X).
+
+Bursting is resolved in the following way:
+
+1.
+
+2.
+
+Choose  a  Weapon  and  a  Corridor  –   Choose  a  Weapon  in 
+a Hand slot. That Weapon must have at least 1 Ammo token 
+on it. Then, choose an adjacent Corridor to Burst at.
+  and  roll 
+  and  make  a  Burst  roll  –  Spend 
+Spend 
+a Burst die. The number on the die shows how many Hits will 
+be applied to Intruders in the chosen Corridor.
+
+3. Apply  Hits  –  Apply  Hits  to  Intruders  in  the  Corridor  in  any 
+
+way you decide.
+
+4. Resolve Hits – Each Adult with 1 Hit and a Drone with 2 Hits 
+
+dies – place it back in the Intruder pool.
+– You  may  not  apply  1  single  Hit  to  Drones.  When  Burst-
+ing, Hits are always applied only if they can take down 
+the given Intruder.
+
+5.
+
+ – If you rolled this result, check for any additional effects 
+that may apply (for example, from your Weapon) it does not 
+provide any additional effects by itself.
+
+35
+
+INTRODUCTION
+Page
+Page 6
+Page 6
+
+ENDGAME 
+CONDITIONS
+Page 7
+
+SETUP 
+Pages
+Pages 8-13
+Pages 8-13
+
+GAME ROUND 
+STRUCTURE 
+Pages
+Pages 14-17
+Pages 14-17
+
+CHARACTER 
+Pages
+Pages 18-20
+Pages 18-20
+
+MAP 
+Pages
+Pages 21-25
+Pages 21-25
+
+CHARACTER 
+MOVEMENT 
+Pages
+Pages 26-29
+Pages 26-29
+
+ITEMS 
+Pages
+Pages 30-31
+Pages 30-31
+
+INTRUDERS 
+Pages 32-34
+
+COMBAT 
+Pages 35-36
+
+THE QUEEN 
+Page
+Page 37
+Page 37
+
+CONTAMINATION 
+CARDS 
+Page 38
+
+ROBOT 
+Page 39
+
+PROCEDURES 
+Page 39
+
+LANDER AND 
+ANTI-AIRCRAFT 
+Page
+Page 40
+Page 40
+
+END OF 
+THE GAME 
+Page
+Page 40
+Page 40
+
+OBJECTIVE AND 
+MISSION TASK 
+Page
+Page 41
+Page 41
+
+ADDITIONAL 
+MODES 
+Page
+Page 42
+Page 42
+
+ICON GLOSSARY 
+Page 44
+
+larva health
+1 Hit is always enough to kill a Larva (even when Shooting) – how-
+ever you still must roll the appropriate die when Shooting/Bursting 
+a Larva in case of special effects or the 
+
+ result.
+
+drone health
+Killing  Drones  is  only  harder  when  they  are  in  Corridors.  Shooting 
+them  in  Rooms  is  always  resolved  the  same  as  Shooting  Adult 
+Intruders.
+
+INTRUDER HIT MARKERS
+Intruders  in  Corridors  never  have  Hit  markers  placed  beside 
+them.  An  injured  Intruder  moving  to  a  Corridor  discards  all 
+markers they may have had.
+
+melee attack
+
+In  dire  situations,  a  Character  may  choose  to  Melee  Attack  an  In-
+truder in the same Room. This should be done only as a last resort, 
+because if the Intruder lives through the Attack it will try to retaliate.
+
+To perform a Melee Attack resolve the following:
+
+1.
+
+Gain 1 Contamination card – Getting that close to Intruders 
+is always a bad idea.
+
+2. Choose  a  target  –  This  must  be  an  Intruder  in  the  same 
+
+Room as the Character.
+
+3. Deal 1 Hit – Place 1 marker next to the Intruder’s base.
+4. Make a roll – Roll a Shoot die and resolve the result:
+
+a.
+
+b.
+
+c.
+
+: Critical hit. The Intruder dies. Place it back in the In-
+
+truder pool.
+
+1
+
+2
+
+3
+
+4 :  Normal  hit.  If  the  number  rolled  is 
+lower than the number of Hits on the Intruder, the Intruder 
+dies – place it back in the Intruder pool.
+
+ – Nothing happens.
+
+5.
+
+Intruder Response OR Prevent – If the Intruder has not died 
+it will try to retaliate. 
+You may choose to place a Malfunction marker on any of your 
+Weapons.
+– If you do – Prevent this Attack.
+– Otherwise – resolve the Intruder Attack.
+Note: Placing a Malfunction marker on a Weapon with 1 al-
+ready there destroys the Weapon.
+
+36
+
+the queen
+
+queen's hits
+
+Eggs in THE Nest
+If there are no Eggs here:
+If there are no Eggs here:
+The Nest is now destroyed.
+
+queen health cards
+If there are no cards here:
+
+Remove the Queen’s model 
+and flip the Intruder Help sheet 
+to the black side.
+
+The Queen is now dead.
+
+life support
+
+queen health
+The  Queen’s  Health  works  a  little  differently  than  other  Intruders, 
+and is facilitated by the Queen’s Health cards. The Queen is much 
+harder to kill than any other Intruder.
+
+queen activation
+At  many  points  of  the  game  the  Queen  may  Activate  –  mostly  as 
+a result of drawing a Queen token from the Intruder bag.
+When the Queen Activates:
+
+•
+
+If she is in a Room with at least 1 Character – The Character 
+ﬁrst  in  Turn  order  in  that  Room  is  Attacked  by  the  Queen 
+using the standard Intruder Attacks rules.
+
+• Otherwise  –  The Queen moves in the direction of the closest 
+Character. The movement is from a Room to a Corridor or from 
+a Corridor to a Room.
+
+Throughout the game Characters may deal Hits to the Queen, both 
+by Shooting and Bursting and in effect draw cards from the Queen 
+Health deck. Those cards will have many different effects, but most 
+importantly each time a random number of them will be discarded. 
+The Queen will be killed only when all cards are discarded.
+
+DEALING HITS AND DISCARDING CARDS
+Bursts and Shots at the Queen deal Hits to her as normal, according 
+to the instructions in the Combat section of the Rulebook. For each 
+Hit dealt to the Queen progress the Universal marker on the Queen’s 
+Hits slots by 1.
+
+Whenever the Queen Health marker reaches the ﬁnal 
+
+ space (or 
+
+ is dealt in any other way): 
+• Draw the top card of the Queen Health deck.
+•
+• Discard the drawn card and reset the Queen Health track.
+
+Resolve it (discarded cards are NOT revealed).
+
+QUEEN DEATH
+When the last Queen’s Health card is discarded the Queen is consid-
+ered dead. In that case remove her model from the game.
+From that point on:
+
+•
+•
+
+Ignore effects that would place the Queen in the Facility.
+Flip the Intruder Help sheet – Queen tokens will now behave 
+differently.
+
+Discard
+Discard
+
+0
+0additional cards.
+
+Repel the Queen.
+
+QUEEN HEALTH
+QUEEN HEALTH
+PRIMEBLOOD
+
+37
+
+INTRODUCTION
+Page
+Page 6
+Page 6
+
+ENDGAME 
+CONDITIONS
+Page 7
+
+SETUP 
+Pages
+Pages 8-13
+Pages 8-13
+
+GAME ROUND 
+STRUCTURE 
+Pages
+Pages 14-17
+Pages 14-17
+
+CHARACTER 
+Pages
+Pages 18-20
+Pages 18-20
+
+MAP 
+Pages
+Pages 21-25
+Pages 21-25
+
+CHARACTER 
+MOVEMENT 
+Pages
+Pages 26-29
+Pages 26-29
+
+ITEMS 
+Pages
+Pages 30-31
+Pages 30-31
+
+INTRUDERS 
+Pages
+Pages 32-34
+Pages 32-34
+
+COMBAT 
+Pages 35-36
+
+THE QUEEN 
+Page 37
+
+CONTAMINATION 
+CARDS 
+Page 38
+
+ROBOT 
+Page 39
+
+PROCEDURES 
+Page 39
+
+LANDER AND 
+ANTI-AIRCRAFT 
+Page
+Page 40
+Page 40
+
+END OF 
+THE GAME 
+Page
+Page 40
+Page 40
+
+OBJECTIVE AND 
+MISSION TASK 
+Page
+Page 41
+Page 41
+
+ADDITIONAL 
+MODES 
+Page
+Page 42
+Page 42
+
+ICON GLOSSARY 
+Page 44
+
+contamination 
+cards
+
+Contamination  cards  are  one  of  the  consequences  of  interacting 
+with Intruders. Some effects, such as Intruder Attacks, may result 
+in Characters receiving Contamination cards. 
+
+hidden text
+Each Contamination card contains hidden text that remains a secret 
+until a game effect allows the player to Scan a Contamination card. 
+
+Can't be discarded for Actions. 
+You may discard this card when you Pass.
+
+ContAmination
+
+ICSNBAJD
+ICSNBAJD
+INFECTED
+INFECTED
+IBSACSFD
+IBSACSFD
+IGHWAEFD
+IGHWAEFD
+IYSFEWED
+IYSFEWED
+
+When a Contamination card is gained, it is always placed in a Char-
+acter’s discard pile.
+
+Contamination cards are undesirable by players and affect them in 
+two ways:
+
+1.
+
+2.
+
+They  ﬁll  up  the  Action  deck  –  Although  Contamination 
+cards  share  the  back  layout  with  Action  cards  (since  they 
+are shufﬂed with the Action cards), they are NOT considered 
+Action  cards.  This  means  they  can  NOT  be  used  as  Action 
+cards to pay for Actions. They are, simply speaking, useless.
+They increase the risk of dying – Having many Contamina-
+tion cards in an Action deck at the End of the Game makes it 
+more likely for a Character to die.
+
+For details see: Infection Procedure (page X) and Eclosion Procedure 
+(page X).
+
+In such a case the player can decipher the card using the Scanner. 
+
+When Scanning a Contamination card you are looking for the word 
+INFECTED:
+
+•
+
+•
+
+If the card contains this exact word, it means the Contamina-
+tion card is Infected.
+If the card does not contain that word, the card is Not Infected.
+
+The exact effect of Scanning Contamination cards is dependent on 
+the Action used and should be described by the Action. Most com-
+monly it is associated with the Infection Procedure.
+
+For details see: Infection Procedure (page X).
+
+infected by larva
+Too  much  Contamination  may  result  in  a  Character  being  a  host 
+for a Larva and, in effect, end with a Character’s death at the End 
+of the Game.
+
+The most common effect of being Infected is placing a Larva model 
+on a Character board. Having a Larva on a Character board does not 
+incur any penalties but heavily increases the chance of that Charac-
+ter’s death during the End of the Game checks.
+
+For details see: Eclosion Procedure (next page).
+
+Larvae can be removed from Characters with a few in-game effects, 
+such as the Surgery Room.
+
+38
+
+robot
+
+Characters, while exploring the Fa-
+cility,  may  come  upon  a  friendly 
+Robot 
+  in  the  Hibernatorium 
+that  they  can  use  to  aid  them  in 
+their  missions.  At  the  start  of 
+the  game  it  is  not  known  which 
+Robot  is  currently  used  in  the  Fa-
+cility  –  it  is  chosen  randomly  at 
+the  start.  The  Robot  also  does 
+nothing on it’s own, they only perform Actions they’ve been assigned 
+by Characters.
+
+The Robot is completely ignored by Intruders in all cases – they 
+are not interested in mechanical beings.
+
+ACTIVATING THE ROBOT
+There are 6 different Robot cards but only 1 can appear in a given 
+game. Each card has a unique effect associated with the Robot.
+
+Characters may use the “Activate the Robot” Action by discarding 
+1 Action card:
+
+•
+
+Locally – if they are in a Room with the Robot
+
+OR
+
+• Remotely  –  if  they  are  in  a  Room  with  a  Computer 
+
+and they discard 1 additional Action card.
+
+DATA TOKEN
+DATA TOKEN
+
+A  Data  token  may  be  gained  by 
+using the Server Room Action. 
+
+Ch  aracters  with  this  token  may 
+Activate  the  Robot  remotely  by 
+discarding only 1 Action card.
+
+MALFUNCTION MARKER ON THE ROBOT
+The  Robot  can  sometimes  get  broken.  Various  game  effects  may 
+place a Malfunction marker on the Robot.
+
+A Robot with a Malfunction marker is considered to have no Action 
+and all game effects mentioning the Robot (for example the Drilling 
+Room) are unavailable. Tactical Gear tokens on the Robot can still 
+be used, however.
+
+If  a  Character  is  in  a  Room  with  the  Robot,  Actions  that  discard 
+Malfunction markers may also do so from the Robot.
+
+ROBOT MOVEMENT
+The Robot never moves on it’s own. All of its movement is done as a 
+result of player Actions. 
+
+The Robot moves from a Room to a neighboring Room. It 
+ignores Intruders (even the ones in Corridors) and 
+ but 
+it cannot move through Doors. It never makes a Noise roll.
+The  Robot  can  never  move  through  an  Unexplored  Corridor  to  Ex-
+plore a new Room.
+
+ROBOT’S TACTICAL BELT
+The  Robot  has  it’s  own  Tactical  Belt  and  starts  with  2  tokens  –  1 
+Ammo token and 1 Oxygen token. When a player Uses their Tactical 
+Gear tokens, while they are in the same Room as the Robot, they may 
+also Use the Robot’s Tactical Gear tokens.
+
+In that case the tokens can also be moved to the Character’s Tactical 
+Gear slots.
+
+DESTROYED FACILITY
+When  the  Facility  is  destroyed,  the  game  ends  –  all  Charac-
+ters in the Facility (even Hibernated) and Intruders (including 
+the Queen) are considered killed. All Rooms (including the Nest) 
+are considered Destroyed.
+
+procedures
+
+There are several Procedures that can be referenced by the game. 
+Any  time  the  game  instructs  you  to  resolve  a  certain  Procedure, 
+simply follow the steps below.
+escape procedure
+The Escape Procedure is used any time a Character performs a Hiberna-
+torium, Landing Zone or Escape Shuttle Room Action.
+
+When  an  Escape  Procedure  is  resolved  make  a  Noise  roll  using 
+the standard rules and:
+
+•
+
+•
+
+If an Intruder appears in the Room – the Action is unsuccess-
+ful and ends immediately.
+If  no  Intruder  appears  in  the  Room  –  you  successfully  per-
+form the Action.
+
+For details see: Noise roll (page X).
+infection procedure
+The Infection Procedure is used to check whether you are infected 
+with Larva.
+
+The Infection Procedure is always performed at the End of the Game 
+(after  drawing  all  cards  to  the  player’s  hand),  but  may  also  some-
+times be performed during the game (for example, by using the Rest
+Action card).
+
+To resolve the Infection Procedure:
+
+1.
+2.
+
+Scan all Contamination cards in hand.
+Look for the word INFECTED on the Scanned cards:
+
+a.
+
+b.
+
+If  you  ﬁnd  the  word  Infected  on  a  card,  it  is  Infected  – 
+place a Larva on your Character board, if you don’t have 
+one already.
+If you don’t ﬁnd such a word, the card is Uninfected.
+
+3. Discard all Contaminations from your hand.
+
+For details see: Contaminations (page X).
+
+eclosion procedure
+The  Eclosion  Procedure  is  a  moment  when  we  check  whether  a 
+Character can survive being infected with a Larva.
+
+The Eclosion Procedure is always performed at the End of the Game, 
+but may also sometimes be performed during the game (for example, 
+because of an Event effect).
+
+To resolve the Eclosion Procedure:
+
+1.
+2.
+
+Draw 4 cards from your Action deck.
+If any of the cards at this point in your hand is a Contamina-
+tion card your Character dies, regardless Infection status of 
+the of the drawn Contamination cards.
+– If this step was done during the game, place 1 Adult in 
+the  Room  –  it  may  result  in  an  Intruder  Attack  against 
+another Character.
+
+3. Discard all cards from your hand.
+
+autodestruction procedure 
+autodestruction procedure 
+The Facility is installed with an Autodestruction Procedure in case 
+of emergency. It can be easily turned on in the Cooling System, but 
+turning it off is not an easy task. It requires a complete power shut-
+down in the Reactor Room.
+
+When  an  Autodestruction  Procedure  is  Activated  for  the  ﬁrst  time, 
+place the Autodestruction token 5 spaces ahead of the current round 
+marker (there should be 4 empty spaces between the Round marker 
+and the Autodestruction token). If there are not enough spaces on 
+the  Round  track,  place  the  Autodestruction  token  behind  the  last 
+space – the Autodestruction will activate upon the game end instead.
+
+When a Round marker moves to the same space as the Autodestruc-
+tion token, the Facility is destroyed and the game ends. 
+
+The  Autodestruction  can  only  be  turned  off  by  using  the  Reactor 
+Room.
+
+39
+
+INTRODUCTION
+Page
+Page 6
+Page 6
+
+ENDGAME 
+CONDITIONS
+Page 7
+
+SETUP 
+Pages
+Pages 8-13
+Pages 8-13
+
+GAME ROUND 
+STRUCTURE 
+Pages
+Pages 14-17
+Pages 14-17
+
+CHARACTER 
+Pages
+Pages 18-20
+Pages 18-20
+
+MAP 
+Pages
+Pages 21-25
+Pages 21-25
+
+CHARACTER 
+MOVEMENT 
+Pages
+Pages 26-29
+Pages 26-29
+
+ITEMS 
+Pages
+Pages 30-31
+Pages 30-31
+
+INTRUDERS 
+Pages
+Pages 32-34
+Pages 32-34
+
+COMBAT 
+Pages
+Pages 35-36
+Pages 35-36
+
+THE QUEEN 
+Page
+Page 37
+Page 37
+
+CONTAMINATION 
+CARDS 
+Page 38
+
+ROBOT 
+Page 39
+
+PROCEDURES 
+Page 39
+
+LANDER AND 
+ANTI-AIRCRAFT 
+Page
+Page 40
+Page 40
+
+END OF 
+THE GAME 
+Page
+Page 40
+Page 40
+
+OBJECTIVE AND 
+MISSION TASK 
+Page
+Page 41
+Page 41
+
+ADDITIONAL 
+MODES 
+Page
+Page 42
+Page 42
+
+ICON GLOSSARY 
+Page 44
+
+lander
+and anti-aircraft 
+system
+
+active
+
+inactive
+
+The Facility is equipped with Anti-Aircraft systems. As such, trying 
+to Escape it using the Lander 
+
+ may prove impossible.
+
+At  the  start  of  the  game  Characters  do  not  know  if  the  system  is 
+working or not, and it’s up to them to gather this information.
+
+The  Anti-Aircraft  system  is  represented  by  2  Anti-Aircraft  tokens. 
+During game setup, these tokens are placed face-down at the top of 
+the Facility in a random order. The token on top indicates the status of 
+the Anti-Aircraft system.
+
+During  the  game  Characters  may  check  and  swap  those  tokens 
+using the Life Support Control “B” Room.
+
+RESOLVING ANTI-AIRCRAFT TOKENS
+Anti-Aircraft  tokens  are  resolved  in  only  one  situation  –  when 
+a  Round  marker  is  placed  on  the  space  with  the  Lander  token  – 
+the  Lander  tries  to  land  in  the  Facility  but  may  be  destroyed  in 
+the process. Check the top Anti-Aircraft token.
+
+•
+•
+
+If it’s ACTIVE – the Lander is shot down. Discard the token.
+If it’s INACTIVE – the Lander lands safely. Place the token on 
+the Landing Zone Room. From now on Characters may use 
+the Landing Zone Room to try and Escape.
+
+For details see: Room List (page X).
+
+When an Anti-Aircraft token is resolved, leave it revealed on top of 
+the  other  Anti-Aircraft  token.  From  that  point  on,  the  Anti-Aircraft 
+token cannot be changed again in any way.
+
+lander
+A Character can get into the Lander by using the Landing Zone Room 
+Action, while the Lander token is already on the Landing Zone Room. 
+The Character models in the Lander are placed on the Anti-Aircraft 
+space. 
+
+While a Character is in the Lander:
+
+• Their Turns are skipped (but they do not Pass).
+• They do not lose Oxygen, nor do they lose Health from any 
+effects (such as Fire in the Room). They are effectively “out 
+of the game”.
+If any Intruder appears in the Landing Zone, they immediately 
+leave the Lander and may act again during their next Turn. 
+
+•
+
+TAKING OFF USING THE LANDER
+At the very start of the Event Phase any Character in the Lander may 
+decide to Take Off. If that happens:
+
+•
+•
+
+Remove the Lander token from game.
+Place all Character models that were in that Lander, on their 
+respective  Character  boards  –  they  have  safely  Escaped 
+the Facility and no longer take part in the game.
+
+Note: This is not a collaborative decision! It is enough for 1 Character 
+to decide to Take Off.
+
+ESCAPE SHUTTLE
+Anti-Aircraft systems do not interact with the Escape Shuttle in any 
+way.
+
+end of the game
+
+When  the  game  ends  there  are  still  a  few  checks  that  need  to  be 
+done before players can determine winners.
+
+At the end of the game perform the following sequence in order:
+
+1.
+
+2.
+
+3.
+
+Each Character without a Larva on their Character board
+–  Draws  all  cards  from  the  deck  and  discard  pile  to  hand 
+and performs the Infection Procedure. 
+Each  Character  that  currently  has  a  Larva  on  their 
+Character board – If a Character now has a Larva on their 
+Character board they gain 1 Contamination card and shufﬂes 
+their  hand  back  into  their  deck  and  performs  the  Eclosion 
+Procedure.
+For  details  see:  Infection  Procedure  (page  X)  and  Eclosion 
+Procedure (page X).
+Each  Character  who  is  still  alive  –  Reveals  and  checks 
+their Objective.
+–  If a Character has not chosen an Objective until that point, 
+they simply do so now (before other players reveal their 
+Objectives).
+
+4.
+
+Each  remaining  Character  who  succeeded  in  completing 
+their Objective wins the game!
+
+40
+
+objective 
+and mission task
+
+Each Character has their own ambitions and desires, but the choices 
+they  make  are  rarely  set  in  stone.  Objective  cards  are  goals  they 
+choose during the game.
+
+The Mission Task is a common mission for the squad. This card is 
+revealed at the start of the game and can never change.
+
+The Mission Task is available for players to be fulﬁlled, if their Mis-
+sion Objective cards interact with it – some may require the player 
+to fulﬁll the Task, but some may require the opposite. 
+
+Objective  cards  are  dealt  individually  to  each  player.  There  are 
+two  types  of  Objective  cards,  and  each  player  is  dealt  1  of  each 
+at  the  start  of  the  game.  During  the  game  players  have  to  make 
+a choice between one of their cards and fulﬁll all the requirements 
+on that card to win the game. 
+
+•
+
+Private  Objectives  –  these  cards  are  all  unique  and  may 
+feature a variety of conditions a Character should fulﬁll.
+• Mission  Objectives  –  these  are  all  connected  to  the  Mis-
+sion  Task  in  some  way.  Most  will  just  require  you  to  fulﬁll 
+the Mission Task but in rare cases they may force you to play 
+against other players.
+
+ESCAPED CHARACTERS
+ESCAPED CHARACTERS
+Some Objectives may require a Character to Escape the Facility.
+Some Objectives may require a Character to Escape the Facility.
+Some Objectives may require a Character to Escape the Facility.
+All  Characters  who  have  Escaped  from  the  Facility  are  con-
+All  Characters  who  have  Escaped  from  the  Facility  are  con-
+siderd  Escaped,  even  if  the  Infection  Procedure  would  leave 
+siderd  Escaped,  even  if  the  Infection  Procedure  would  leave 
+them dead in the process.
+them dead in the process.
+
+Remove the other Objective from the game to:
+Remove the other Objective from the game to:
+Progress the Objective Choice track once 
+Progress the Objective Choice track once 
+and draw  A  accordingly.
+and draw  A  accordingly.
+
+2+
+
+veni, vidi, vici
+
+The Nest (Section C) 
+must be destroyed.
+2+
+PRIVATE OBJECTIVE
+
+primary samples
+primary samples
+
+All 
+
+ who Escape from the Facility 
+
+must be carrying at least 2 Eggs 
+in total among them
+(no matter if they Survive after Escaping).
+MISSION TASK
+MISSION TASK
+
+INTRODUCTION
+Page
+Page 6
+Page 6
+
+ENDGAME 
+CONDITIONS
+Page 7
+
+SETUP 
+Pages
+Pages 8-13
+Pages 8-13
+
+GAME ROUND 
+STRUCTURE 
+Pages
+Pages 14-17
+Pages 14-17
+
+CHARACTER 
+Pages
+Pages 18-20
+Pages 18-20
+
+MAP 
+Pages
+Pages 21-25
+Pages 21-25
+
+CHARACTER 
+MOVEMENT 
+Pages
+Pages 26-29
+Pages 26-29
+
+ITEMS 
+Pages
+Pages 30-31
+Pages 30-31
+
+INTRUDERS 
+Pages
+Pages 32-34
+Pages 32-34
+
+COMBAT 
+Pages
+Pages 35-36
+Pages 35-36
+
+THE QUEEN 
+Page
+Page 37
+Page 37
+
+CONTAMINATION 
+CARDS 
+Page 38
+
+ROBOT 
+Page 39
+
+PROCEDURES 
+Page 39
+
+LANDER AND 
+ANTI-AIRCRAFT 
+Page 40
+
+END OF 
+THE GAME 
+Page 40
+
+OBJECTIVE AND 
+MISSION TASK 
+Page 41
+
+ADDITIONAL 
+MODES 
+Page
+Page 42
+Page 42
+
+ICON GLOSSARY 
+Page 44
+
+41
+
+additional modes
+Deadly Mode
+
+You may wish to increase the difﬁculty of the game. This mode is 
+available both in the standard and in the Solo/Coop version of the 
+game.
+
+solo and coop rules
+
+While  Nemesis  shines  as  a  semi-cooperative  experience,  you  can 
+also play it in fully cooperative mode, or even solo. To facilitate that, 
+special Solo-coop Objectives are used.
+
+In Deadly mode some Corridors have 2 Noise values increasing the 
+chances of Intruders appearing and entering Rooms.
+
+When playing the Deadly mode use on Corridors both the standard 
+Noise values and the second, smaller Noise values.
+
+Corridors are treated as having both of those Noise values for any 
+effects.
+
+setup
+Apply the following changes to the setup of the game:
+
+1.
+
+Instead  of  placing  a  random  Mission  Task  card,  draw  and 
+place  1  Solo/coop  Mission  Task  for  each  Character  taking 
+part in the game.
+
+2. Do NOT draw standard Objective cards. They are not used 
+
+For the sake of any Tie-breaks use only the standard Noise value.
+
+in this mode.
+
+winning
+To win, all Mission Tasks must be fulﬁlled, and at least 1 Character 
+must survive.
+
+Note: If there are multiple Objectives requiring you to fulﬁll a require-
+ment (such as gaining a Data token), that many Characters must do 
+so and survive.
+
+There  may  be  a  situation  in  which  the  Tasks  require  you  to  have 
+more Data tokens than there are Characters in the game. In that case 
+simply gain as many as it’s possible.
+
+revive (coop only)
+In this fully cooperative mode, the Surgery Room is equipped with 
+a special AutoDoc device, allowing the marines to revive any near 
+death person.
+
+Whenever one of the Characters dies, leave their model on the board 
+knocked  over.  When  Moving  from  a  Room  containing  the  model, 
+another  Character  may  take  the  model  with  them  by  discarding  1 
+additional Action card.
+
+If a knocked over Character model starts a Round in a Surgery Room 
+(there must be no Intruders and no Malfunction marker there), they 
+are placed back up and discard all Serious Wounds.
+
+Difficulty
+We recommend starting with the standard setup, but it is possible to 
+change the difﬁculty of the game for groups that are new or groups 
+that are more experienced with Nemesis.
+
+To do so, simply increase (or decrease) the number of Mission Tasks 
+during setup.
+
+42
+
+INTRODUCTION
+Page
+Page 6
+Page 6
+
+ENDGAME 
+CONDITIONS
+Page 7
+
+SETUP 
+Pages
+Pages 8-13
+Pages 8-13
+
+GAME ROUND 
+STRUCTURE 
+Pages
+Pages 14-17
+Pages 14-17
+
+CHARACTER 
+Pages
+Pages 18-20
+Pages 18-20
+
+MAP 
+Pages
+Pages 21-25
+Pages 21-25
+
+CHARACTER 
+MOVEMENT 
+Pages
+Pages 26-29
+Pages 26-29
+
+ITEMS 
+Pages
+Pages 30-31
+Pages 30-31
+
+INTRUDERS 
+Pages
+Pages 32-34
+Pages 32-34
+
+COMBAT 
+Pages
+Pages 35-36
+Pages 35-36
+
+THE QUEEN 
+Page
+Page 37
+Page 37
+
+CONTAMINATION 
+CARDS 
+Page 38
+
+ROBOT 
+Page 39
+
+PROCEDURES 
+Page 39
+
+LANDER AND 
+ANTI-AIRCRAFT 
+Page
+Page 40
+Page 40
+
+END OF 
+THE GAME 
+Page
+Page 40
+Page 40
+
+OBJECTIVE AND 
+MISSION TASK 
+Page
+Page 41
+Page 41
+
+ADDITIONAL 
+MODES 
+Page 42
+
+ICON GLOSSARY 
+Page 44
+
+43
+
+icon glossary
+dice–related icons
+1
+
+,  2 ,  3 ,  4 , 
+
+, 
+
+ Shoot die icons – Speciﬁc results 
+
+on a Shoot die. 
+
+In  this  speciﬁc  prototype,  results  with 
+a die).
+1 ,  2 ,  3 ,  4 , 
+Burst die. 
+
+ Burst die icons – Speciﬁc results on a 
+
+  look  different  on 
+
+0 ,  1 ,  2 ,  3 ,  4 , 
+on a Noise die.
+
+ Noise die icons – Speciﬁc results 
+
+map–related icons
+
+, 
+
+, 
+
+ Red, Yellow, Green Item – An Item of a speciﬁc type.
+
+ System – Shows whether a speciﬁc Room has working system 
+
+access.
+
+Fire marker 
+
+ Malfunction marker – Shows whether something is broken. It 
+
+may be in a Room, but also on a Robot or a Heavy Item.
+
+ Noise marker
+
+ Secure token
+
+, 
+
+, 
+
+ Corridor icons (the rotation of the icon is import-
+
+ant) – Shows Corridors in the Facility in that speciﬁc state.
+
+, 
+
+  Active/Inactive  Life  Support  systems  –  Re-
+
+lated tokens can be found on each Section tile.
+
+, 
+
+  Active/Inactive  Hibernatorium  –  The  related 
+
+token can be found on Section tile B.
+
+Lander token
+
+ Autodestruction token
+
+tactical gear icons
+Oxygen Tactical Gear token
+
+Ammo Tactical Gear token
+
+Grenade Tactical Gear token
+
+Medpack Tactical Gear token
+
+general
+
+ Player Character
+
+ Oxygen – in the Character supply. 
+
+ Health points
+
+A  Action card
+ Robot
+
+ Not In Combat – Actions with this icon cannot be performed in 
+
+a Room with Intruders.
+
+ Intruder
+
+44
+
+

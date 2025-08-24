@@ -64,6 +64,14 @@ def _noise_roll(state: GameState, action: Action) -> NoiseTarget:
     # More elaborate dice logic can be added later.
     return 'corridor'
 
+def _last_bullet_trigger(attack_deck_value: int) -> bool:
+    """
+    Deterministic stand-in for the “last-bullet” symbol on the Shoot die.
+    Returns True when the provided value is a multiple of 5.
+    (Uses deck counter before it is decremented.)
+    """
+    return attack_deck_value % 5 == 0 if attack_deck_value > 0 else False
+
 class Rules:
     def legal_actions(self, state: GameState) -> List[Action]:
         actions: List[Action] = []
@@ -89,6 +97,8 @@ class Rules:
                 # SHOOT only if gun ready & ammo
                 if state.ammo > 0 and not state.weapon_jammed:
                     actions.append(Action(ActionType.SHOOT))
+                    # BURST action (ranged attack) – same gating as SHOOT
+                    actions.append(Action(ActionType.BURST))
             
             # Room actions ----------------------------------------------------
             room_type = state.board.room_types.get(state.player_room)
@@ -229,44 +239,83 @@ class Rules:
         # Handle SHOOT
         # --------------------------------------------------------------------
         elif action.type is ActionType.SHOOT:
-            if state.player_room in state.intruders and state.ammo > 0:
+            if (
+                state.player_room in state.intruders
+                and state.ammo > 0
+                and not state.weapon_jammed
+            ):
                 new_intruders = dict(state.intruders)
-                ammo = state.ammo - 1
-                attack_deck = state.attack_deck
+                attack_deck_val = state.attack_deck
+
+                # Determine outcome & last-bullet BEFORE deck decrement
+                outcome = _attack_outcome(attack_deck_val)
+                last_bullet = _last_bullet_trigger(attack_deck_val)
+
+                # Decrement deck if possible
+                new_attack_deck = max(attack_deck_val - 1, 0)
+
+                # Consume ammo only on last-bullet symbol
+                ammo_spent = 1 if last_bullet else 0
+                ammo = max(state.ammo - ammo_spent, 0)
+
                 weapon_jammed = state.weapon_jammed
 
-                if weapon_jammed:
-                    # Jammed gun: consume ammo, but no other effect
-                    new_state = new_state.next(ammo=ammo)
-                    actions_in_turn += 1
-                else:
-                    outcome = _attack_outcome(attack_deck)
-                    if attack_deck > 0:
-                        attack_deck -= 1
+                # Apply damage / jam according to outcome
+                if outcome in ("hit", "crit"):
+                    dmg = 1 if outcome == "hit" else 2
+                    hp = new_intruders[state.player_room] - dmg
+                    if hp <= 0:
+                        new_intruders.pop(state.player_room)
+                    else:
+                        new_intruders[state.player_room] = hp
+                elif outcome == "jam":
+                    weapon_jammed = True
+                # miss → nothing
 
-                    if outcome == "hit":
-                        hp = new_intruders[state.player_room] - 1
-                        if hp <= 0:
-                            new_intruders.pop(state.player_room)
-                        else:
-                            new_intruders[state.player_room] = hp
-                    elif outcome == "crit":
-                        hp = new_intruders[state.player_room] - 2
-                        if hp <= 0:
-                            new_intruders.pop(state.player_room)
-                        else:
-                            new_intruders[state.player_room] = hp
-                    elif outcome == "jam":
-                        weapon_jammed = True
-                    # miss → no damage
+                new_state = new_state.next(
+                    intruders=new_intruders,
+                    ammo=ammo,
+                    attack_deck=new_attack_deck,
+                    weapon_jammed=weapon_jammed,
+                )
+                actions_in_turn += 1
 
-                    new_state = new_state.next(
-                        intruders=new_intruders,
-                        ammo=ammo,
-                        attack_deck=attack_deck,
-                        weapon_jammed=weapon_jammed,
-                    )
-                    actions_in_turn += 1
+        # --------------------------------------------------------------------
+        # Handle BURST (always consumes 1 ammo)
+        # --------------------------------------------------------------------
+        elif action.type is ActionType.BURST:
+            if (
+                state.player_room in state.intruders
+                and state.ammo > 0
+                and not state.weapon_jammed
+            ):
+                new_intruders = dict(state.intruders)
+                attack_deck_val = state.attack_deck
+                outcome = _attack_outcome(attack_deck_val)
+                new_attack_deck = max(attack_deck_val - 1, 0)
+
+                # BURST always spends exactly 1 ammo up-front
+                ammo = state.ammo - 1
+
+                weapon_jammed = state.weapon_jammed
+
+                if outcome in ("hit", "crit"):
+                    dmg = 1 if outcome == "hit" else 2
+                    hp = new_intruders[state.player_room] - dmg
+                    if hp <= 0:
+                        new_intruders.pop(state.player_room)
+                    else:
+                        new_intruders[state.player_room] = hp
+                elif outcome == "jam":
+                    weapon_jammed = True
+
+                new_state = new_state.next(
+                    intruders=new_intruders,
+                    ammo=ammo,
+                    attack_deck=new_attack_deck,
+                    weapon_jammed=weapon_jammed,
+                )
+                actions_in_turn += 1
 
         # --------------------------------------------------------------------
         # Handle MELEE

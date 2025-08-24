@@ -27,32 +27,36 @@ class TestAmmoAndAttackDeck(unittest.TestCase):
         shoot_actions = [a for a in legal_actions if a.type == ActionType.SHOOT]
         self.assertEqual(len(shoot_actions), 0, "SHOOT should not be legal when ammo is 0")
 
-    def test_shoot_consumes_ammo(self):
-        """Test that SHOOT action consumes ammo with each shot."""
-        # Create state with intruder in player's room and 3 ammo
+    # ------------------------------------------------------------------ #
+    # Updated ammo-spend behaviour                                       #
+    # ------------------------------------------------------------------ #
+
+    def test_shoot_spends_ammo_only_on_last_bullet(self):
+        """
+        First shot (attack_deck=11) → no last-bullet symbol → ammo unchanged.
+        Second shot (attack_deck=10) → triggers last-bullet → ammo ‑1.
+        """
         state = self.initial_state.next(
-            intruders={"A": 2},  # Intruder with 2 HP in room A
-            ammo=3,              # 3 ammo
-            attack_deck=10       # Plenty of attack cards
+            intruders={"A": 2},
+            ammo=3,
+            attack_deck=11
         )
-        
-        # Verify SHOOT action is available
-        legal_actions = self.rules.legal_actions(state)
-        shoot_actions = [a for a in legal_actions if a.type == ActionType.SHOOT]
-        self.assertEqual(len(shoot_actions), 1, "Should have SHOOT action available")
-        
-        # Shoot once
-        shoot_action = shoot_actions[0]
-        state_after_shoot = self.rules.apply(state, shoot_action)
-        
-        # Verify ammo decreased by 1
-        self.assertEqual(state_after_shoot.ammo, 2, "Ammo should decrease by 1 after SHOOT")
-        
-        # Shoot again
-        state_after_second_shoot = self.rules.apply(state_after_shoot, shoot_action)
-        
-        # Verify ammo decreased again
-        self.assertEqual(state_after_second_shoot.ammo, 1, "Ammo should decrease by 1 after second SHOOT")
+
+        shoot = [a for a in self.rules.legal_actions(state) if a.type == ActionType.SHOOT][0]
+
+        # First SHOOT – deck 11 → outcome 'hit', last_bullet False
+        s1 = self.rules.apply(state, shoot)
+        self.assertEqual(s1.ammo, 3, "Ammo should NOT be spent without last-bullet symbol")
+        self.assertEqual(s1.attack_deck, 10, "Attack deck must decrement")
+        self.assertEqual(s1.intruders.get("A", 0), 1, "Intruder HP should reduce by 1")
+
+        # Second SHOOT – deck 10 → last_bullet True (multiple of 5)
+        shoot2 = [a for a in self.rules.legal_actions(s1) if a.type == ActionType.SHOOT][0]
+        s2 = self.rules.apply(s1, shoot2)
+
+        self.assertEqual(s2.ammo, 2, "Ammo spent on last-bullet outcome")
+        self.assertEqual(s2.attack_deck, 9)
+        self.assertNotIn("A", s2.intruders, "Intruder eliminated after second hit")
 
     def test_no_damage_with_empty_attack_deck(self):
         """Test that SHOOT consumes ammo but doesn't damage intruder when attack_deck is 0."""
@@ -73,7 +77,7 @@ class TestAmmoAndAttackDeck(unittest.TestCase):
         state_after_shoot = self.rules.apply(state, shoot_action)
         
         # Verify ammo decreased
-        self.assertEqual(state_after_shoot.ammo, 2, "Ammo should decrease after SHOOT")
+        self.assertEqual(state_after_shoot.ammo, 3, "Ammo should not decrease when attack deck empty (no last-bullet)")
         
         # Verify intruder HP unchanged (no damage with empty attack deck)
         self.assertEqual(state_after_shoot.intruders.get("A", 0), 2, 
@@ -154,7 +158,7 @@ class TestAmmoAndAttackDeck(unittest.TestCase):
         s1 = self.rules.apply(state, shoot)
 
         # Ammo spent, no damage done
-        self.assertEqual(s1.ammo, 1, "Ammo should drop by 1")
+        self.assertEqual(s1.ammo, 2, "Ammo should NOT drop on jam when no last-bullet")
         self.assertEqual(s1.intruders.get("A", 0), 2, "No damage on jammed shot")
         self.assertTrue(s1.weapon_jammed, "Gun should be jammed after jam outcome")
 
@@ -178,6 +182,29 @@ class TestAmmoAndAttackDeck(unittest.TestCase):
         legal4 = self.rules.legal_actions(s4)
         self.assertTrue(any(a.type == ActionType.SHOOT for a in legal4),
                         "SHOOT should be legal again after clearing jam when sharing room with intruder")
+
+    # ------------------------------------------------------------------ #
+    # New BURST tests                                                    #
+    # ------------------------------------------------------------------ #
+
+    def test_burst_always_consumes_ammo_and_deals_damage(self):
+        """BURST consumes 1 ammo up-front, decrements attack deck and applies damage."""
+        state = self.initial_state.next(
+            intruders={"A": 2},
+            ammo=3,
+            attack_deck=10   # outcome 'hit'
+        )
+
+        burst = [a for a in self.rules.legal_actions(state) if a.type == ActionType.BURST][0]
+
+        s1 = self.rules.apply(state, burst)
+
+        # Ammo spent
+        self.assertEqual(s1.ammo, 2, "BURST must spend exactly 1 ammo")
+        # Attack deck decremented
+        self.assertEqual(s1.attack_deck, 9)
+        # Intruder HP reduced by 1
+        self.assertEqual(s1.intruders.get("A", 0), 1, "BURST should deal damage based on outcome")
 
 if __name__ == "__main__":
     unittest.main()

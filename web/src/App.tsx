@@ -480,6 +480,17 @@ export default function App() {
                 </button>
               )}
               
+              {/* BURST if available */}
+              {findAction('BURST') && (
+                <button
+                  onClick={() => execAction(findAction('BURST')!)}
+                  disabled={loading}
+                  style={{ padding: '4px 12px' }}
+                >
+                  BURST
+                </button>
+              )}
+              
               {/* MELEE if available */}
               {findAction('MELEE') && (
                 <button 
