@@ -94,6 +94,8 @@ class Rules:
             room_type = state.board.room_types.get(state.player_room)
             if room_type in ('CONTROL', 'ARMORY', 'SURGERY', 'ENGINE'):
                 actions.append(Action(ActionType.USE_ROOM))
+            if room_type == 'ENGINE':
+                actions.append(Action(ActionType.ESCAPE))
             
             # Pass is always legal
             actions.append(Action(ActionType.PASS))
@@ -332,6 +334,14 @@ class Rules:
                     actions_in_turn += 1
 
         # --------------------------------------------------------------------
+        # Handle ESCAPE
+        # --------------------------------------------------------------------
+        elif action.type is ActionType.ESCAPE:
+            # Only legal in ENGINE (validated via legal_actions)
+            new_state = new_state.next(game_over=True, win=True)
+            actions_in_turn += 1
+
+        # --------------------------------------------------------------------
         # Handle PASS
         # --------------------------------------------------------------------
         elif action.type is ActionType.PASS:
@@ -465,7 +475,11 @@ class Rules:
                             new_room_noise.get(new_state.player_room, 0) + 1
                         )
                     elif card == "BAG_DEV":
+                        # increment dev counter and add an ADULT token
                         new_state = new_state.next(bag_dev_count=new_state.bag_dev_count + 1)
+                        bag = dict(new_state.bag)
+                        bag["ADULT"] = bag.get("ADULT", 0) + 1
+                        new_state = new_state.next(bag=bag)
                     elif card == "SPAWN_FROM_BAG":
                         # deterministic draw: first token with count>0 sorted by name
                         if new_state.bag:
@@ -481,6 +495,14 @@ class Rules:
                                     intr = dict(new_state.intruders)
                                     intr[new_state.player_room] = 1
                                     new_state = new_state.next(intruders=intr)
+                    elif card == "OXYGEN_LEAK":
+                        # Life support immediately fails
+                        new_state = new_state.next(life_support_active=False)
+                    elif card == "FIRE_ROOM":
+                        # Current room catches fire
+                        new_fires = set(new_state.fires)
+                        new_fires.add(new_state.player_room)
+                        new_state = new_state.next(fires=new_fires)
                     # unknown card ids are ignored for now
 
                 # ------------------------------------------------------------------
@@ -512,6 +534,14 @@ class Rules:
                     round=new_state.round + 1,
                     destruction_timer=timer,
                 )
+
+                # Check for self-destruct completion -> game lost
+                if (
+                    new_state.self_destruct_armed
+                    and new_state.destruction_timer == 0
+                    and not new_state.game_over
+                ):
+                    new_state = new_state.next(game_over=True, win=False)
 
             # after phase-specific updates new_state variables used below
 

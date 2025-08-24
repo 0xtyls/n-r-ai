@@ -158,7 +158,9 @@ class TestEventBagSkeleton(unittest.TestCase):
         self.assertIn("A", state9.intruders)
         self.assertEqual(state9.event_deck, 0)
         self.assertEqual(len(state9.event_deck_cards), 0)
-        self.assertNotIn("ADULT", state9.bag)
+        # After BAG_DEV added one ADULT and SPAWN_FROM_BAG drew one ADULT,
+        # there should be exactly one ADULT token left in the bag.
+        self.assertEqual(state9.bag.get("ADULT", 0), 1)
 
     def test_fallback_when_no_cards(self):
         """Test fallback behavior when event deck is empty."""
