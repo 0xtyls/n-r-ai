@@ -3,6 +3,9 @@
 
 This document is **not** an official rulebook and is provided only to guide engine / agent implementation.*
 
+> **Note** – This reference is aligned with the official rulebook PDF located at the project root.  
+> The full text was re-extracted into `RULES_EXTRACT.txt` for accurate cross-referencing.
+
 ---
 
 ## Finding full rules in `RULES_EXTRACT.txt`
